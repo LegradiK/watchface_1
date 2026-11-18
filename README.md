@@ -4,7 +4,7 @@ A digital Garmin Connect IQ watch face written in Monkey C, built and tested for
 
 It shows the date and 24-hour time at the top, three bars for watch battery, Body Battery and heart rate in the middle, and a step-goal ring around the edge.
 
-![watchface_on the Forerunner 245 simulator](screenshot.png)
+<img alt="watchface_1" src="watchface_screenshot.png" width="240">
 
 ## Features
 
