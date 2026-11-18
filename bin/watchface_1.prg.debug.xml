@@ -5,297 +5,400 @@
         <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="1" lineNum="34" parent="globals" pc="268435460" symbol="getApp"/>
         <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="1" lineNum="35" parent="globals" pc="268435470" symbol="getApp"/>
         <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/bin/gen/006-B3076-00/source/Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435486" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="3" lineNum="20" parent="globals/watchface_1View" pc="268435510" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="3" lineNum="21" parent="globals/watchface_1View" pc="268435510" symbol="&lt;init&gt;"/>
         <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="4" lineNum="7" parent="globals/watchface_1App" pc="268435529" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="152" parent="globals/watchface_1View" pc="268435548" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="154" parent="globals/watchface_1View" pc="268435552" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="155" parent="globals/watchface_1View" pc="268435563" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="156" parent="globals/watchface_1View" pc="268435573" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="157" parent="globals/watchface_1View" pc="268435584" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="161" parent="globals/watchface_1View" pc="268435594" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="162" parent="globals/watchface_1View" pc="268435600" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="164" parent="globals/watchface_1View" pc="268435631" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="165" parent="globals/watchface_1View" pc="268435653" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="170" parent="globals/watchface_1View" pc="268435687" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="171" parent="globals/watchface_1View" pc="268435697" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="172" parent="globals/watchface_1View" pc="268435719" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="174" parent="globals/watchface_1View" pc="268435759" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="175" parent="globals/watchface_1View" pc="268435781" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="176" parent="globals/watchface_1View" pc="268435792" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="177" parent="globals/watchface_1View" pc="268435811" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="181" parent="globals/watchface_1View" pc="268435848" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="182" parent="globals/watchface_1View" pc="268435867" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="6" lineNum="246" parent="globals/watchface_1View" pc="268435902" symbol="&lt;globals/watchface_1View/&lt;&gt;drawTime&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="6" lineNum="247" parent="globals/watchface_1View" pc="268435904" symbol="&lt;globals/watchface_1View/&lt;&gt;drawTime&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="6" lineNum="248" parent="globals/watchface_1View" pc="268435926" symbol="&lt;globals/watchface_1View/&lt;&gt;drawTime&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="7" lineNum="314" parent="globals/watchface_1View" pc="268436000" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="7" lineNum="315" parent="globals/watchface_1View" pc="268436004" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="7" lineNum="316" parent="globals/watchface_1View" pc="268436034" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="7" lineNum="320" parent="globals/watchface_1View" pc="268436092" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="7" lineNum="321" parent="globals/watchface_1View" pc="268436112" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="7" lineNum="324" parent="globals/watchface_1View" pc="268436136" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="297" parent="globals/watchface_1View" pc="268436138" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="298" parent="globals/watchface_1View" pc="268436142" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="299" parent="globals/watchface_1View" pc="268436159" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="300" parent="globals/watchface_1View" pc="268436179" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="303" parent="globals/watchface_1View" pc="268436191" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="304" parent="globals/watchface_1View" pc="268436206" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="305" parent="globals/watchface_1View" pc="268436239" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="306" parent="globals/watchface_1View" pc="268436263" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="309" parent="globals/watchface_1View" pc="268436278" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="9" lineNum="291" parent="globals/watchface_1View" pc="268436280" symbol="&lt;globals/watchface_1View/&lt;&gt;getTimeText&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="9" lineNum="292" parent="globals/watchface_1View" pc="268436284" symbol="&lt;globals/watchface_1View/&lt;&gt;getTimeText&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="9" lineNum="293" parent="globals/watchface_1View" pc="268436301" symbol="&lt;globals/watchface_1View/&lt;&gt;getTimeText&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="212" parent="globals/watchface_1View" pc="268436353" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="213" parent="globals/watchface_1View" pc="268436357" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="214" parent="globals/watchface_1View" pc="268436374" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="215" parent="globals/watchface_1View" pc="268436404" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="217" parent="globals/watchface_1View" pc="268436451" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="218" parent="globals/watchface_1View" pc="268436467" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="219" parent="globals/watchface_1View" pc="268436478" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="222" parent="globals/watchface_1View" pc="268436488" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="223" parent="globals/watchface_1View" pc="268436510" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="226" parent="globals/watchface_1View" pc="268436527" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="227" parent="globals/watchface_1View" pc="268436549" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="230" parent="globals/watchface_1View" pc="268436579" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="231" parent="globals/watchface_1View" pc="268436601" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="232" parent="globals/watchface_1View" pc="268436612" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="233" parent="globals/watchface_1View" pc="268436645" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="234" parent="globals/watchface_1View" pc="268436656" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="235" parent="globals/watchface_1View" pc="268436681" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="237" parent="globals/watchface_1View" pc="268436726" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="240" parent="globals/watchface_1View" pc="268436743" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="241" parent="globals/watchface_1View" pc="268436765" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="12" lineNum="276" parent="globals/watchface_1View" pc="268436839" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="12" lineNum="277" parent="globals/watchface_1View" pc="268436843" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="12" lineNum="278" parent="globals/watchface_1View" pc="268436866" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="12" lineNum="279" parent="globals/watchface_1View" pc="268436888" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="12" lineNum="281" parent="globals/watchface_1View" pc="268436916" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="12" lineNum="282" parent="globals/watchface_1View" pc="268436938" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="13" lineNum="135" parent="globals/watchface_1View" pc="268436994" symbol="onExitSleep"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="13" lineNum="136" parent="globals/watchface_1View" pc="268436996" symbol="onExitSleep"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="13" lineNum="137" parent="globals/watchface_1View" pc="268437006" symbol="onExitSleep"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="65" parent="globals/watchface_1View" pc="268437023" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="66" parent="globals/watchface_1View" pc="268437027" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="67" parent="globals/watchface_1View" pc="268437052" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="68" parent="globals/watchface_1View" pc="268437077" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="70" parent="globals/watchface_1View" pc="268437124" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="71" parent="globals/watchface_1View" pc="268437164" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="75" parent="globals/watchface_1View" pc="268437195" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="76" parent="globals/watchface_1View" pc="268437226" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="77" parent="globals/watchface_1View" pc="268437239" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="79" parent="globals/watchface_1View" pc="268437294" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="80" parent="globals/watchface_1View" pc="268437301" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="81" parent="globals/watchface_1View" pc="268437308" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="83" parent="globals/watchface_1View" pc="268437315" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="84" parent="globals/watchface_1View" pc="268437334" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="85" parent="globals/watchface_1View" pc="268437353" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="86" parent="globals/watchface_1View" pc="268437375" symbol="onLayout"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="189" parent="globals/watchface_1View" pc="268437407" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="191" parent="globals/watchface_1View" pc="268437411" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="192" parent="globals/watchface_1View" pc="268437418" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="193" parent="globals/watchface_1View" pc="268437425" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="196" parent="globals/watchface_1View" pc="268437438" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="197" parent="globals/watchface_1View" pc="268437460" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="198" parent="globals/watchface_1View" pc="268437477" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="199" parent="globals/watchface_1View" pc="268437497" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="202" parent="globals/watchface_1View" pc="268437535" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="203" parent="globals/watchface_1View" pc="268437557" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="204" parent="globals/watchface_1View" pc="268437568" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="205" parent="globals/watchface_1View" pc="268437587" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="17" lineNum="140" parent="globals/watchface_1View" pc="268437629" symbol="onEnterSleep"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="17" lineNum="141" parent="globals/watchface_1View" pc="268437631" symbol="onEnterSleep"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="17" lineNum="142" parent="globals/watchface_1View" pc="268437641" symbol="onEnterSleep"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="54" parent="globals/watchface_1View" pc="268437658" symbol="initialize"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="55" parent="globals/watchface_1View" pc="268437662" symbol="initialize"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="58" parent="globals/watchface_1View" pc="268437680" symbol="initialize"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="59" parent="globals/watchface_1View" pc="268437697" symbol="initialize"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="60" parent="globals/watchface_1View" pc="268437708" symbol="initialize"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="93" parent="globals/watchface_1View" pc="268437728" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="94" parent="globals/watchface_1View" pc="268437732" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="95" parent="globals/watchface_1View" pc="268437743" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="98" parent="globals/watchface_1View" pc="268437760" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="99" parent="globals/watchface_1View" pc="268437782" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="102" parent="globals/watchface_1View" pc="268437794" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="103" parent="globals/watchface_1View" pc="268437817" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="104" parent="globals/watchface_1View" pc="268437831" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="108" parent="globals/watchface_1View" pc="268437835" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="109" parent="globals/watchface_1View" pc="268437867" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="110" parent="globals/watchface_1View" pc="268437880" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="112" parent="globals/watchface_1View" pc="268437893" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="113" parent="globals/watchface_1View" pc="268437900" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="114" parent="globals/watchface_1View" pc="268437907" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="117" parent="globals/watchface_1View" pc="268437935" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="118" parent="globals/watchface_1View" pc="268437949" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="119" parent="globals/watchface_1View" pc="268437963" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="122" parent="globals/watchface_1View" pc="268437977" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="124" parent="globals/watchface_1View" pc="268438030" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="19" lineNum="127" parent="globals/watchface_1View" pc="268438118" symbol="onUpdate"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="253" parent="globals/watchface_1View" pc="268438193" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="254" parent="globals/watchface_1View" pc="268438197" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="257" parent="globals/watchface_1View" pc="268438214" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="258" parent="globals/watchface_1View" pc="268438238" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="260" parent="globals/watchface_1View" pc="268438257" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="261" parent="globals/watchface_1View" pc="268438279" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="265" parent="globals/watchface_1View" pc="268438343" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="266" parent="globals/watchface_1View" pc="268438367" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="270" parent="globals/watchface_1View" pc="268438449" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="271" parent="globals/watchface_1View" pc="268438471" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="21" lineNum="14" parent="globals/watchface_1App" pc="268438536" symbol="onStart"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="22" lineNum="28" parent="globals/watchface_1App" pc="268438539" symbol="onSettingsChanged"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="22" lineNum="29" parent="globals/watchface_1App" pc="268438541" symbol="onSettingsChanged"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="23" lineNum="22" parent="globals/watchface_1App" pc="268438558" symbol="getInitialView"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="23" lineNum="23" parent="globals/watchface_1App" pc="268438560" symbol="getInitialView"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="24" lineNum="9" parent="globals/watchface_1App" pc="268438597" symbol="initialize"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="24" lineNum="10" parent="globals/watchface_1App" pc="268438599" symbol="initialize"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="25" lineNum="18" parent="globals/watchface_1App" pc="268438618" symbol="onStop"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/bin/gen/006-B3076-00/source/Rez.mcgen" id="26" lineNum="13" parent="globals/Rez/Layouts" pc="268438621" symbol="WatchFace"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/bin/gen/006-B3076-00/source/Rez.mcgen" id="26" lineNum="14" parent="globals/Rez/Layouts" pc="268438633" symbol="WatchFace"/>
-        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/bin/gen/006-B3076-00/source/Rez.mcgen" id="26" lineNum="16" parent="globals/Rez/Layouts" pc="268438786" symbol="WatchFace"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="217" parent="globals/watchface_1View" pc="268435548" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="219" parent="globals/watchface_1View" pc="268435552" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="220" parent="globals/watchface_1View" pc="268435563" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="221" parent="globals/watchface_1View" pc="268435573" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="222" parent="globals/watchface_1View" pc="268435584" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="226" parent="globals/watchface_1View" pc="268435594" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="227" parent="globals/watchface_1View" pc="268435605" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="228" parent="globals/watchface_1View" pc="268435636" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="229" parent="globals/watchface_1View" pc="268435647" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="231" parent="globals/watchface_1View" pc="268435676" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="235" parent="globals/watchface_1View" pc="268435702" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="236" parent="globals/watchface_1View" pc="268435712" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="237" parent="globals/watchface_1View" pc="268435734" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="239" parent="globals/watchface_1View" pc="268435774" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="240" parent="globals/watchface_1View" pc="268435796" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="241" parent="globals/watchface_1View" pc="268435807" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="242" parent="globals/watchface_1View" pc="268435826" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="246" parent="globals/watchface_1View" pc="268435863" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="5" lineNum="247" parent="globals/watchface_1View" pc="268435882" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="6" lineNum="376" parent="globals/watchface_1View" pc="268435923" symbol="&lt;globals/watchface_1View/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="6" lineNum="377" parent="globals/watchface_1View" pc="268435925" symbol="&lt;globals/watchface_1View/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="6" lineNum="378" parent="globals/watchface_1View" pc="268435947" symbol="&lt;globals/watchface_1View/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="7" lineNum="453" parent="globals/watchface_1View" pc="268436003" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="7" lineNum="454" parent="globals/watchface_1View" pc="268436007" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="7" lineNum="455" parent="globals/watchface_1View" pc="268436037" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="7" lineNum="459" parent="globals/watchface_1View" pc="268436095" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="7" lineNum="460" parent="globals/watchface_1View" pc="268436115" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="7" lineNum="463" parent="globals/watchface_1View" pc="268436139" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="319" parent="globals/watchface_1View" pc="268436141" symbol="&lt;globals/watchface_1View/&lt;&gt;drawFeetIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="321" parent="globals/watchface_1View" pc="268436143" symbol="&lt;globals/watchface_1View/&lt;&gt;drawFeetIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="324" parent="globals/watchface_1View" pc="268436162" symbol="&lt;globals/watchface_1View/&lt;&gt;drawFeetIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="325" parent="globals/watchface_1View" pc="268436200" symbol="&lt;globals/watchface_1View/&lt;&gt;drawFeetIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="328" parent="globals/watchface_1View" pc="268436233" symbol="&lt;globals/watchface_1View/&lt;&gt;drawFeetIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="8" lineNum="329" parent="globals/watchface_1View" pc="268436271" symbol="&lt;globals/watchface_1View/&lt;&gt;drawFeetIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="9" lineNum="276" parent="globals/watchface_1View" pc="268436305" symbol="&lt;globals/watchface_1View/&lt;&gt;drawHeartIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="9" lineNum="278" parent="globals/watchface_1View" pc="268436309" symbol="&lt;globals/watchface_1View/&lt;&gt;drawHeartIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="9" lineNum="279" parent="globals/watchface_1View" pc="268436319" symbol="&lt;globals/watchface_1View/&lt;&gt;drawHeartIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="9" lineNum="281" parent="globals/watchface_1View" pc="268436329" symbol="&lt;globals/watchface_1View/&lt;&gt;drawHeartIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="9" lineNum="282" parent="globals/watchface_1View" pc="268436348" symbol="&lt;globals/watchface_1View/&lt;&gt;drawHeartIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="9" lineNum="283" parent="globals/watchface_1View" pc="268436375" symbol="&lt;globals/watchface_1View/&lt;&gt;drawHeartIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="9" lineNum="284" parent="globals/watchface_1View" pc="268436402" symbol="&lt;globals/watchface_1View/&lt;&gt;drawHeartIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="10" lineNum="430" parent="globals/watchface_1View" pc="268436553" symbol="&lt;globals/watchface_1View/&lt;&gt;getTimeText&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="10" lineNum="431" parent="globals/watchface_1View" pc="268436557" symbol="&lt;globals/watchface_1View/&lt;&gt;getTimeText&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="10" lineNum="432" parent="globals/watchface_1View" pc="268436574" symbol="&lt;globals/watchface_1View/&lt;&gt;getTimeText&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="406" parent="globals/watchface_1View" pc="268436626" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="407" parent="globals/watchface_1View" pc="268436630" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="408" parent="globals/watchface_1View" pc="268436653" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="409" parent="globals/watchface_1View" pc="268436675" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="411" parent="globals/watchface_1View" pc="268436703" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="11" lineNum="412" parent="globals/watchface_1View" pc="268436725" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="12" lineNum="88" parent="globals/watchface_1View" pc="268436787" symbol="onLayout"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="12" lineNum="89" parent="globals/watchface_1View" pc="268436789" symbol="onLayout"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="12" lineNum="90" parent="globals/watchface_1View" pc="268436814" symbol="onLayout"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="12" lineNum="91" parent="globals/watchface_1View" pc="268436839" symbol="onLayout"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="12" lineNum="93" parent="globals/watchface_1View" pc="268436886" symbol="onLayout"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="12" lineNum="94" parent="globals/watchface_1View" pc="268436933" symbol="onLayout"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="12" lineNum="96" parent="globals/watchface_1View" pc="268436980" symbol="onLayout"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="13" lineNum="421" parent="globals/watchface_1View" pc="268436995" symbol="&lt;globals/watchface_1View/&lt;&gt;getTimeFont&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="13" lineNum="422" parent="globals/watchface_1View" pc="268436997" symbol="&lt;globals/watchface_1View/&lt;&gt;getTimeFont&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="14" lineNum="205" parent="globals/watchface_1View" pc="268437027" symbol="onEnterSleep"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="14" lineNum="206" parent="globals/watchface_1View" pc="268437029" symbol="onEnterSleep"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="14" lineNum="207" parent="globals/watchface_1View" pc="268437039" symbol="onEnterSleep"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="383" parent="globals/watchface_1View" pc="268437056" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="384" parent="globals/watchface_1View" pc="268437060" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="387" parent="globals/watchface_1View" pc="268437077" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="388" parent="globals/watchface_1View" pc="268437101" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="390" parent="globals/watchface_1View" pc="268437120" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="391" parent="globals/watchface_1View" pc="268437142" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="395" parent="globals/watchface_1View" pc="268437188" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="396" parent="globals/watchface_1View" pc="268437212" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="400" parent="globals/watchface_1View" pc="268437294" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="15" lineNum="401" parent="globals/watchface_1View" pc="268437316" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="293" parent="globals/watchface_1View" pc="268437363" symbol="&lt;globals/watchface_1View/&lt;&gt;drawPulseIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="295" parent="globals/watchface_1View" pc="268437367" symbol="&lt;globals/watchface_1View/&lt;&gt;drawPulseIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="306" parent="globals/watchface_1View" pc="268437707" symbol="&lt;globals/watchface_1View/&lt;&gt;drawPulseIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="307" parent="globals/watchface_1View" pc="268437726" symbol="&lt;globals/watchface_1View/&lt;&gt;drawPulseIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="308" parent="globals/watchface_1View" pc="268437743" symbol="&lt;globals/watchface_1View/&lt;&gt;drawPulseIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="309" parent="globals/watchface_1View" pc="268437773" symbol="&lt;globals/watchface_1View/&lt;&gt;drawPulseIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="310" parent="globals/watchface_1View" pc="268437780" symbol="&lt;globals/watchface_1View/&lt;&gt;drawPulseIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="311" parent="globals/watchface_1View" pc="268437793" symbol="&lt;globals/watchface_1View/&lt;&gt;drawPulseIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="16" lineNum="313" parent="globals/watchface_1View" pc="268437850" symbol="&lt;globals/watchface_1View/&lt;&gt;drawPulseIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="17" lineNum="436" parent="globals/watchface_1View" pc="268437868" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="17" lineNum="437" parent="globals/watchface_1View" pc="268437872" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="17" lineNum="438" parent="globals/watchface_1View" pc="268437889" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="17" lineNum="439" parent="globals/watchface_1View" pc="268437909" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="17" lineNum="442" parent="globals/watchface_1View" pc="268437921" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="17" lineNum="443" parent="globals/watchface_1View" pc="268437936" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="17" lineNum="444" parent="globals/watchface_1View" pc="268437969" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="17" lineNum="445" parent="globals/watchface_1View" pc="268437993" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="17" lineNum="448" parent="globals/watchface_1View" pc="268438008" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="103" parent="globals/watchface_1View" pc="268438010" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="104" parent="globals/watchface_1View" pc="268438014" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="105" parent="globals/watchface_1View" pc="268438038" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="107" parent="globals/watchface_1View" pc="268438062" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="108" parent="globals/watchface_1View" pc="268438069" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="111" parent="globals/watchface_1View" pc="268438085" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="115" parent="globals/watchface_1View" pc="268438131" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="116" parent="globals/watchface_1View" pc="268438162" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="118" parent="globals/watchface_1View" pc="268438184" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="119" parent="globals/watchface_1View" pc="268438218" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="120" parent="globals/watchface_1View" pc="268438237" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="121" parent="globals/watchface_1View" pc="268438245" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="124" parent="globals/watchface_1View" pc="268438252" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="125" parent="globals/watchface_1View" pc="268438271" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="126" parent="globals/watchface_1View" pc="268438278" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="127" parent="globals/watchface_1View" pc="268438297" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="128" parent="globals/watchface_1View" pc="268438307" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="129" parent="globals/watchface_1View" pc="268438326" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="130" parent="globals/watchface_1View" pc="268438336" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="134" parent="globals/watchface_1View" pc="268438361" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="135" parent="globals/watchface_1View" pc="268438395" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="136" parent="globals/watchface_1View" pc="268438408" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="137" parent="globals/watchface_1View" pc="268438428" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="139" parent="globals/watchface_1View" pc="268438447" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="142" parent="globals/watchface_1View" pc="268438508" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="145" parent="globals/watchface_1View" pc="268438515" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="146" parent="globals/watchface_1View" pc="268438544" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="148" parent="globals/watchface_1View" pc="268438551" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="149" parent="globals/watchface_1View" pc="268438570" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="150" parent="globals/watchface_1View" pc="268438589" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="18" lineNum="151" parent="globals/watchface_1View" pc="268438611" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="335" parent="globals/watchface_1View" pc="268438643" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="336" parent="globals/watchface_1View" pc="268438647" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="337" parent="globals/watchface_1View" pc="268438664" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="338" parent="globals/watchface_1View" pc="268438694" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="340" parent="globals/watchface_1View" pc="268438741" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="341" parent="globals/watchface_1View" pc="268438757" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="342" parent="globals/watchface_1View" pc="268438768" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="345" parent="globals/watchface_1View" pc="268438778" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="346" parent="globals/watchface_1View" pc="268438800" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="349" parent="globals/watchface_1View" pc="268438817" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="350" parent="globals/watchface_1View" pc="268438839" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="353" parent="globals/watchface_1View" pc="268438869" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="354" parent="globals/watchface_1View" pc="268438891" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="355" parent="globals/watchface_1View" pc="268438902" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="356" parent="globals/watchface_1View" pc="268438935" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="357" parent="globals/watchface_1View" pc="268438946" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="358" parent="globals/watchface_1View" pc="268438971" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="360" parent="globals/watchface_1View" pc="268439016" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="363" parent="globals/watchface_1View" pc="268439033" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="364" parent="globals/watchface_1View" pc="268439046" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="365" parent="globals/watchface_1View" pc="268439072" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="366" parent="globals/watchface_1View" pc="268439082" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="368" parent="globals/watchface_1View" pc="268439101" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="370" parent="globals/watchface_1View" pc="268439130" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="20" lineNum="371" parent="globals/watchface_1View" pc="268439152" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="21" lineNum="200" parent="globals/watchface_1View" pc="268439205" symbol="onExitSleep"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="21" lineNum="201" parent="globals/watchface_1View" pc="268439207" symbol="onExitSleep"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="21" lineNum="202" parent="globals/watchface_1View" pc="268439217" symbol="onExitSleep"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="23" lineNum="425" parent="globals/watchface_1View" pc="268439234" symbol="&lt;globals/watchface_1View/&lt;&gt;getSmallFont&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="23" lineNum="426" parent="globals/watchface_1View" pc="268439236" symbol="&lt;globals/watchface_1View/&lt;&gt;getSmallFont&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="24" lineNum="254" parent="globals/watchface_1View" pc="268439266" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="24" lineNum="256" parent="globals/watchface_1View" pc="268439270" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="24" lineNum="257" parent="globals/watchface_1View" pc="268439277" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="24" lineNum="258" parent="globals/watchface_1View" pc="268439284" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="24" lineNum="261" parent="globals/watchface_1View" pc="268439297" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="24" lineNum="262" parent="globals/watchface_1View" pc="268439319" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="24" lineNum="263" parent="globals/watchface_1View" pc="268439336" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="24" lineNum="264" parent="globals/watchface_1View" pc="268439356" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="24" lineNum="267" parent="globals/watchface_1View" pc="268439394" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="24" lineNum="268" parent="globals/watchface_1View" pc="268439416" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="24" lineNum="269" parent="globals/watchface_1View" pc="268439427" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="24" lineNum="270" parent="globals/watchface_1View" pc="268439446" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="25" lineNum="77" parent="globals/watchface_1View" pc="268439488" symbol="initialize"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="25" lineNum="78" parent="globals/watchface_1View" pc="268439492" symbol="initialize"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="25" lineNum="81" parent="globals/watchface_1View" pc="268439510" symbol="initialize"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="25" lineNum="82" parent="globals/watchface_1View" pc="268439527" symbol="initialize"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="25" lineNum="83" parent="globals/watchface_1View" pc="268439538" symbol="initialize"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="158" parent="globals/watchface_1View" pc="268439558" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="159" parent="globals/watchface_1View" pc="268439562" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="160" parent="globals/watchface_1View" pc="268439573" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="163" parent="globals/watchface_1View" pc="268439590" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="164" parent="globals/watchface_1View" pc="268439612" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="167" parent="globals/watchface_1View" pc="268439624" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="168" parent="globals/watchface_1View" pc="268439647" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="169" parent="globals/watchface_1View" pc="268439661" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="173" parent="globals/watchface_1View" pc="268439665" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="174" parent="globals/watchface_1View" pc="268439697" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="175" parent="globals/watchface_1View" pc="268439710" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="177" parent="globals/watchface_1View" pc="268439723" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="178" parent="globals/watchface_1View" pc="268439730" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="179" parent="globals/watchface_1View" pc="268439737" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="182" parent="globals/watchface_1View" pc="268439765" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="183" parent="globals/watchface_1View" pc="268439779" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="184" parent="globals/watchface_1View" pc="268439793" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="187" parent="globals/watchface_1View" pc="268439807" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="189" parent="globals/watchface_1View" pc="268439858" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" id="26" lineNum="192" parent="globals/watchface_1View" pc="268439946" symbol="onUpdate"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="27" lineNum="14" parent="globals/watchface_1App" pc="268440021" symbol="onStart"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="28" lineNum="28" parent="globals/watchface_1App" pc="268440024" symbol="onSettingsChanged"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="28" lineNum="29" parent="globals/watchface_1App" pc="268440026" symbol="onSettingsChanged"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="29" lineNum="22" parent="globals/watchface_1App" pc="268440043" symbol="getInitialView"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="29" lineNum="23" parent="globals/watchface_1App" pc="268440045" symbol="getInitialView"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="30" lineNum="9" parent="globals/watchface_1App" pc="268440082" symbol="initialize"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="30" lineNum="10" parent="globals/watchface_1App" pc="268440084" symbol="initialize"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1App.mc" id="31" lineNum="18" parent="globals/watchface_1App" pc="268440103" symbol="onStop"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/bin/gen/006-B3076-00/source/Rez.mcgen" id="32" lineNum="18" parent="globals/Rez/Layouts" pc="268440106" symbol="WatchFace"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/bin/gen/006-B3076-00/source/Rez.mcgen" id="32" lineNum="19" parent="globals/Rez/Layouts" pc="268440118" symbol="WatchFace"/>
+        <entry filename="/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/bin/gen/006-B3076-00/source/Rez.mcgen" id="32" lineNum="21" parent="globals/Rez/Layouts" pc="268440271" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry id="22" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
-        <entry id="21" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
+        <entry id="29" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;"/>
+        <entry id="28" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="33" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawPulseIcon&gt;"/>
         <entry id="8389683" method="true" symbol="onSettingsChanged"/>
         <entry id="8389702" method="true" symbol="getHeartRateHistory"/>
-        <entry id="27" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
-        <entry field="true" id="10" symbol="&lt;globals/watchface_1View/&lt;&gt;_barWidth&gt;"/>
+        <entry field="true" id="16" symbol="&lt;globals/watchface_1View/&lt;&gt;_dayY&gt;"/>
+        <entry id="37" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;"/>
+        <entry field="true" id="22" symbol="&lt;globals/watchface_1View/&lt;&gt;_smallFont&gt;"/>
+        <entry field="true" id="11" symbol="&lt;globals/watchface_1View/&lt;&gt;_barWidth&gt;"/>
         <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry id="39" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;getTimeFont&gt;"/>
         <entry id="8391839" method="true" symbol="getBodyBatteryHistory"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="16" symbol="&lt;globals/watchface_1View/&lt;&gt;_labelLeft&gt;"/>
-        <entry id="7" object="true" symbol="watchface_1View"/>
-        <entry field="true" id="18" symbol="&lt;globals/watchface_1View/&lt;&gt;_rowGap&gt;"/>
-        <entry field="true" id="30" symbol="AppName"/>
+        <entry field="true" id="19" symbol="&lt;globals/watchface_1View/&lt;&gt;_labelLeft&gt;"/>
+        <entry id="8" object="true" symbol="watchface_1View"/>
+        <entry field="true" id="21" symbol="&lt;globals/watchface_1View/&lt;&gt;_rowGap&gt;"/>
+        <entry field="true" id="45" symbol="AppName"/>
         <entry id="8388633" module="true" symbol="ActivityMonitor"/>
-        <entry id="6" object="true" symbol="watchface_1App"/>
-        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="7" object="true" symbol="watchface_1App"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
         <entry id="8388631" module="true" symbol="Activity"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
-        <entry id="23" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
+        <entry id="32" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
-        <entry field="true" id="15" symbol="&lt;globals/watchface_1View/&lt;&gt;_isAwake&gt;"/>
-        <entry id="26" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
+        <entry field="true" id="18" symbol="&lt;globals/watchface_1View/&lt;&gt;_isAwake&gt;"/>
+        <entry id="36" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;"/>
+        <entry field="true" id="15" symbol="&lt;globals/watchface_1View/&lt;&gt;_dateY&gt;"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="28" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;getTimeText&gt;"/>
+        <entry field="true" id="44" symbol="TimeFont"/>
+        <entry id="40" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;getTimeText&gt;"/>
         <entry id="8389275" method="true" symbol="getApp"/>
-        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="5" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="25" symbol="&lt;globals/watchface_1View/&lt;&gt;_timeY&gt;"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="30" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawFeetIcon&gt;"/>
         <entry id="8389376" method="true" symbol="onEnterSleep"/>
         <entry field="true" id="8389063" symbol="identifier"/>
         <entry id="8389349" symbol="justification"/>
-        <entry field="true" id="17" symbol="&lt;globals/watchface_1View/&lt;&gt;_r&gt;"/>
+        <entry field="true" id="20" symbol="&lt;globals/watchface_1View/&lt;&gt;_r&gt;"/>
+        <entry field="true" id="43" symbol="SmallFont"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry field="true" id="23" symbol="&lt;globals/watchface_1View/&lt;&gt;_stepsY&gt;"/>
         <entry id="8389809" symbol="order"/>
         <entry id="8389377" method="true" symbol="onExitSleep"/>
-        <entry id="20" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
+        <entry id="27" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;"/>
         <entry id="8388644" module="true" symbol="System"/>
+        <entry field="true" id="24" symbol="&lt;globals/watchface_1View/&lt;&gt;_timeFont&gt;"/>
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry field="true" id="14" symbol="&lt;globals/watchface_1View/&lt;&gt;_firstRowY&gt;"/>
+        <entry field="true" id="17" symbol="&lt;globals/watchface_1View/&lt;&gt;_firstRowY&gt;"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry field="true" id="29" symbol="LauncherIcon"/>
+        <entry field="true" id="42" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry field="true" id="8391194" symbol="requiresBurnInProtection"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry id="8388702" method="true" symbol="initialize"/>
-        <entry field="true" id="11" symbol="&lt;globals/watchface_1View/&lt;&gt;_burnInProtection&gt;"/>
+        <entry field="true" id="12" symbol="&lt;globals/watchface_1View/&lt;&gt;_burnInProtection&gt;"/>
         <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="31" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawHeartIcon&gt;"/>
         <entry id="8389808" symbol="period"/>
         <entry id="8388641" module="true" symbol="Math"/>
         <entry id="8391701" method="true" symbol="setAntiAlias"/>
+        <entry id="41" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry field="true" id="8389347" symbol="color"/>
         <entry id="8389781" module="true" symbol="SensorHistory"/>
-        <entry id="8" module="true" symbol="Layouts"/>
-        <entry field="true" id="13" symbol="&lt;globals/watchface_1View/&lt;&gt;_cy&gt;"/>
-        <entry id="25" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawTime&gt;"/>
-        <entry id="24" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
-        <entry field="true" id="12" symbol="&lt;globals/watchface_1View/&lt;&gt;_cx&gt;"/>
+        <entry id="9" module="true" symbol="Layouts"/>
+        <entry id="38" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;getSmallFont&gt;"/>
+        <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+        <entry field="true" id="14" symbol="&lt;globals/watchface_1View/&lt;&gt;_cy&gt;"/>
+        <entry id="35" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawTime&gt;"/>
+        <entry id="34" method="true" symbol="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;"/>
+        <entry field="true" id="13" symbol="&lt;globals/watchface_1View/&lt;&gt;_cx&gt;"/>
         <entry id="8389125" method="true" symbol="onHide"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry field="true" id="19" symbol="&lt;globals/watchface_1View/&lt;&gt;_valueRight&gt;"/>
-        <entry field="true" id="9" symbol="&lt;globals/watchface_1View/&lt;&gt;_barLeft&gt;"/>
+        <entry field="true" id="26" symbol="&lt;globals/watchface_1View/&lt;&gt;_valueRight&gt;"/>
+        <entry field="true" id="10" symbol="&lt;globals/watchface_1View/&lt;&gt;_barLeft&gt;"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435901" name="dc" stackId="1" startPc="268435548"/>
-        <entry arg="true" endPc="268435901" name="centreY" stackId="2" startPc="268435548"/>
-        <entry arg="true" endPc="268435901" name="label" stackId="3" startPc="268435548"/>
-        <entry arg="true" endPc="268435901" name="value" stackId="4" startPc="268435548"/>
-        <entry arg="true" endPc="268435901" name="fraction" stackId="5" startPc="268435548"/>
-        <entry arg="true" endPc="268435901" name="colour" stackId="6" startPc="268435548"/>
-        <entry endPc="268435900" name="barY" stackId="7" startPc="268435552"/>
-        <entry endPc="268435900" name="filled" stackId="8" startPc="268435552"/>
-        <entry arg="true" endPc="268435999" name="dc" stackId="1" startPc="268435902"/>
-        <entry endPc="268436132" name="sample" stackId="1" startPc="268436034"/>
-        <entry endPc="268436279" name="info" stackId="1" startPc="268436142"/>
-        <entry endPc="268436274" name="sample" stackId="2" startPc="268436206"/>
-        <entry endPc="268436352" name="clock" stackId="1" startPc="268436284"/>
-        <entry arg="true" endPc="268436838" name="dc" stackId="1" startPc="268436353"/>
-        <entry endPc="268436837" name="info" stackId="2" startPc="268436357"/>
-        <entry endPc="268436837" name="steps" stackId="3" startPc="268436357"/>
-        <entry endPc="268436837" name="goal" stackId="4" startPc="268436357"/>
-        <entry endPc="268436837" name="fraction" stackId="5" startPc="268436357"/>
-        <entry endPc="268436837" name="radius" stackId="6" startPc="268436357"/>
-        <entry endPc="268436722" name="endAngle" stackId="7" startPc="268436656"/>
-        <entry arg="true" endPc="268436993" name="dc" stackId="1" startPc="268436839"/>
-        <entry endPc="268436992" name="min" stackId="2" startPc="268436843"/>
-        <entry endPc="268436992" name="dx" stackId="3" startPc="268436843"/>
-        <entry endPc="268436992" name="dy" stackId="4" startPc="268436843"/>
-        <entry arg="true" endPc="268437406" name="dc" stackId="1" startPc="268437023"/>
-        <entry endPc="268437405" name="lowestEdge" stackId="2" startPc="268437027"/>
-        <entry endPc="268437405" name="dy" stackId="3" startPc="268437027"/>
-        <entry endPc="268437405" name="halfWidth" stackId="4" startPc="268437027"/>
-        <entry endPc="268437405" name="labelColumn" stackId="5" startPc="268437027"/>
-        <entry endPc="268437405" name="valueColumn" stackId="6" startPc="268437027"/>
-        <entry endPc="268437405" name="padding" stackId="7" startPc="268437027"/>
-        <entry arg="true" endPc="268437628" name="dc" stackId="1" startPc="268437407"/>
-        <entry arg="true" endPc="268437628" name="x" stackId="2" startPc="268437407"/>
-        <entry arg="true" endPc="268437628" name="centreY" stackId="3" startPc="268437407"/>
-        <entry arg="true" endPc="268437628" name="fraction" stackId="4" startPc="268437407"/>
-        <entry arg="true" endPc="268437628" name="colour" stackId="5" startPc="268437407"/>
-        <entry endPc="268437627" name="w" stackId="6" startPc="268437411"/>
-        <entry endPc="268437627" name="h" stackId="7" startPc="268437411"/>
-        <entry endPc="268437627" name="top" stackId="8" startPc="268437411"/>
-        <entry endPc="268437627" name="innerW" stackId="9" startPc="268437411"/>
-        <entry endPc="268437726" name="settings" stackId="1" startPc="268437662"/>
-        <entry arg="true" endPc="268438192" name="dc" stackId="1" startPc="268437728"/>
-        <entry endPc="268438191" name="battery" stackId="2" startPc="268437732"/>
-        <entry endPc="268438191" name="bodyBattery" stackId="3" startPc="268437732"/>
-        <entry endPc="268438191" name="heartRate" stackId="4" startPc="268437732"/>
-        <entry endPc="268438191" name="hrFraction" stackId="5" startPc="268437732"/>
-        <entry arg="true" endPc="268438535" name="dc" stackId="1" startPc="268438193"/>
-        <entry endPc="268438534" name="now" stackId="2" startPc="268438197"/>
-        <entry endPc="268438534" name="medium" stackId="3" startPc="268438197"/>
-        <entry endPc="268438534" name="dayName" stackId="4" startPc="268438197"/>
-        <entry endPc="268438534" name="info" stackId="5" startPc="268438197"/>
-        <entry endPc="268438534" name="text" stackId="6" startPc="268438197"/>
-        <entry arg="true" endPc="268438802" name="dc" stackId="1" startPc="268438621"/>
-        <entry endPc="268438802" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268438633"/>
+        <entry arg="true" endPc="268435922" name="dc" stackId="1" startPc="268435548"/>
+        <entry arg="true" endPc="268435922" name="centreY" stackId="2" startPc="268435548"/>
+        <entry arg="true" endPc="268435922" name="icon" stackId="3" startPc="268435548"/>
+        <entry arg="true" endPc="268435922" name="value" stackId="4" startPc="268435548"/>
+        <entry arg="true" endPc="268435922" name="fraction" stackId="5" startPc="268435548"/>
+        <entry arg="true" endPc="268435922" name="colour" stackId="6" startPc="268435548"/>
+        <entry endPc="268435921" name="barY" stackId="7" startPc="268435552"/>
+        <entry endPc="268435921" name="filled" stackId="8" startPc="268435552"/>
+        <entry arg="true" endPc="268436002" name="dc" stackId="1" startPc="268435923"/>
+        <entry endPc="268436135" name="sample" stackId="1" startPc="268436037"/>
+        <entry arg="true" endPc="268436304" name="dc" stackId="1" startPc="268436141"/>
+        <entry arg="true" endPc="268436304" name="x" stackId="2" startPc="268436141"/>
+        <entry arg="true" endPc="268436304" name="centreY" stackId="3" startPc="268436141"/>
+        <entry arg="true" endPc="268436304" name="colour" stackId="4" startPc="268436141"/>
+        <entry arg="true" endPc="268436552" name="dc" stackId="1" startPc="268436305"/>
+        <entry arg="true" endPc="268436552" name="x" stackId="2" startPc="268436305"/>
+        <entry arg="true" endPc="268436552" name="centreY" stackId="3" startPc="268436305"/>
+        <entry arg="true" endPc="268436552" name="colour" stackId="4" startPc="268436305"/>
+        <entry endPc="268436551" name="cx" stackId="5" startPc="268436309"/>
+        <entry endPc="268436551" name="top" stackId="6" startPc="268436309"/>
+        <entry endPc="268436625" name="clock" stackId="1" startPc="268436557"/>
+        <entry arg="true" endPc="268436786" name="dc" stackId="1" startPc="268436626"/>
+        <entry endPc="268436785" name="min" stackId="2" startPc="268436630"/>
+        <entry endPc="268436785" name="dx" stackId="3" startPc="268436630"/>
+        <entry endPc="268436785" name="dy" stackId="4" startPc="268436630"/>
+        <entry arg="true" endPc="268436994" name="dc" stackId="1" startPc="268436787"/>
+        <entry arg="true" endPc="268437362" name="dc" stackId="1" startPc="268437056"/>
+        <entry endPc="268437361" name="now" stackId="2" startPc="268437060"/>
+        <entry endPc="268437361" name="medium" stackId="3" startPc="268437060"/>
+        <entry endPc="268437361" name="dayName" stackId="4" startPc="268437060"/>
+        <entry endPc="268437361" name="info" stackId="5" startPc="268437060"/>
+        <entry endPc="268437361" name="text" stackId="6" startPc="268437060"/>
+        <entry arg="true" endPc="268437867" name="dc" stackId="1" startPc="268437363"/>
+        <entry arg="true" endPc="268437867" name="x" stackId="2" startPc="268437363"/>
+        <entry arg="true" endPc="268437867" name="centreY" stackId="3" startPc="268437363"/>
+        <entry arg="true" endPc="268437867" name="colour" stackId="4" startPc="268437363"/>
+        <entry endPc="268437866" name="points" stackId="5" startPc="268437367"/>
+        <entry endPc="268437849" name="i" stackId="6" startPc="268437773"/>
+        <entry endPc="268437836" name="a" stackId="7" startPc="268437773"/>
+        <entry endPc="268437836" name="b" stackId="8" startPc="268437773"/>
+        <entry endPc="268438009" name="info" stackId="1" startPc="268437872"/>
+        <entry endPc="268438004" name="sample" stackId="2" startPc="268437936"/>
+        <entry arg="true" endPc="268438642" name="dc" stackId="1" startPc="268438010"/>
+        <entry endPc="268438641" name="smallH" stackId="2" startPc="268438014"/>
+        <entry endPc="268438641" name="timeH" stackId="3" startPc="268438014"/>
+        <entry endPc="268438641" name="gap" stackId="4" startPc="268438014"/>
+        <entry endPc="268438641" name="top" stackId="5" startPc="268438014"/>
+        <entry endPc="268438641" name="bottom" stackId="6" startPc="268438014"/>
+        <entry endPc="268438641" name="blockH" stackId="7" startPc="268438014"/>
+        <entry endPc="268438641" name="y" stackId="8" startPc="268438014"/>
+        <entry endPc="268438641" name="lowestEdge" stackId="9" startPc="268438014"/>
+        <entry endPc="268438641" name="dy" stackId="10" startPc="268438014"/>
+        <entry endPc="268438641" name="halfWidth" stackId="11" startPc="268438014"/>
+        <entry endPc="268438641" name="labelColumn" stackId="12" startPc="268438014"/>
+        <entry endPc="268438641" name="valueColumn" stackId="13" startPc="268438014"/>
+        <entry endPc="268438641" name="padding" stackId="14" startPc="268438014"/>
+        <entry arg="true" endPc="268439204" name="dc" stackId="1" startPc="268438643"/>
+        <entry endPc="268439203" name="info" stackId="2" startPc="268438647"/>
+        <entry endPc="268439203" name="steps" stackId="3" startPc="268438647"/>
+        <entry endPc="268439203" name="goal" stackId="4" startPc="268438647"/>
+        <entry endPc="268439203" name="fraction" stackId="5" startPc="268438647"/>
+        <entry endPc="268439203" name="radius" stackId="6" startPc="268438647"/>
+        <entry endPc="268439012" name="endAngle" stackId="7" startPc="268438946"/>
+        <entry endPc="268439203" name="text" stackId="8" startPc="268438647"/>
+        <entry endPc="268439203" name="textW" stackId="9" startPc="268438647"/>
+        <entry endPc="268439203" name="totalW" stackId="10" startPc="268438647"/>
+        <entry endPc="268439203" name="left" stackId="11" startPc="268438647"/>
+        <entry arg="true" endPc="268439487" name="dc" stackId="1" startPc="268439266"/>
+        <entry arg="true" endPc="268439487" name="x" stackId="2" startPc="268439266"/>
+        <entry arg="true" endPc="268439487" name="centreY" stackId="3" startPc="268439266"/>
+        <entry arg="true" endPc="268439487" name="fraction" stackId="4" startPc="268439266"/>
+        <entry arg="true" endPc="268439487" name="colour" stackId="5" startPc="268439266"/>
+        <entry endPc="268439486" name="w" stackId="6" startPc="268439270"/>
+        <entry endPc="268439486" name="h" stackId="7" startPc="268439270"/>
+        <entry endPc="268439486" name="top" stackId="8" startPc="268439270"/>
+        <entry endPc="268439486" name="innerW" stackId="9" startPc="268439270"/>
+        <entry endPc="268439556" name="settings" stackId="1" startPc="268439492"/>
+        <entry arg="true" endPc="268440020" name="dc" stackId="1" startPc="268439558"/>
+        <entry endPc="268440019" name="battery" stackId="2" startPc="268439562"/>
+        <entry endPc="268440019" name="bodyBattery" stackId="3" startPc="268439562"/>
+        <entry endPc="268440019" name="heartRate" stackId="4" startPc="268439562"/>
+        <entry endPc="268440019" name="hrFraction" stackId="5" startPc="268439562"/>
+        <entry arg="true" endPc="268440287" name="dc" stackId="1" startPc="268440106"/>
+        <entry endPc="268440287" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268440118"/>
     </localVars>
     <deviceInfo deviceVersion="45fe3cbb0de8ea0a70e12628d2697915f1272301" partNumber="006-B3076-00"/>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="TimeFont"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="SmallFont"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
     </annotations>
     <dataEntryOffsetMappings>
-        <dataEntry label="globals" offset="63" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/Rez" offset="134" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/watchface_1View" offset="189" parentId="globals" symbolId="watchface_1View" type="class"/>
-        <dataEntry label="globals/watchface_1App" offset="444" parentId="globals" symbolId="watchface_1App" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="523" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="562" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="601" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Rez" offset="142" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/watchface_1View" offset="205" parentId="globals" symbolId="watchface_1View" type="class"/>
+        <dataEntry label="globals/watchface_1App" offset="556" parentId="globals" symbolId="watchface_1App" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="635" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="674" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="713" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="760" parentId="Rez" symbolId="Strings" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
@@ -316,53 +419,94 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
             <documentation/>
         </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268435901" name="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;" parent="watchface_1View" startPc="268435548">
+        <functionEntry accessMode="private" endPc="268435922" name="&lt;globals/watchface_1View/&lt;&gt;drawBarRow&gt;" parent="watchface_1View" startPc="268435548">
             <param id="dc"/>
             <param id="centreY"/>
-            <param id="label"/>
+            <param id="icon"/>
             <param id="value"/>
             <param id="fraction"/>
             <param id="colour"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268435999" name="&lt;globals/watchface_1View/&lt;&gt;drawTime&gt;" parent="watchface_1View" startPc="268435902">
+        <functionEntry accessMode="private" endPc="268436002" name="&lt;globals/watchface_1View/&lt;&gt;drawTime&gt;" parent="watchface_1View" startPc="268435923">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436137" name="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;" parent="watchface_1View" startPc="268436000">
+        <functionEntry accessMode="private" endPc="268436140" name="&lt;globals/watchface_1View/&lt;&gt;getBodyBattery&gt;" parent="watchface_1View" startPc="268436003">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436279" name="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;" parent="watchface_1View" startPc="268436138">
+        <functionEntry accessMode="private" endPc="268436304" name="&lt;globals/watchface_1View/&lt;&gt;drawFeetIcon&gt;" parent="watchface_1View" startPc="268436141">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="centreY"/>
+            <param id="colour"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436352" name="&lt;globals/watchface_1View/&lt;&gt;getTimeText&gt;" parent="watchface_1View" startPc="268436280">
+        <functionEntry accessMode="private" endPc="268436552" name="&lt;globals/watchface_1View/&lt;&gt;drawHeartIcon&gt;" parent="watchface_1View" startPc="268436305">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="centreY"/>
+            <param id="colour"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436625" name="&lt;globals/watchface_1View/&lt;&gt;getTimeText&gt;" parent="watchface_1View" startPc="268436553">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436786" name="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;" parent="watchface_1View" startPc="268436626">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436994" name="onLayout" parent="watchface_1View" startPc="268436787">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437026" name="&lt;globals/watchface_1View/&lt;&gt;getTimeFont&gt;" parent="watchface_1View" startPc="268436995">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437055" name="onEnterSleep" parent="watchface_1View" startPc="268437027">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437362" name="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;" parent="watchface_1View" startPc="268437056">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437867" name="&lt;globals/watchface_1View/&lt;&gt;drawPulseIcon&gt;" parent="watchface_1View" startPc="268437363">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="centreY"/>
+            <param id="colour"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438009" name="&lt;globals/watchface_1View/&lt;&gt;getHeartRate&gt;" parent="watchface_1View" startPc="268437868">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438642" name="&lt;globals/watchface_1View/&lt;&gt;layOut&gt;" parent="watchface_1View" startPc="268438010">
+            <param id="dc"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onHide" parent="watchface_1View">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436838" name="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;" parent="watchface_1View" startPc="268436353">
+        <functionEntry accessMode="private" endPc="268439204" name="&lt;globals/watchface_1View/&lt;&gt;drawStepRing&gt;" parent="watchface_1View" startPc="268438643">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436993" name="&lt;globals/watchface_1View/&lt;&gt;drawLowPowerTime&gt;" parent="watchface_1View" startPc="268436839">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437022" name="onExitSleep" parent="watchface_1View" startPc="268436994">
+        <functionEntry accessMode="public" endPc="268439233" name="onExitSleep" parent="watchface_1View" startPc="268439205">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onShow" parent="watchface_1View">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437406" name="onLayout" parent="watchface_1View" startPc="268437023">
-            <param id="dc"/>
+        <functionEntry accessMode="private" endPc="268439265" name="&lt;globals/watchface_1View/&lt;&gt;getSmallFont&gt;" parent="watchface_1View" startPc="268439234">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268437628" name="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;" parent="watchface_1View" startPc="268437407">
+        <functionEntry accessMode="private" endPc="268439487" name="&lt;globals/watchface_1View/&lt;&gt;drawBatteryIcon&gt;" parent="watchface_1View" startPc="268439266">
             <param id="dc"/>
             <param id="x"/>
             <param id="centreY"/>
@@ -370,38 +514,31 @@
             <param id="colour"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437657" name="onEnterSleep" parent="watchface_1View" startPc="268437629">
+        <functionEntry accessMode="public" endPc="268439557" name="initialize" parent="watchface_1View" startPc="268439488">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437727" name="initialize" parent="watchface_1View" startPc="268437658">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268438192" name="onUpdate" parent="watchface_1View" startPc="268437728">
+        <functionEntry accessMode="public" endPc="268440020" name="onUpdate" parent="watchface_1View" startPc="268439558">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268438535" name="&lt;globals/watchface_1View/&lt;&gt;drawDate&gt;" parent="watchface_1View" startPc="268438193">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268438538" name="onStart" parent="watchface_1App" startPc="268438536">
+        <functionEntry accessMode="public" endPc="268440023" name="onStart" parent="watchface_1App" startPc="268440021">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438557" name="onSettingsChanged" parent="watchface_1App" startPc="268438539">
+        <functionEntry accessMode="public" endPc="268440042" name="onSettingsChanged" parent="watchface_1App" startPc="268440024">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438596" name="getInitialView" parent="watchface_1App" startPc="268438558">
+        <functionEntry accessMode="public" endPc="268440081" name="getInitialView" parent="watchface_1App" startPc="268440043">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438617" name="initialize" parent="watchface_1App" startPc="268438597">
+        <functionEntry accessMode="public" endPc="268440102" name="initialize" parent="watchface_1App" startPc="268440082">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438620" name="onStop" parent="watchface_1App" startPc="268438618">
+        <functionEntry accessMode="public" endPc="268440105" name="onStop" parent="watchface_1App" startPc="268440103">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438802" name="WatchFace" parent="Layouts" startPc="268438621">
+        <functionEntry accessMode="public" endPc="268440287" name="WatchFace" parent="Layouts" startPc="268440106">
             <param id="dc"/>
             <documentation/>
         </functionEntry>

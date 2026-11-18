@@ -1,0 +1,2773 @@
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Activity,1,14,22]; ]
+import Toybox.Activity;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [ActivityMonitor,2,14,29]; ]
+import Toybox.ActivityMonitor;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Graphics,3,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Lang,4,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Math,5,14,18]; ]
+import Toybox.Math;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [SensorHistory,6,14,27]; ]
+import Toybox.SensorHistory;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [System,7,14,20]; ]
+import Toybox.System;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 8; @symbol_importdef<0> = [Toybox,8,7,13]; @symbol_importdef<1> = [Time,8,14,18]; ]
+import Toybox.Time;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 9; @symbol_importdef<0> = [Toybox,9,7,13]; @symbol_importdef<1> = [Time,9,14,18]; @symbol_importdef<2> = [Gregorian,9,19,28]; ]
+import Toybox.Time.Gregorian;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 10; @symbol_importdef<0> = [Toybox,10,7,13]; @symbol_importdef<1> = [WatchUi,10,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 21; @symbol_classdef = [watchface_1View,21,6,21]; @symbol_extends<0> = [WatchUi,21,30,37]; @symbol_extends<1> = [WatchFace,21,38,47]; ]
+class watchface_1View extends WatchUi.WatchFace {
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 21; ]
+    <init> {
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 24 10 ]
+        symbol [ Graphics %tmp.1 24 27 35 ];
+        %tmp.1 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.2 24 36 47 ];
+        %tmp.2 = getv %tmp.1 :COLOR_GREEN;
+        putv self :COLOUR_BATTERY %tmp.2;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 25 10 ]
+        symbol [ Graphics %tmp.3 25 24 32 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.4 25 33 43 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLUE;
+        putv self :COLOUR_BODY %tmp.4;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 26 10 ]
+        symbol [ Graphics %tmp.5 26 25 33 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.6 26 34 43 ];
+        %tmp.6 = getv %tmp.5 :COLOR_RED;
+        putv self :COLOUR_HEART %tmp.6;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 28 10 ]
+        symbol [ Graphics %tmp.7 28 25 33 ];
+        %tmp.7 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.8 28 34 47 ];
+        %tmp.8 = getv %tmp.7 :COLOR_DK_GRAY;
+        putv self :COLOUR_TRACK %tmp.8;
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 21; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 24; @position = 10; @symbol_constdef = [COLOUR_BATTERY,24,10,24]; ]
+    const COLOUR_BATTERY;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 25; @position = 10; @symbol_constdef = [COLOUR_BODY,25,10,21]; ]
+    const COLOUR_BODY;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 26; @position = 10; @symbol_constdef = [COLOUR_HEART,26,10,22]; ]
+    const COLOUR_HEART;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 27; @position = 10; @symbol_constdef = [COLOUR_STEPS,27,10,22]; ]
+    const COLOUR_STEPS = 0xFFFF55;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 28; @position = 10; @symbol_constdef = [COLOUR_TRACK,28,10,22]; ]
+    const COLOUR_TRACK;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 31; @position = 10; @symbol_constdef = [HR_MIN,31,10,16]; ]
+    const HR_MIN = 40;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 32; @position = 10; @symbol_constdef = [HR_MAX,32,10,16]; ]
+    const HR_MAX = 200;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 35; @position = 10; @symbol_constdef = [ICON_BATTERY,35,10,22]; ]
+    const ICON_BATTERY = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 36; @position = 10; @symbol_constdef = [ICON_HEART,36,10,20]; ]
+    const ICON_HEART = 1;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 37; @position = 10; @symbol_constdef = [ICON_PULSE,37,10,20]; ]
+    const ICON_PULSE = 2;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 40; @position = 10; @symbol_constdef = [ICON_WIDTH,40,10,20]; ]
+    const ICON_WIDTH = 20;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 43; @position = 10; @symbol_constdef = [BAR_HEIGHT,43,10,20]; ]
+    const BAR_HEIGHT = 6;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 44; @position = 10; @symbol_constdef = [RING_WIDTH,44,10,20]; ]
+    const RING_WIDTH = 6;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 46; @position = 16; @symbol_vardef = [_isAwake,46,16,24]; @symbol_type<0> = [Boolean,46,28,35]; ]
+    private
+    var _isAwake as Boolean = true;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 47; @position = 16; @symbol_vardef = [_burnInProtection,47,16,33]; @symbol_type<0> = [Boolean,47,37,44]; ]
+    private
+    var _burnInProtection as Boolean = false;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 50; @position = 16; @symbol_vardef = [_cx,50,16,19]; @symbol_type<0> = [Number,50,23,29]; ]
+    private
+    var _cx as Number = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 51; @position = 16; @symbol_vardef = [_cy,51,16,19]; @symbol_type<0> = [Number,51,23,29]; ]
+    private
+    var _cy as Number = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 52; @position = 16; @symbol_vardef = [_r,52,16,18]; @symbol_type<0> = [Number,52,22,28]; ]
+    private
+    var _r as Number = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 56; @position = 16; @symbol_vardef = [_firstRowY,56,16,26]; @symbol_type<0> = [Number,56,30,36]; ]
+    private
+    var _firstRowY as Number = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 57; @position = 16; @symbol_vardef = [_rowGap,57,16,23]; @symbol_type<0> = [Number,57,27,33]; ]
+    private
+    var _rowGap as Number = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 58; @position = 16; @symbol_vardef = [_labelLeft,58,16,26]; @symbol_type<0> = [Number,58,30,36]; ]
+    private
+    var _labelLeft as Number = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 59; @position = 16; @symbol_vardef = [_barLeft,59,16,24]; @symbol_type<0> = [Number,59,28,34]; ]
+    private
+    var _barLeft as Number = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 60; @position = 16; @symbol_vardef = [_barWidth,60,16,25]; @symbol_type<0> = [Number,60,29,35]; ]
+    private
+    var _barWidth as Number = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 61; @position = 16; @symbol_vardef = [_valueRight,61,16,27]; @symbol_type<0> = [Number,61,31,37]; ]
+    private
+    var _valueRight as Number = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 64; @position = 16; @symbol_vardef = [_dayY,64,16,21]; @symbol_type<0> = [Number,64,25,31]; ]
+    private
+    var _dayY as Number = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 65; @position = 16; @symbol_vardef = [_dateY,65,16,22]; @symbol_type<0> = [Number,65,26,32]; ]
+    private
+    var _dateY as Number = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 66; @position = 16; @symbol_vardef = [_timeY,66,16,22]; @symbol_type<0> = [Number,66,26,32]; ]
+    private
+    var _timeY as Number = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 67; @position = 16; @symbol_vardef = [_stepsY,67,16,23]; @symbol_type<0> = [Number,67,27,33]; ]
+    private
+    var _stepsY as Number = 0;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 71; @position = 16; @symbol_vardef = [_timeFont,71,16,25]; @symbol_type<0> = [FontResource,71,29,41]; ]
+    private
+    var _timeFont as FontResource or Null = null;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 75; @position = 16; @symbol_vardef = [_smallFont,75,16,26]; @symbol_type<0> = [FontResource,75,30,42]; ]
+    private
+    var _smallFont as FontResource or Null = null;
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 77; @symbol_functiondef = [initialize,77,13,23]; ]
+    function initialize() as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_77_26_85_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 78 8 ]
+        symbol [ WatchFace %tmp.2 78 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 78 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 81 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_77_26_85_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_77_26_85_4_stop" ]
+        %settings.1 = local;
+        symbol [ settings %settings.1 81 12 20 ];
+        symbol [ System %tmp.4 81 23 29 ];
+        %tmp.4 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.5 81 30 47 ];
+        %tmp.5 = getv function %tmp.4 :getDeviceSettings;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %settings.1 %tmp.6;
+        symbol [ settings %settings.1 81 12 20 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 82 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_82_8_84_8_if_stmt:
+        %tmp.7 = lgetv %settings.1;
+        symbol [ settings %tmp.7 82 12 20 ];
+        %tmp.9 = const :requiresBurnInProtection;
+        symbol [ requiresBurnInProtection %tmp.9 82 26 50 const ];
+        %tmp.10 = canhazplz %tmp.7 %tmp.9;
+        bf %tmp.10 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_82_8_84_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_82_8_84_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_82_52_84_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 83 12 ]
+        %tmp.11 = lgetv %settings.1;
+        symbol [ settings %tmp.11 83 32 40 ];
+        %tmp.12 = as %tmp.11 { (interface { var requiresBurnInProtection; }) };
+        symbol [ requiresBurnInProtection %tmp.13 83 41 65 ];
+        %tmp.13 = getv %tmp.12 :requiresBurnInProtection;
+        symbol [ _burnInProtection ? 83 12 29 ];
+        putv self :_burnInProtection %tmp.13;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_82_52_84_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_82_8_84_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_82_8_84_8_if_end:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_77_26_85_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 88; @symbol_functiondef = [onLayout,88,13,21]; @symbol_param<0> = [dc,88,22,24]; @symbol_param<0>_type<0> = [Dc,88,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_88_40_97_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 89 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 89 14 16 ];
+        symbol [ getWidth %tmp.2 89 17 25 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 2;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        symbol [ _cx ? 89 8 11 ];
+        putv self :_cx %tmp.5;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 90 8 ]
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 90 14 16 ];
+        symbol [ getHeight %tmp.7 90 17 26 ];
+        %tmp.7 = getv function %tmp.6 :getHeight;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = 2;
+        %tmp.10 = div %tmp.8 %tmp.9;
+        symbol [ _cy ? 90 8 11 ];
+        putv self :_cy %tmp.10;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 91 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_91_13_91_33_begin:
+        symbol [ _cx %tmp.12 91 14 17 ];
+        %tmp.12 = getv ? :_cx;
+        symbol [ _cy %tmp.14 91 20 23 ];
+        %tmp.14 = getv ? :_cy;
+        %tmp.15 = lt %tmp.12 %tmp.14;
+        bf %tmp.15 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_91_13_91_33_else_false;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_91_13_91_33_true:
+        symbol [ _cx %tmp.17 91 27 30 ];
+        %tmp.17 = getv ? :_cx;
+        push %tmp.17;
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_91_13_91_33_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_91_13_91_33_else_false:
+        symbol [ _cy %tmp.19 91 33 36 ];
+        %tmp.19 = getv ? :_cy;
+        push %tmp.19;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_91_13_91_33_end:
+        %tmp.20 = phi [%tmp.15 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_91_13_91_33_begin] [%tmp.17 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_91_13_91_33_true] [%tmp.19 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_91_13_91_33_else_false] [%tmp.20 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_91_13_91_33_end];
+        symbol [ _r ? 91 8 10 ];
+        putv self :_r %tmp.20;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 93 8 ]
+        symbol [ WatchUi %tmp.21 93 20 27 ];
+        %tmp.21 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.22 93 28 40 ];
+        %tmp.22 = getv function %tmp.21 :loadResource;
+        symbol [ Rez %tmp.24 93 41 44 ];
+        %tmp.24 = getv ? :Rez;
+        symbol [ Fonts %tmp.25 93 45 50 ];
+        %tmp.25 = getv %tmp.24 :Fonts;
+        symbol [ TimeFont %tmp.26 93 51 59 ];
+        %tmp.26 = getv %tmp.25 :TimeFont;
+        %tmp.27 = invoke %tmp.21 %tmp.22(%tmp.26);
+        %tmp.28 = as %tmp.27 FontResource;
+        symbol [ FontResource %tmp.28 93 64 76 ];
+        symbol [ _timeFont ? 93 8 17 ];
+        putv self :_timeFont %tmp.28;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 94 8 ]
+        symbol [ WatchUi %tmp.29 94 21 28 ];
+        %tmp.29 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.30 94 29 41 ];
+        %tmp.30 = getv function %tmp.29 :loadResource;
+        symbol [ Rez %tmp.32 94 42 45 ];
+        %tmp.32 = getv ? :Rez;
+        symbol [ Fonts %tmp.33 94 46 51 ];
+        %tmp.33 = getv %tmp.32 :Fonts;
+        symbol [ SmallFont %tmp.34 94 52 61 ];
+        %tmp.34 = getv %tmp.33 :SmallFont;
+        %tmp.35 = invoke %tmp.29 %tmp.30(%tmp.34);
+        %tmp.36 = as %tmp.35 FontResource;
+        symbol [ FontResource %tmp.36 94 66 78 ];
+        symbol [ _smallFont ? 94 8 18 ];
+        putv self :_smallFont %tmp.36;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 96 8 ]
+        %tmp.37 = self;
+        symbol [ layOut %tmp.38 96 8 14 ];
+        %tmp.38 = getv function %tmp.37 :layOut;
+        %tmp.39 = lgetv %dc;
+        symbol [ dc %tmp.39 96 15 17 ];
+        invoke %tmp.37 %tmp.38(%tmp.39);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_88_40_97_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 103; @symbol_functiondef = [layOut,103,21,27]; @symbol_param<0> = [dc,103,28,30]; @symbol_param<0>_type<0> = [Dc,103,34,36]; ]
+    private
+    function layOut(dc as Dc) as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 104 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop" ]
+        %smallH.1 = local;
+        symbol [ smallH %smallH.1 104 12 18 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 104 21 23 ];
+        symbol [ getFontHeight %tmp.2 104 24 37 ];
+        %tmp.2 = getv function %tmp.1 :getFontHeight;
+        %tmp.3 = self;
+        symbol [ getSmallFont %tmp.4 104 38 50 ];
+        %tmp.4 = getv function %tmp.3 :getSmallFont;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = invoke %tmp.1 %tmp.2(%tmp.5);
+        lputv %smallH.1 %tmp.6;
+        symbol [ smallH %smallH.1 104 12 18 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 105 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop" ]
+        %timeH.2 = local;
+        symbol [ timeH %timeH.2 105 12 17 ];
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 105 20 22 ];
+        symbol [ getFontHeight %tmp.8 105 23 36 ];
+        %tmp.8 = getv function %tmp.7 :getFontHeight;
+        %tmp.9 = self;
+        symbol [ getTimeFont %tmp.10 105 37 48 ];
+        %tmp.10 = getv function %tmp.9 :getTimeFont;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = invoke %tmp.7 %tmp.8(%tmp.11);
+        lputv %timeH.2 %tmp.12;
+        symbol [ timeH %timeH.2 105 12 17 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 107 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop" ]
+        %gap.3 = local;
+        symbol [ gap %gap.3 107 12 15 ];
+        %tmp.13 = 2;
+        lputv %gap.3 %tmp.13;
+        symbol [ gap %gap.3 107 12 15 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 108 8 ]
+        %tmp.14 = lgetv %smallH.1;
+        symbol [ smallH %tmp.14 108 18 24 ];
+        %tmp.15 = 2;
+        %tmp.16 = add %tmp.14 %tmp.15;
+        symbol [ _rowGap ? 108 8 15 ];
+        putv self :_rowGap %tmp.16;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 111 8 ]
+        symbol [ _cy %tmp.18 111 18 21 ];
+        %tmp.18 = getv ? :_cy;
+        symbol [ _r %tmp.20 111 24 26 ];
+        %tmp.20 = getv ? :_r;
+        %tmp.21 = add %tmp.18 %tmp.20;
+        symbol [ RING_WIDTH %tmp.23 111 29 39 ];
+        %tmp.23 = getv ? :RING_WIDTH;
+        %tmp.24 = sub %tmp.21 %tmp.23;
+        %tmp.25 = 4;
+        %tmp.26 = sub %tmp.24 %tmp.25;
+        %tmp.27 = lgetv %smallH.1;
+        symbol [ smallH %tmp.27 111 46 52 ];
+        %tmp.28 = 2;
+        %tmp.29 = div %tmp.27 %tmp.28;
+        %tmp.30 = sub %tmp.26 %tmp.29;
+        symbol [ _stepsY ? 111 8 15 ];
+        putv self :_stepsY %tmp.30;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 115 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop" ]
+        %top.4 = local;
+        symbol [ top %top.4 115 12 15 ];
+        symbol [ _cy %tmp.32 115 18 21 ];
+        %tmp.32 = getv ? :_cy;
+        symbol [ _r %tmp.34 115 24 26 ];
+        %tmp.34 = getv ? :_r;
+        %tmp.35 = sub %tmp.32 %tmp.34;
+        symbol [ RING_WIDTH %tmp.37 115 29 39 ];
+        %tmp.37 = getv ? :RING_WIDTH;
+        %tmp.38 = add %tmp.35 %tmp.37;
+        %tmp.39 = 6;
+        %tmp.40 = add %tmp.38 %tmp.39;
+        lputv %top.4 %tmp.40;
+        symbol [ top %top.4 115 12 15 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 116 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop" ]
+        %bottom.5 = local;
+        symbol [ bottom %bottom.5 116 12 18 ];
+        symbol [ _stepsY %tmp.42 116 21 28 ];
+        %tmp.42 = getv ? :_stepsY;
+        %tmp.43 = lgetv %smallH.1;
+        symbol [ smallH %tmp.43 116 31 37 ];
+        %tmp.44 = 2;
+        %tmp.45 = div %tmp.43 %tmp.44;
+        %tmp.46 = sub %tmp.42 %tmp.45;
+        %tmp.47 = lgetv %gap.3;
+        symbol [ gap %tmp.47 116 44 47 ];
+        %tmp.48 = sub %tmp.46 %tmp.47;
+        lputv %bottom.5 %tmp.48;
+        symbol [ bottom %bottom.5 116 12 18 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 118 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop" ]
+        %blockH.6 = local;
+        symbol [ blockH %blockH.6 118 12 18 ];
+        %tmp.49 = lgetv %smallH.1;
+        symbol [ smallH %tmp.49 118 21 27 ];
+        %tmp.50 = lgetv %smallH.1;
+        symbol [ smallH %tmp.50 118 30 36 ];
+        %tmp.51 = add %tmp.49 %tmp.50;
+        %tmp.52 = lgetv %timeH.2;
+        symbol [ timeH %tmp.52 118 39 44 ];
+        %tmp.53 = add %tmp.51 %tmp.52;
+        %tmp.54 = lgetv %gap.3;
+        symbol [ gap %tmp.54 118 47 50 ];
+        %tmp.55 = 2;
+        %tmp.56 = mul %tmp.54 %tmp.55;
+        %tmp.57 = add %tmp.53 %tmp.56;
+        symbol [ _rowGap %tmp.59 118 57 64 ];
+        %tmp.59 = getv ? :_rowGap;
+        %tmp.60 = 3;
+        %tmp.61 = mul %tmp.59 %tmp.60;
+        %tmp.62 = add %tmp.57 %tmp.61;
+        lputv %blockH.6 %tmp.62;
+        symbol [ blockH %blockH.6 118 12 18 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 119 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop" ]
+        %y.7 = local;
+        symbol [ y %y.7 119 12 13 ];
+        %tmp.63 = lgetv %top.4;
+        symbol [ top %tmp.63 119 16 19 ];
+        %tmp.64 = lgetv %bottom.5;
+        symbol [ bottom %tmp.64 119 23 29 ];
+        %tmp.65 = lgetv %top.4;
+        symbol [ top %tmp.65 119 32 35 ];
+        %tmp.66 = sub %tmp.64 %tmp.65;
+        %tmp.67 = lgetv %blockH.6;
+        symbol [ blockH %tmp.67 119 38 44 ];
+        %tmp.68 = sub %tmp.66 %tmp.67;
+        %tmp.69 = 2;
+        %tmp.70 = div %tmp.68 %tmp.69;
+        %tmp.71 = add %tmp.63 %tmp.70;
+        lputv %y.7 %tmp.71;
+        symbol [ y %y.7 119 12 13 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 120 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_120_8_122_8_if_stmt:
+        %tmp.72 = lgetv %y.7;
+        symbol [ y %tmp.72 120 12 13 ];
+        %tmp.73 = lgetv %top.4;
+        symbol [ top %tmp.73 120 16 19 ];
+        %tmp.74 = lt %tmp.72 %tmp.73;
+        bf %tmp.74 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_120_8_122_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_120_8_122_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_120_21_122_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 121 12 ]
+        %tmp.75 = lgetv %top.4;
+        symbol [ top %tmp.75 121 16 19 ];
+        lputv %y.7 %tmp.75;
+        symbol [ y %y.7 121 12 13 ];
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_120_21_122_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_120_8_122_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_120_8_122_8_if_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 124 8 ]
+        %tmp.76 = lgetv %y.7;
+        symbol [ y %tmp.76 124 16 17 ];
+        %tmp.77 = lgetv %smallH.1;
+        symbol [ smallH %tmp.77 124 20 26 ];
+        %tmp.78 = 2;
+        %tmp.79 = div %tmp.77 %tmp.78;
+        %tmp.80 = add %tmp.76 %tmp.79;
+        symbol [ _dayY ? 124 8 13 ];
+        putv self :_dayY %tmp.80;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 125 8 ]
+        %tmp.81 = lgetv %y.7;
+        symbol [ y %tmp.81 125 8 9 ];
+        %tmp.82 = lgetv %smallH.1;
+        symbol [ smallH %tmp.82 125 13 19 ];
+        %tmp.83 = add %tmp.81 %tmp.82;
+        lputv %y.7 %tmp.83;
+        symbol [ y %y.7 125 8 9 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 126 8 ]
+        %tmp.84 = lgetv %y.7;
+        symbol [ y %tmp.84 126 17 18 ];
+        %tmp.85 = lgetv %smallH.1;
+        symbol [ smallH %tmp.85 126 21 27 ];
+        %tmp.86 = 2;
+        %tmp.87 = div %tmp.85 %tmp.86;
+        %tmp.88 = add %tmp.84 %tmp.87;
+        symbol [ _dateY ? 126 8 14 ];
+        putv self :_dateY %tmp.88;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 127 8 ]
+        %tmp.89 = lgetv %y.7;
+        symbol [ y %tmp.89 127 8 9 ];
+        %tmp.90 = lgetv %smallH.1;
+        symbol [ smallH %tmp.90 127 13 19 ];
+        %tmp.91 = lgetv %gap.3;
+        symbol [ gap %tmp.91 127 22 25 ];
+        %tmp.92 = add %tmp.90 %tmp.91;
+        %tmp.93 = add %tmp.89 %tmp.92;
+        lputv %y.7 %tmp.93;
+        symbol [ y %y.7 127 8 9 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 128 8 ]
+        %tmp.94 = lgetv %y.7;
+        symbol [ y %tmp.94 128 17 18 ];
+        %tmp.95 = lgetv %timeH.2;
+        symbol [ timeH %tmp.95 128 21 26 ];
+        %tmp.96 = 2;
+        %tmp.97 = div %tmp.95 %tmp.96;
+        %tmp.98 = add %tmp.94 %tmp.97;
+        symbol [ _timeY ? 128 8 14 ];
+        putv self :_timeY %tmp.98;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 129 8 ]
+        %tmp.99 = lgetv %y.7;
+        symbol [ y %tmp.99 129 8 9 ];
+        %tmp.100 = lgetv %timeH.2;
+        symbol [ timeH %tmp.100 129 13 18 ];
+        %tmp.101 = lgetv %gap.3;
+        symbol [ gap %tmp.101 129 21 24 ];
+        %tmp.102 = add %tmp.100 %tmp.101;
+        %tmp.103 = add %tmp.99 %tmp.102;
+        lputv %y.7 %tmp.103;
+        symbol [ y %y.7 129 8 9 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 130 8 ]
+        %tmp.104 = lgetv %y.7;
+        symbol [ y %tmp.104 130 21 22 ];
+        symbol [ _rowGap %tmp.106 130 25 32 ];
+        %tmp.106 = getv ? :_rowGap;
+        %tmp.107 = 2;
+        %tmp.108 = div %tmp.106 %tmp.107;
+        %tmp.109 = add %tmp.104 %tmp.108;
+        symbol [ _firstRowY ? 130 8 18 ];
+        putv self :_firstRowY %tmp.109;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 134 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop" ]
+        %lowestEdge.8 = local;
+        symbol [ lowestEdge %lowestEdge.8 134 12 22 ];
+        symbol [ _firstRowY %tmp.111 134 25 35 ];
+        %tmp.111 = getv ? :_firstRowY;
+        symbol [ _rowGap %tmp.113 134 38 45 ];
+        %tmp.113 = getv ? :_rowGap;
+        %tmp.114 = 2;
+        %tmp.115 = mul %tmp.113 %tmp.114;
+        %tmp.116 = add %tmp.111 %tmp.115;
+        %tmp.117 = lgetv %smallH.1;
+        symbol [ smallH %tmp.117 134 52 58 ];
+        %tmp.118 = 2;
+        %tmp.119 = div %tmp.117 %tmp.118;
+        %tmp.120 = add %tmp.116 %tmp.119;
+        lputv %lowestEdge.8 %tmp.120;
+        symbol [ lowestEdge %lowestEdge.8 134 12 22 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 135 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop" ]
+        %dy.9 = local;
+        symbol [ dy %dy.9 135 12 14 ];
+        %tmp.121 = lgetv %lowestEdge.8;
+        symbol [ lowestEdge %tmp.121 135 17 27 ];
+        symbol [ _cy %tmp.123 135 30 33 ];
+        %tmp.123 = getv ? :_cy;
+        %tmp.124 = sub %tmp.121 %tmp.123;
+        lputv %dy.9 %tmp.124;
+        symbol [ dy %dy.9 135 12 14 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 136 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_136_8_138_8_if_stmt:
+        %tmp.125 = lgetv %dy.9;
+        symbol [ dy %tmp.125 136 12 14 ];
+        symbol [ _r %tmp.127 136 17 19 ];
+        %tmp.127 = getv ? :_r;
+        %tmp.128 = 30;
+        %tmp.129 = sub %tmp.127 %tmp.128;
+        %tmp.130 = gt %tmp.125 %tmp.129;
+        bf %tmp.130 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_136_8_138_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_136_8_138_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_136_26_138_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 137 12 ]
+        symbol [ _r %tmp.132 137 17 19 ];
+        %tmp.132 = getv ? :_r;
+        %tmp.133 = 30;
+        %tmp.134 = sub %tmp.132 %tmp.133;
+        lputv %dy.9 %tmp.134;
+        symbol [ dy %dy.9 137 12 14 ];
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_136_26_138_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_136_8_138_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_136_8_138_8_if_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 139 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop" ]
+        %halfWidth.10 = local;
+        symbol [ halfWidth %halfWidth.10 139 12 21 ];
+        symbol [ Math %tmp.135 139 24 28 ];
+        %tmp.135 = getm $.Toybox.Math;
+        symbol [ sqrt %tmp.136 139 29 33 ];
+        %tmp.136 = getv function %tmp.135 :sqrt;
+        symbol [ _r %tmp.138 139 34 36 ];
+        %tmp.138 = getv ? :_r;
+        symbol [ _r %tmp.140 139 39 41 ];
+        %tmp.140 = getv ? :_r;
+        %tmp.141 = mul %tmp.138 %tmp.140;
+        %tmp.142 = lgetv %dy.9;
+        symbol [ dy %tmp.142 139 44 46 ];
+        %tmp.143 = lgetv %dy.9;
+        symbol [ dy %tmp.143 139 49 51 ];
+        %tmp.144 = mul %tmp.142 %tmp.143;
+        %tmp.145 = sub %tmp.141 %tmp.144;
+        %tmp.146 = invoke %tmp.135 %tmp.136(%tmp.145);
+        symbol [ toNumber %tmp.147 139 53 61 ];
+        %tmp.147 = getv function %tmp.146 :toNumber;
+        %tmp.148 = invoke %tmp.146 %tmp.147();
+        symbol [ RING_WIDTH %tmp.150 139 66 76 ];
+        %tmp.150 = getv ? :RING_WIDTH;
+        %tmp.151 = sub %tmp.148 %tmp.150;
+        %tmp.152 = 8;
+        %tmp.153 = sub %tmp.151 %tmp.152;
+        lputv %halfWidth.10 %tmp.153;
+        symbol [ halfWidth %halfWidth.10 139 12 21 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 142 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop" ]
+        %labelColumn.11 = local;
+        symbol [ labelColumn %labelColumn.11 142 12 23 ];
+        symbol [ ICON_WIDTH %tmp.155 142 26 36 ];
+        %tmp.155 = getv ? :ICON_WIDTH;
+        lputv %labelColumn.11 %tmp.155;
+        symbol [ labelColumn %labelColumn.11 142 12 23 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 145 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop" ]
+        %valueColumn.12 = local;
+        symbol [ valueColumn %valueColumn.12 145 12 23 ];
+        %tmp.156 = lgetv %dc;
+        symbol [ dc %tmp.156 145 26 28 ];
+        symbol [ getTextWidthInPixels %tmp.157 145 29 49 ];
+        %tmp.157 = getv function %tmp.156 :getTextWidthInPixels;
+        %tmp.158 = "200";
+        %tmp.159 = self;
+        symbol [ getSmallFont %tmp.160 145 57 69 ];
+        %tmp.160 = getv function %tmp.159 :getSmallFont;
+        %tmp.161 = invoke %tmp.159 %tmp.160();
+        %tmp.162 = invoke %tmp.156 %tmp.157(%tmp.158, %tmp.161);
+        lputv %valueColumn.12 %tmp.162;
+        symbol [ valueColumn %valueColumn.12 145 12 23 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 146 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop" ]
+        %padding.13 = local;
+        symbol [ padding %padding.13 146 12 19 ];
+        %tmp.163 = 4;
+        lputv %padding.13 %tmp.163;
+        symbol [ padding %padding.13 146 12 19 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 148 8 ]
+        symbol [ _cx %tmp.165 148 21 24 ];
+        %tmp.165 = getv ? :_cx;
+        %tmp.166 = lgetv %halfWidth.10;
+        symbol [ halfWidth %tmp.166 148 27 36 ];
+        %tmp.167 = sub %tmp.165 %tmp.166;
+        symbol [ _labelLeft ? 148 8 18 ];
+        putv self :_labelLeft %tmp.167;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 149 8 ]
+        symbol [ _cx %tmp.169 149 22 25 ];
+        %tmp.169 = getv ? :_cx;
+        %tmp.170 = lgetv %halfWidth.10;
+        symbol [ halfWidth %tmp.170 149 28 37 ];
+        %tmp.171 = add %tmp.169 %tmp.170;
+        symbol [ _valueRight ? 149 8 19 ];
+        putv self :_valueRight %tmp.171;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 150 8 ]
+        symbol [ _labelLeft %tmp.173 150 19 29 ];
+        %tmp.173 = getv ? :_labelLeft;
+        %tmp.174 = lgetv %labelColumn.11;
+        symbol [ labelColumn %tmp.174 150 32 43 ];
+        %tmp.175 = add %tmp.173 %tmp.174;
+        %tmp.176 = lgetv %padding.13;
+        symbol [ padding %tmp.176 150 46 53 ];
+        %tmp.177 = add %tmp.175 %tmp.176;
+        symbol [ _barLeft ? 150 8 16 ];
+        putv self :_barLeft %tmp.177;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 151 8 ]
+        symbol [ _valueRight %tmp.179 151 21 32 ];
+        %tmp.179 = getv ? :_valueRight;
+        %tmp.180 = lgetv %valueColumn.12;
+        symbol [ valueColumn %tmp.180 151 35 46 ];
+        %tmp.181 = sub %tmp.179 %tmp.180;
+        %tmp.182 = lgetv %padding.13;
+        symbol [ padding %tmp.182 151 49 56 ];
+        %tmp.183 = sub %tmp.181 %tmp.182;
+        symbol [ _barLeft %tmp.185 151 60 68 ];
+        %tmp.185 = getv ? :_barLeft;
+        %tmp.186 = sub %tmp.183 %tmp.185;
+        symbol [ _barWidth ? 151 8 17 ];
+        putv self :_barWidth %tmp.186;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_103_46_152_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 154; @symbol_functiondef = [onShow,154,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 158; @symbol_functiondef = [onUpdate,158,13,21]; @symbol_param<0> = [dc,158,22,24]; @symbol_param<0>_type<0> = [Dc,158,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_158_40_195_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 159 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_159_8_161_8_if_stmt:
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 159 12 14 ];
+        %tmp.3 = const :setAntiAlias;
+        symbol [ setAntiAlias %tmp.3 159 20 32 const ];
+        %tmp.4 = canhazplz %tmp.1 %tmp.3;
+        bf %tmp.4 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_159_8_161_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_159_8_161_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_159_34_161_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 160 12 ]
+        %tmp.5 = lgetv %dc;
+        symbol [ dc %tmp.5 160 12 14 ];
+        %tmp.6 = as %tmp.5 { (interface { var setAntiAlias; }) };
+        symbol [ setAntiAlias %tmp.7 160 15 27 ];
+        %tmp.7 = getv function %tmp.6 :setAntiAlias;
+        %tmp.8 = true;
+        invoke %tmp.6 %tmp.7(%tmp.8);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_159_34_161_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_159_8_161_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_159_8_161_8_if_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 163 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 163 8 10 ];
+        symbol [ setColor %tmp.10 163 11 19 ];
+        %tmp.10 = getv function %tmp.9 :setColor;
+        symbol [ Graphics %tmp.11 163 20 28 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.12 163 29 40 ];
+        %tmp.12 = getv %tmp.11 :COLOR_BLACK;
+        symbol [ Graphics %tmp.13 163 42 50 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.14 163 51 62 ];
+        %tmp.14 = getv %tmp.13 :COLOR_BLACK;
+        invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 164 8 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 164 8 10 ];
+        symbol [ clear %tmp.16 164 11 16 ];
+        %tmp.16 = getv function %tmp.15 :clear;
+        invoke %tmp.15 %tmp.16();
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 167 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_8_170_8_if_stmt:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_12_167_34_begin:
+        symbol [ _burnInProtection %tmp.18 167 12 29 ];
+        %tmp.18 = getv ? :_burnInProtection;
+        bf %tmp.18 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_8_170_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_33_167_34_true:
+        symbol [ _isAwake %tmp.20 167 34 42 ];
+        %tmp.20 = getv ? :_isAwake;
+        %tmp.21 = not %tmp.20;
+        push %tmp.21;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_33_167_34_end:
+        %tmp.22 = phi [%tmp.18 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_12_167_34_begin] [%tmp.21 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_33_167_34_true] [%tmp.22 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_33_167_34_end];
+        bf %tmp.22 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_8_170_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_8_170_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_44_170_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 168 12 ]
+        %tmp.23 = self;
+        symbol [ drawLowPowerTime %tmp.24 168 12 28 ];
+        %tmp.24 = getv function %tmp.23 :drawLowPowerTime;
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 168 29 31 ];
+        invoke %tmp.23 %tmp.24(%tmp.25);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 169 12 ]
+        ret ?;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_44_170_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_8_170_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_167_8_170_8_if_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 173 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_158_40_195_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_158_40_195_4_stop" ]
+        %battery.1 = local;
+        symbol [ battery %battery.1 173 12 19 ];
+        symbol [ System %tmp.26 173 22 28 ];
+        %tmp.26 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.27 173 29 43 ];
+        %tmp.27 = getv function %tmp.26 :getSystemStats;
+        %tmp.28 = invoke %tmp.26 %tmp.27();
+        symbol [ battery %tmp.29 173 46 53 ];
+        %tmp.29 = getv %tmp.28 :battery;
+        symbol [ toNumber %tmp.30 173 54 62 ];
+        %tmp.30 = getv function %tmp.29 :toNumber;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        lputv %battery.1 %tmp.31;
+        symbol [ battery %battery.1 173 12 19 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 174 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_158_40_195_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_158_40_195_4_stop" ]
+        %bodyBattery.2 = local;
+        symbol [ bodyBattery %bodyBattery.2 174 12 23 ];
+        %tmp.32 = self;
+        symbol [ getBodyBattery %tmp.33 174 26 40 ];
+        %tmp.33 = getv function %tmp.32 :getBodyBattery;
+        %tmp.34 = invoke %tmp.32 %tmp.33();
+        lputv %bodyBattery.2 %tmp.34;
+        symbol [ bodyBattery %bodyBattery.2 174 12 23 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 175 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_158_40_195_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_158_40_195_4_stop" ]
+        %heartRate.3 = local;
+        symbol [ heartRate %heartRate.3 175 12 21 ];
+        %tmp.35 = self;
+        symbol [ getHeartRate %tmp.36 175 24 36 ];
+        %tmp.36 = getv function %tmp.35 :getHeartRate;
+        %tmp.37 = invoke %tmp.35 %tmp.36();
+        lputv %heartRate.3 %tmp.37;
+        symbol [ heartRate %heartRate.3 175 12 21 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 177 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_158_40_195_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_158_40_195_4_stop" ]
+        %hrFraction.4 = local;
+        symbol [ hrFraction %hrFraction.4 177 12 22 ];
+        %tmp.38 = 0.0;
+        lputv %hrFraction.4 %tmp.38;
+        symbol [ hrFraction %hrFraction.4 177 12 22 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 178 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_178_8_180_8_if_stmt:
+        %tmp.39 = lgetv %heartRate.3;
+        symbol [ heartRate %tmp.39 178 12 21 ];
+        %tmp.40 = null;
+        %tmp.41 = ne %tmp.39 %tmp.40;
+        bf %tmp.41 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_178_8_180_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_178_8_180_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_178_31_180_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 179 12 ]
+        %tmp.42 = lgetv %heartRate.3;
+        symbol [ heartRate %tmp.42 179 26 35 ];
+        %tmp.43 = as %tmp.42 { (!Null) };
+        symbol [ HR_MIN %tmp.45 179 38 44 ];
+        %tmp.45 = getv ? :HR_MIN;
+        %tmp.46 = sub %tmp.43 %tmp.45;
+        symbol [ toFloat %tmp.47 179 46 53 ];
+        %tmp.47 = getv function %tmp.46 :toFloat;
+        %tmp.48 = invoke %tmp.46 %tmp.47();
+        symbol [ HR_MAX %tmp.50 179 59 65 ];
+        %tmp.50 = getv ? :HR_MAX;
+        symbol [ HR_MIN %tmp.52 179 68 74 ];
+        %tmp.52 = getv ? :HR_MIN;
+        %tmp.53 = sub %tmp.50 %tmp.52;
+        %tmp.54 = div %tmp.48 %tmp.53;
+        lputv %hrFraction.4 %tmp.54;
+        symbol [ hrFraction %hrFraction.4 179 12 22 ];
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_178_31_180_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_178_8_180_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_178_8_180_8_if_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 182 8 ]
+        %tmp.55 = self;
+        symbol [ drawStepRing %tmp.56 182 8 20 ];
+        %tmp.56 = getv function %tmp.55 :drawStepRing;
+        %tmp.57 = lgetv %dc;
+        symbol [ dc %tmp.57 182 21 23 ];
+        invoke %tmp.55 %tmp.56(%tmp.57);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 183 8 ]
+        %tmp.58 = self;
+        symbol [ drawDate %tmp.59 183 8 16 ];
+        %tmp.59 = getv function %tmp.58 :drawDate;
+        %tmp.60 = lgetv %dc;
+        symbol [ dc %tmp.60 183 17 19 ];
+        invoke %tmp.58 %tmp.59(%tmp.60);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 184 8 ]
+        %tmp.61 = self;
+        symbol [ drawTime %tmp.62 184 8 16 ];
+        %tmp.62 = getv function %tmp.61 :drawTime;
+        %tmp.63 = lgetv %dc;
+        symbol [ dc %tmp.63 184 17 19 ];
+        invoke %tmp.61 %tmp.62(%tmp.63);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 187 8 ]
+        %tmp.64 = self;
+        symbol [ drawBarRow %tmp.65 187 8 18 ];
+        %tmp.65 = getv function %tmp.64 :drawBarRow;
+        %tmp.66 = lgetv %dc;
+        symbol [ dc %tmp.66 187 19 21 ];
+        symbol [ _firstRowY %tmp.68 187 23 33 ];
+        %tmp.68 = getv ? :_firstRowY;
+        symbol [ ICON_BATTERY %tmp.70 187 35 47 ];
+        %tmp.70 = getv ? :ICON_BATTERY;
+        %tmp.71 = lgetv %battery.1;
+        symbol [ battery %tmp.71 187 49 56 ];
+        symbol [ toString %tmp.72 187 57 65 ];
+        %tmp.72 = getv function %tmp.71 :toString;
+        %tmp.73 = invoke %tmp.71 %tmp.72();
+        %tmp.74 = lgetv %battery.1;
+        symbol [ battery %tmp.74 188 12 19 ];
+        %tmp.75 = 100.0;
+        %tmp.76 = div %tmp.74 %tmp.75;
+        symbol [ COLOUR_BATTERY %tmp.78 188 29 43 ];
+        %tmp.78 = getv ? :COLOUR_BATTERY;
+        invoke %tmp.64 %tmp.65(%tmp.66, %tmp.68, %tmp.70, %tmp.73, %tmp.76, %tmp.78);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 189 8 ]
+        %tmp.79 = self;
+        symbol [ drawBarRow %tmp.80 189 8 18 ];
+        %tmp.80 = getv function %tmp.79 :drawBarRow;
+        %tmp.81 = lgetv %dc;
+        symbol [ dc %tmp.81 189 19 21 ];
+        symbol [ _firstRowY %tmp.83 189 23 33 ];
+        %tmp.83 = getv ? :_firstRowY;
+        symbol [ _rowGap %tmp.85 189 36 43 ];
+        %tmp.85 = getv ? :_rowGap;
+        %tmp.86 = add %tmp.83 %tmp.85;
+        symbol [ ICON_HEART %tmp.88 189 45 55 ];
+        %tmp.88 = getv ? :ICON_HEART;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_190_12_190_64_begin:
+        %tmp.89 = lgetv %bodyBattery.2;
+        symbol [ bodyBattery %tmp.89 190 13 24 ];
+        %tmp.90 = null;
+        %tmp.91 = eq %tmp.89 %tmp.90;
+        bf %tmp.91 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_190_12_190_64_else_false;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_190_12_190_64_true:
+        %tmp.92 = "--";
+        push %tmp.92;
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_190_12_190_64_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_190_12_190_64_else_false:
+        %tmp.93 = lgetv %bodyBattery.2;
+        symbol [ bodyBattery %tmp.93 190 43 54 ];
+        %tmp.94 = as %tmp.93 { (!Null) };
+        symbol [ toString %tmp.95 190 55 63 ];
+        %tmp.95 = getv function %tmp.94 :toString;
+        %tmp.96 = invoke %tmp.94 %tmp.95();
+        push %tmp.96;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_190_12_190_64_end:
+        %tmp.97 = phi [%tmp.91 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_190_12_190_64_begin] [%tmp.92 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_190_12_190_64_true] [%tmp.96 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_190_12_190_64_else_false] [%tmp.97 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_190_12_190_64_end];
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_191_12_191_56_begin:
+        %tmp.98 = lgetv %bodyBattery.2;
+        symbol [ bodyBattery %tmp.98 191 13 24 ];
+        %tmp.99 = null;
+        %tmp.100 = eq %tmp.98 %tmp.99;
+        bf %tmp.100 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_191_12_191_56_else_false;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_191_12_191_56_true:
+        %tmp.101 = 0.0;
+        push %tmp.101;
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_191_12_191_56_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_191_12_191_56_else_false:
+        %tmp.102 = lgetv %bodyBattery.2;
+        symbol [ bodyBattery %tmp.102 191 42 53 ];
+        %tmp.103 = as %tmp.102 { (!Null) };
+        %tmp.104 = 100.0;
+        %tmp.105 = div %tmp.103 %tmp.104;
+        push %tmp.105;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_191_12_191_56_end:
+        %tmp.106 = phi [%tmp.100 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_191_12_191_56_begin] [%tmp.101 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_191_12_191_56_true] [%tmp.105 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_191_12_191_56_else_false] [%tmp.106 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_191_12_191_56_end];
+        symbol [ COLOUR_BODY %tmp.108 191 63 74 ];
+        %tmp.108 = getv ? :COLOUR_BODY;
+        invoke %tmp.79 %tmp.80(%tmp.81, %tmp.86, %tmp.88, %tmp.97, %tmp.106, %tmp.108);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 192 8 ]
+        %tmp.109 = self;
+        symbol [ drawBarRow %tmp.110 192 8 18 ];
+        %tmp.110 = getv function %tmp.109 :drawBarRow;
+        %tmp.111 = lgetv %dc;
+        symbol [ dc %tmp.111 192 19 21 ];
+        symbol [ _firstRowY %tmp.113 192 23 33 ];
+        %tmp.113 = getv ? :_firstRowY;
+        symbol [ _rowGap %tmp.115 192 36 43 ];
+        %tmp.115 = getv ? :_rowGap;
+        %tmp.116 = 2;
+        %tmp.117 = mul %tmp.115 %tmp.116;
+        %tmp.118 = add %tmp.113 %tmp.117;
+        symbol [ ICON_PULSE %tmp.120 192 49 59 ];
+        %tmp.120 = getv ? :ICON_PULSE;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_193_12_193_60_begin:
+        %tmp.121 = lgetv %heartRate.3;
+        symbol [ heartRate %tmp.121 193 13 22 ];
+        %tmp.122 = null;
+        %tmp.123 = eq %tmp.121 %tmp.122;
+        bf %tmp.123 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_193_12_193_60_else_false;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_193_12_193_60_true:
+        %tmp.124 = "--";
+        push %tmp.124;
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_193_12_193_60_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_193_12_193_60_else_false:
+        %tmp.125 = lgetv %heartRate.3;
+        symbol [ heartRate %tmp.125 193 41 50 ];
+        %tmp.126 = as %tmp.125 { (!Null) };
+        symbol [ toString %tmp.127 193 51 59 ];
+        %tmp.127 = getv function %tmp.126 :toString;
+        %tmp.128 = invoke %tmp.126 %tmp.127();
+        push %tmp.128;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_193_12_193_60_end:
+        %tmp.129 = phi [%tmp.123 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_193_12_193_60_begin] [%tmp.124 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_193_12_193_60_true] [%tmp.128 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_193_12_193_60_else_false] [%tmp.129 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_193_12_193_60_end];
+        %tmp.130 = lgetv %hrFraction.4;
+        symbol [ hrFraction %tmp.130 194 12 22 ];
+        symbol [ COLOUR_HEART %tmp.132 194 24 36 ];
+        %tmp.132 = getv ? :COLOUR_HEART;
+        invoke %tmp.109 %tmp.110(%tmp.111, %tmp.118, %tmp.120, %tmp.129, %tmp.130, %tmp.132);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_158_40_195_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 197; @symbol_functiondef = [onHide,197,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 200; @symbol_functiondef = [onExitSleep,200,13,24]; ]
+    function onExitSleep() as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_200_35_203_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 201 8 ]
+        %tmp.1 = true;
+        symbol [ _isAwake ? 201 8 16 ];
+        putv self :_isAwake %tmp.1;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 202 8 ]
+        symbol [ WatchUi %tmp.2 202 8 15 ];
+        %tmp.2 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.3 202 16 29 ];
+        %tmp.3 = getv function %tmp.2 :requestUpdate;
+        invoke %tmp.2 %tmp.3();
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_200_35_203_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 205; @symbol_functiondef = [onEnterSleep,205,13,25]; ]
+    function onEnterSleep() as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_205_36_208_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 206 8 ]
+        %tmp.1 = false;
+        symbol [ _isAwake ? 206 8 16 ];
+        putv self :_isAwake %tmp.1;
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 207 8 ]
+        symbol [ WatchUi %tmp.2 207 8 15 ];
+        %tmp.2 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.3 207 16 29 ];
+        %tmp.3 = getv function %tmp.2 :requestUpdate;
+        invoke %tmp.2 %tmp.3();
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_205_36_208_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 217; @symbol_functiondef = [drawBarRow,217,21,31]; @symbol_param<0> = [dc,217,32,34]; @symbol_param<0>_type<0> = [Dc,217,38,40]; @symbol_param<1> = [centreY,217,42,49]; @symbol_param<1>_type<0> = [Number,217,53,59]; @symbol_param<2> = [icon,217,61,65]; @symbol_param<2>_type<0> = [Number,217,69,75]; @symbol_param<3> = [value,218,12,17]; @symbol_param<3>_type<0> = [String,218,21,27]; @symbol_param<4> = [fraction,218,29,37]; @symbol_param<4>_type<0> = [Float,218,41,46]; @symbol_param<5> = [colour,218,48,54]; @symbol_param<5>_type<0> = [Number,218,58,64]; ]
+    private
+    function drawBarRow(dc as Dc, centreY as Number, icon as Number, value as String, fraction as Float, colour as Number) as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_218_74_249_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 219 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_219_8_223_8_if_stmt:
+        %tmp.1 = lgetv %fraction;
+        symbol [ fraction %tmp.1 219 12 20 ];
+        %tmp.2 = 0.0;
+        %tmp.3 = lt %tmp.1 %tmp.2;
+        bf %tmp.3 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_219_8_223_8_if_false;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_219_8_223_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_219_28_221_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 220 12 ]
+        %tmp.4 = 0.0;
+        lputv %fraction %tmp.4;
+        symbol [ fraction %fraction 220 12 20 ];
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_219_28_221_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_219_8_223_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_219_8_223_8_if_false:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 221 15 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_221_15_223_8_if_stmt:
+        %tmp.5 = lgetv %fraction;
+        symbol [ fraction %tmp.5 221 19 27 ];
+        %tmp.6 = 1.0;
+        %tmp.7 = gt %tmp.5 %tmp.6;
+        bf %tmp.7 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_221_15_223_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_221_15_223_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_221_35_223_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 222 12 ]
+        %tmp.8 = 1.0;
+        lputv %fraction %tmp.8;
+        symbol [ fraction %fraction 222 12 20 ];
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_221_35_223_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_221_15_223_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_221_15_223_8_if_end:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_219_8_223_8_if_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 226 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_226_8_232_8_if_stmt:
+        %tmp.9 = lgetv %icon;
+        symbol [ icon %tmp.9 226 12 16 ];
+        symbol [ ICON_BATTERY %tmp.11 226 20 32 ];
+        %tmp.11 = getv ? :ICON_BATTERY;
+        %tmp.12 = eq %tmp.9 %tmp.11;
+        bf %tmp.12 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_226_8_232_8_if_false;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_226_8_232_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_226_34_228_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 227 12 ]
+        %tmp.13 = self;
+        symbol [ drawBatteryIcon %tmp.14 227 12 27 ];
+        %tmp.14 = getv function %tmp.13 :drawBatteryIcon;
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 227 28 30 ];
+        symbol [ _labelLeft %tmp.17 227 32 42 ];
+        %tmp.17 = getv ? :_labelLeft;
+        %tmp.18 = lgetv %centreY;
+        symbol [ centreY %tmp.18 227 44 51 ];
+        %tmp.19 = lgetv %fraction;
+        symbol [ fraction %tmp.19 227 53 61 ];
+        %tmp.20 = lgetv %colour;
+        symbol [ colour %tmp.20 227 63 69 ];
+        invoke %tmp.13 %tmp.14(%tmp.15, %tmp.17, %tmp.18, %tmp.19, %tmp.20);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_226_34_228_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_226_8_232_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_226_8_232_8_if_false:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 228 15 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_228_15_232_8_if_stmt:
+        %tmp.21 = lgetv %icon;
+        symbol [ icon %tmp.21 228 19 23 ];
+        symbol [ ICON_HEART %tmp.23 228 27 37 ];
+        %tmp.23 = getv ? :ICON_HEART;
+        %tmp.24 = eq %tmp.21 %tmp.23;
+        bf %tmp.24 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_228_15_232_8_if_else_false;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_228_15_232_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_228_39_230_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 229 12 ]
+        %tmp.25 = self;
+        symbol [ drawHeartIcon %tmp.26 229 12 25 ];
+        %tmp.26 = getv function %tmp.25 :drawHeartIcon;
+        %tmp.27 = lgetv %dc;
+        symbol [ dc %tmp.27 229 26 28 ];
+        symbol [ _labelLeft %tmp.29 229 30 40 ];
+        %tmp.29 = getv ? :_labelLeft;
+        %tmp.30 = lgetv %centreY;
+        symbol [ centreY %tmp.30 229 42 49 ];
+        %tmp.31 = lgetv %colour;
+        symbol [ colour %tmp.31 229 51 57 ];
+        invoke %tmp.25 %tmp.26(%tmp.27, %tmp.29, %tmp.30, %tmp.31);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_228_39_230_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_228_15_232_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_228_15_232_8_if_else_false:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_230_15_232_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 231 12 ]
+        %tmp.32 = self;
+        symbol [ drawPulseIcon %tmp.33 231 12 25 ];
+        %tmp.33 = getv function %tmp.32 :drawPulseIcon;
+        %tmp.34 = lgetv %dc;
+        symbol [ dc %tmp.34 231 26 28 ];
+        symbol [ _labelLeft %tmp.36 231 30 40 ];
+        %tmp.36 = getv ? :_labelLeft;
+        %tmp.37 = lgetv %centreY;
+        symbol [ centreY %tmp.37 231 42 49 ];
+        %tmp.38 = lgetv %colour;
+        symbol [ colour %tmp.38 231 51 57 ];
+        invoke %tmp.32 %tmp.33(%tmp.34, %tmp.36, %tmp.37, %tmp.38);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_230_15_232_8_stop:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_228_15_232_8_if_end:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_226_8_232_8_if_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 235 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_218_74_249_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_218_74_249_4_stop" ]
+        %barY.1 = local;
+        symbol [ barY %barY.1 235 12 16 ];
+        %tmp.39 = lgetv %centreY;
+        symbol [ centreY %tmp.39 235 19 26 ];
+        symbol [ BAR_HEIGHT %tmp.41 235 29 39 ];
+        %tmp.41 = getv ? :BAR_HEIGHT;
+        %tmp.42 = 2;
+        %tmp.43 = div %tmp.41 %tmp.42;
+        %tmp.44 = sub %tmp.39 %tmp.43;
+        lputv %barY.1 %tmp.44;
+        symbol [ barY %barY.1 235 12 16 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 236 8 ]
+        %tmp.45 = lgetv %dc;
+        symbol [ dc %tmp.45 236 8 10 ];
+        symbol [ setColor %tmp.46 236 11 19 ];
+        %tmp.46 = getv function %tmp.45 :setColor;
+        symbol [ COLOUR_TRACK %tmp.48 236 20 32 ];
+        %tmp.48 = getv ? :COLOUR_TRACK;
+        symbol [ Graphics %tmp.49 236 34 42 ];
+        %tmp.49 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.50 236 43 60 ];
+        %tmp.50 = getv %tmp.49 :COLOR_TRANSPARENT;
+        invoke %tmp.45 %tmp.46(%tmp.48, %tmp.50);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 237 8 ]
+        %tmp.51 = lgetv %dc;
+        symbol [ dc %tmp.51 237 8 10 ];
+        symbol [ fillRoundedRectangle %tmp.52 237 11 31 ];
+        %tmp.52 = getv function %tmp.51 :fillRoundedRectangle;
+        symbol [ _barLeft %tmp.54 237 32 40 ];
+        %tmp.54 = getv ? :_barLeft;
+        %tmp.55 = lgetv %barY.1;
+        symbol [ barY %tmp.55 237 42 46 ];
+        symbol [ _barWidth %tmp.57 237 48 57 ];
+        %tmp.57 = getv ? :_barWidth;
+        symbol [ BAR_HEIGHT %tmp.59 237 59 69 ];
+        %tmp.59 = getv ? :BAR_HEIGHT;
+        symbol [ BAR_HEIGHT %tmp.61 237 71 81 ];
+        %tmp.61 = getv ? :BAR_HEIGHT;
+        %tmp.62 = 2;
+        %tmp.63 = div %tmp.61 %tmp.62;
+        invoke %tmp.51 %tmp.52(%tmp.54, %tmp.55, %tmp.57, %tmp.59, %tmp.63);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 239 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_218_74_249_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_218_74_249_4_stop" ]
+        %filled.2 = local;
+        symbol [ filled %filled.2 239 12 18 ];
+        symbol [ _barWidth %tmp.65 239 22 31 ];
+        %tmp.65 = getv ? :_barWidth;
+        %tmp.66 = lgetv %fraction;
+        symbol [ fraction %tmp.66 239 34 42 ];
+        %tmp.67 = mul %tmp.65 %tmp.66;
+        symbol [ toNumber %tmp.68 239 44 52 ];
+        %tmp.68 = getv function %tmp.67 :toNumber;
+        %tmp.69 = invoke %tmp.67 %tmp.68();
+        lputv %filled.2 %tmp.69;
+        symbol [ filled %filled.2 239 12 18 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 240 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_240_8_243_8_if_stmt:
+        %tmp.70 = lgetv %filled.2;
+        symbol [ filled %tmp.70 240 12 18 ];
+        symbol [ BAR_HEIGHT %tmp.72 240 22 32 ];
+        %tmp.72 = getv ? :BAR_HEIGHT;
+        %tmp.73 = gte %tmp.70 %tmp.72;
+        bf %tmp.73 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_240_8_243_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_240_8_243_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_240_34_243_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 241 12 ]
+        %tmp.74 = lgetv %dc;
+        symbol [ dc %tmp.74 241 12 14 ];
+        symbol [ setColor %tmp.75 241 15 23 ];
+        %tmp.75 = getv function %tmp.74 :setColor;
+        %tmp.76 = lgetv %colour;
+        symbol [ colour %tmp.76 241 24 30 ];
+        symbol [ Graphics %tmp.77 241 32 40 ];
+        %tmp.77 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.78 241 41 58 ];
+        %tmp.78 = getv %tmp.77 :COLOR_TRANSPARENT;
+        invoke %tmp.74 %tmp.75(%tmp.76, %tmp.78);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 242 12 ]
+        %tmp.79 = lgetv %dc;
+        symbol [ dc %tmp.79 242 12 14 ];
+        symbol [ fillRoundedRectangle %tmp.80 242 15 35 ];
+        %tmp.80 = getv function %tmp.79 :fillRoundedRectangle;
+        symbol [ _barLeft %tmp.82 242 36 44 ];
+        %tmp.82 = getv ? :_barLeft;
+        %tmp.83 = lgetv %barY.1;
+        symbol [ barY %tmp.83 242 46 50 ];
+        %tmp.84 = lgetv %filled.2;
+        symbol [ filled %tmp.84 242 52 58 ];
+        symbol [ BAR_HEIGHT %tmp.86 242 60 70 ];
+        %tmp.86 = getv ? :BAR_HEIGHT;
+        symbol [ BAR_HEIGHT %tmp.88 242 72 82 ];
+        %tmp.88 = getv ? :BAR_HEIGHT;
+        %tmp.89 = 2;
+        %tmp.90 = div %tmp.88 %tmp.89;
+        invoke %tmp.79 %tmp.80(%tmp.82, %tmp.83, %tmp.84, %tmp.86, %tmp.90);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_240_34_243_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_240_8_243_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_240_8_243_8_if_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 246 8 ]
+        %tmp.91 = lgetv %dc;
+        symbol [ dc %tmp.91 246 8 10 ];
+        symbol [ setColor %tmp.92 246 11 19 ];
+        %tmp.92 = getv function %tmp.91 :setColor;
+        %tmp.93 = lgetv %colour;
+        symbol [ colour %tmp.93 246 20 26 ];
+        symbol [ Graphics %tmp.94 246 28 36 ];
+        %tmp.94 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.95 246 37 54 ];
+        %tmp.95 = getv %tmp.94 :COLOR_TRANSPARENT;
+        invoke %tmp.91 %tmp.92(%tmp.93, %tmp.95);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 247 8 ]
+        %tmp.96 = lgetv %dc;
+        symbol [ dc %tmp.96 247 8 10 ];
+        symbol [ drawText %tmp.97 247 11 19 ];
+        %tmp.97 = getv function %tmp.96 :drawText;
+        symbol [ _valueRight %tmp.99 247 20 31 ];
+        %tmp.99 = getv ? :_valueRight;
+        %tmp.100 = lgetv %centreY;
+        symbol [ centreY %tmp.100 247 33 40 ];
+        %tmp.101 = self;
+        symbol [ getSmallFont %tmp.102 247 42 54 ];
+        %tmp.102 = getv function %tmp.101 :getSmallFont;
+        %tmp.103 = invoke %tmp.101 %tmp.102();
+        %tmp.104 = lgetv %value;
+        symbol [ value %tmp.104 247 58 63 ];
+        symbol [ Graphics %tmp.105 248 12 20 ];
+        %tmp.105 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.106 248 21 39 ];
+        %tmp.106 = getv %tmp.105 :TEXT_JUSTIFY_RIGHT;
+        symbol [ Graphics %tmp.107 248 42 50 ];
+        %tmp.107 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.108 248 51 71 ];
+        %tmp.108 = getv %tmp.107 :TEXT_JUSTIFY_VCENTER;
+        %tmp.109 = bitor %tmp.106 %tmp.108;
+        invoke %tmp.96 %tmp.97(%tmp.99, %tmp.100, %tmp.103, %tmp.104, %tmp.109);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_218_74_249_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 254; @symbol_functiondef = [drawBatteryIcon,254,21,36]; @symbol_param<0> = [dc,254,37,39]; @symbol_param<0>_type<0> = [Dc,254,43,45]; @symbol_param<1> = [x,254,47,48]; @symbol_param<1>_type<0> = [Number,254,52,58]; @symbol_param<2> = [centreY,254,60,67]; @symbol_param<2>_type<0> = [Number,254,71,77]; @symbol_param<3> = [fraction,255,12,20]; @symbol_param<3>_type<0> = [Float,255,24,29]; @symbol_param<4> = [colour,255,31,37]; @symbol_param<4>_type<0> = [Number,255,41,47]; ]
+    private
+    function drawBatteryIcon(dc as Dc, x as Number, centreY as Number, fraction as Float, colour as Number) as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_255_57_272_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 256 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_255_57_272_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_255_57_272_4_stop" ]
+        %w.1 = local;
+        symbol [ w %w.1 256 12 13 ];
+        %tmp.1 = 18;
+        lputv %w.1 %tmp.1;
+        symbol [ w %w.1 256 12 13 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 257 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_255_57_272_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_255_57_272_4_stop" ]
+        %h.2 = local;
+        symbol [ h %h.2 257 12 13 ];
+        %tmp.2 = 10;
+        lputv %h.2 %tmp.2;
+        symbol [ h %h.2 257 12 13 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 258 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_255_57_272_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_255_57_272_4_stop" ]
+        %top.3 = local;
+        symbol [ top %top.3 258 12 15 ];
+        %tmp.3 = lgetv %centreY;
+        symbol [ centreY %tmp.3 258 18 25 ];
+        %tmp.4 = lgetv %h.2;
+        symbol [ h %tmp.4 258 28 29 ];
+        %tmp.5 = 2;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        %tmp.7 = sub %tmp.3 %tmp.6;
+        lputv %top.3 %tmp.7;
+        symbol [ top %top.3 258 12 15 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 261 8 ]
+        %tmp.8 = lgetv %dc;
+        symbol [ dc %tmp.8 261 8 10 ];
+        symbol [ setColor %tmp.9 261 11 19 ];
+        %tmp.9 = getv function %tmp.8 :setColor;
+        symbol [ Graphics %tmp.10 261 20 28 ];
+        %tmp.10 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.11 261 29 42 ];
+        %tmp.11 = getv %tmp.10 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.12 261 44 52 ];
+        %tmp.12 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.13 261 53 70 ];
+        %tmp.13 = getv %tmp.12 :COLOR_TRANSPARENT;
+        invoke %tmp.8 %tmp.9(%tmp.11, %tmp.13);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 262 8 ]
+        %tmp.14 = lgetv %dc;
+        symbol [ dc %tmp.14 262 8 10 ];
+        symbol [ setPenWidth %tmp.15 262 11 22 ];
+        %tmp.15 = getv function %tmp.14 :setPenWidth;
+        %tmp.16 = 1;
+        invoke %tmp.14 %tmp.15(%tmp.16);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 263 8 ]
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 263 8 10 ];
+        symbol [ drawRectangle %tmp.18 263 11 24 ];
+        %tmp.18 = getv function %tmp.17 :drawRectangle;
+        %tmp.19 = lgetv %x;
+        symbol [ x %tmp.19 263 25 26 ];
+        %tmp.20 = lgetv %top.3;
+        symbol [ top %tmp.20 263 28 31 ];
+        %tmp.21 = lgetv %w.1;
+        symbol [ w %tmp.21 263 33 34 ];
+        %tmp.22 = lgetv %h.2;
+        symbol [ h %tmp.22 263 36 37 ];
+        invoke %tmp.17 %tmp.18(%tmp.19, %tmp.20, %tmp.21, %tmp.22);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 264 8 ]
+        %tmp.23 = lgetv %dc;
+        symbol [ dc %tmp.23 264 8 10 ];
+        symbol [ fillRectangle %tmp.24 264 11 24 ];
+        %tmp.24 = getv function %tmp.23 :fillRectangle;
+        %tmp.25 = lgetv %x;
+        symbol [ x %tmp.25 264 25 26 ];
+        %tmp.26 = lgetv %w.1;
+        symbol [ w %tmp.26 264 29 30 ];
+        %tmp.27 = add %tmp.25 %tmp.26;
+        %tmp.28 = lgetv %top.3;
+        symbol [ top %tmp.28 264 32 35 ];
+        %tmp.29 = 3;
+        %tmp.30 = add %tmp.28 %tmp.29;
+        %tmp.31 = 2;
+        %tmp.32 = lgetv %h.2;
+        symbol [ h %tmp.32 264 44 45 ];
+        %tmp.33 = 6;
+        %tmp.34 = sub %tmp.32 %tmp.33;
+        invoke %tmp.23 %tmp.24(%tmp.27, %tmp.30, %tmp.31, %tmp.34);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 267 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_255_57_272_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_255_57_272_4_stop" ]
+        %innerW.4 = local;
+        symbol [ innerW %innerW.4 267 12 18 ];
+        %tmp.35 = lgetv %w.1;
+        symbol [ w %tmp.35 267 23 24 ];
+        %tmp.36 = 4;
+        %tmp.37 = sub %tmp.35 %tmp.36;
+        %tmp.38 = lgetv %fraction;
+        symbol [ fraction %tmp.38 267 32 40 ];
+        %tmp.39 = mul %tmp.37 %tmp.38;
+        symbol [ toNumber %tmp.40 267 42 50 ];
+        %tmp.40 = getv function %tmp.39 :toNumber;
+        %tmp.41 = invoke %tmp.39 %tmp.40();
+        lputv %innerW.4 %tmp.41;
+        symbol [ innerW %innerW.4 267 12 18 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 268 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_268_8_271_8_if_stmt:
+        %tmp.42 = lgetv %innerW.4;
+        symbol [ innerW %tmp.42 268 12 18 ];
+        %tmp.43 = 0;
+        %tmp.44 = gt %tmp.42 %tmp.43;
+        bf %tmp.44 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_268_8_271_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_268_8_271_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_268_24_271_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 269 12 ]
+        %tmp.45 = lgetv %dc;
+        symbol [ dc %tmp.45 269 12 14 ];
+        symbol [ setColor %tmp.46 269 15 23 ];
+        %tmp.46 = getv function %tmp.45 :setColor;
+        %tmp.47 = lgetv %colour;
+        symbol [ colour %tmp.47 269 24 30 ];
+        symbol [ Graphics %tmp.48 269 32 40 ];
+        %tmp.48 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.49 269 41 58 ];
+        %tmp.49 = getv %tmp.48 :COLOR_TRANSPARENT;
+        invoke %tmp.45 %tmp.46(%tmp.47, %tmp.49);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 270 12 ]
+        %tmp.50 = lgetv %dc;
+        symbol [ dc %tmp.50 270 12 14 ];
+        symbol [ fillRectangle %tmp.51 270 15 28 ];
+        %tmp.51 = getv function %tmp.50 :fillRectangle;
+        %tmp.52 = lgetv %x;
+        symbol [ x %tmp.52 270 29 30 ];
+        %tmp.53 = 2;
+        %tmp.54 = add %tmp.52 %tmp.53;
+        %tmp.55 = lgetv %top.3;
+        symbol [ top %tmp.55 270 36 39 ];
+        %tmp.56 = 2;
+        %tmp.57 = add %tmp.55 %tmp.56;
+        %tmp.58 = lgetv %innerW.4;
+        symbol [ innerW %tmp.58 270 45 51 ];
+        %tmp.59 = lgetv %h.2;
+        symbol [ h %tmp.59 270 53 54 ];
+        %tmp.60 = 4;
+        %tmp.61 = sub %tmp.59 %tmp.60;
+        invoke %tmp.50 %tmp.51(%tmp.54, %tmp.57, %tmp.58, %tmp.61);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_268_24_271_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_268_8_271_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_268_8_271_8_if_end:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_255_57_272_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 276; @symbol_functiondef = [drawHeartIcon,276,21,34]; @symbol_param<0> = [dc,276,35,37]; @symbol_param<0>_type<0> = [Dc,276,41,43]; @symbol_param<1> = [x,276,45,46]; @symbol_param<1>_type<0> = [Number,276,50,56]; @symbol_param<2> = [centreY,276,58,65]; @symbol_param<2>_type<0> = [Number,276,69,75]; @symbol_param<3> = [colour,277,12,18]; @symbol_param<3>_type<0> = [Number,277,22,28]; ]
+    private
+    function drawHeartIcon(dc as Dc, x as Number, centreY as Number, colour as Number) as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_277_38_289_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 278 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_277_38_289_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_277_38_289_4_stop" ]
+        %cx.1 = local;
+        symbol [ cx %cx.1 278 12 14 ];
+        %tmp.1 = lgetv %x;
+        symbol [ x %tmp.1 278 17 18 ];
+        symbol [ ICON_WIDTH %tmp.3 278 21 31 ];
+        %tmp.3 = getv ? :ICON_WIDTH;
+        %tmp.4 = 2;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        %tmp.6 = add %tmp.1 %tmp.5;
+        lputv %cx.1 %tmp.6;
+        symbol [ cx %cx.1 278 12 14 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 279 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_277_38_289_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_277_38_289_4_stop" ]
+        %top.2 = local;
+        symbol [ top %top.2 279 12 15 ];
+        %tmp.7 = lgetv %centreY;
+        symbol [ centreY %tmp.7 279 18 25 ];
+        %tmp.8 = 3;
+        %tmp.9 = sub %tmp.7 %tmp.8;
+        lputv %top.2 %tmp.9;
+        symbol [ top %top.2 279 12 15 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 281 8 ]
+        %tmp.10 = lgetv %dc;
+        symbol [ dc %tmp.10 281 8 10 ];
+        symbol [ setColor %tmp.11 281 11 19 ];
+        %tmp.11 = getv function %tmp.10 :setColor;
+        %tmp.12 = lgetv %colour;
+        symbol [ colour %tmp.12 281 20 26 ];
+        symbol [ Graphics %tmp.13 281 28 36 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.14 281 37 54 ];
+        %tmp.14 = getv %tmp.13 :COLOR_TRANSPARENT;
+        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.14);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 282 8 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 282 8 10 ];
+        symbol [ fillCircle %tmp.16 282 11 21 ];
+        %tmp.16 = getv function %tmp.15 :fillCircle;
+        %tmp.17 = lgetv %cx.1;
+        symbol [ cx %tmp.17 282 22 24 ];
+        %tmp.18 = 3;
+        %tmp.19 = sub %tmp.17 %tmp.18;
+        %tmp.20 = lgetv %top.2;
+        symbol [ top %tmp.20 282 30 33 ];
+        %tmp.21 = 4;
+        invoke %tmp.15 %tmp.16(%tmp.19, %tmp.20, %tmp.21);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 283 8 ]
+        %tmp.22 = lgetv %dc;
+        symbol [ dc %tmp.22 283 8 10 ];
+        symbol [ fillCircle %tmp.23 283 11 21 ];
+        %tmp.23 = getv function %tmp.22 :fillCircle;
+        %tmp.24 = lgetv %cx.1;
+        symbol [ cx %tmp.24 283 22 24 ];
+        %tmp.25 = 3;
+        %tmp.26 = add %tmp.24 %tmp.25;
+        %tmp.27 = lgetv %top.2;
+        symbol [ top %tmp.27 283 30 33 ];
+        %tmp.28 = 4;
+        invoke %tmp.22 %tmp.23(%tmp.26, %tmp.27, %tmp.28);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 284 8 ]
+        %tmp.29 = lgetv %dc;
+        symbol [ dc %tmp.29 284 8 10 ];
+        symbol [ fillPolygon %tmp.30 284 11 22 ];
+        %tmp.30 = getv function %tmp.29 :fillPolygon;
+        %tmp.31 = newa 3;
+        %tmp.32 = newa 2;
+        %tmp.33 = lgetv %cx.1;
+        symbol [ cx %tmp.33 285 13 15 ];
+        %tmp.34 = 7;
+        %tmp.35 = sub %tmp.33 %tmp.34;
+        %tmp.36 = dup %tmp.32;
+        %tmp.37 = aputv %tmp.36 0 %tmp.35;
+        %tmp.38 = lgetv %top.2;
+        symbol [ top %tmp.38 285 21 24 ];
+        %tmp.39 = 1;
+        %tmp.40 = add %tmp.38 %tmp.39;
+        %tmp.41 = dup %tmp.37;
+        %tmp.42 = aputv %tmp.41 1 %tmp.40;
+        %tmp.43 = dup %tmp.31;
+        %tmp.44 = aputv %tmp.43 0 %tmp.42;
+        %tmp.45 = newa 2;
+        %tmp.46 = lgetv %cx.1;
+        symbol [ cx %tmp.46 286 13 15 ];
+        %tmp.47 = 7;
+        %tmp.48 = add %tmp.46 %tmp.47;
+        %tmp.49 = dup %tmp.45;
+        %tmp.50 = aputv %tmp.49 0 %tmp.48;
+        %tmp.51 = lgetv %top.2;
+        symbol [ top %tmp.51 286 21 24 ];
+        %tmp.52 = 1;
+        %tmp.53 = add %tmp.51 %tmp.52;
+        %tmp.54 = dup %tmp.50;
+        %tmp.55 = aputv %tmp.54 1 %tmp.53;
+        %tmp.56 = dup %tmp.44;
+        %tmp.57 = aputv %tmp.56 1 %tmp.55;
+        %tmp.58 = newa 2;
+        %tmp.59 = lgetv %cx.1;
+        symbol [ cx %tmp.59 287 13 15 ];
+        %tmp.60 = dup %tmp.58;
+        %tmp.61 = aputv %tmp.60 0 %tmp.59;
+        %tmp.62 = lgetv %centreY;
+        symbol [ centreY %tmp.62 287 17 24 ];
+        %tmp.63 = 7;
+        %tmp.64 = add %tmp.62 %tmp.63;
+        %tmp.65 = dup %tmp.61;
+        %tmp.66 = aputv %tmp.65 1 %tmp.64;
+        %tmp.67 = dup %tmp.57;
+        %tmp.68 = aputv %tmp.67 2 %tmp.66;
+        invoke %tmp.29 %tmp.30(%tmp.68);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_277_38_289_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 293; @symbol_functiondef = [drawPulseIcon,293,21,34]; @symbol_param<0> = [dc,293,35,37]; @symbol_param<0>_type<0> = [Dc,293,41,43]; @symbol_param<1> = [x,293,45,46]; @symbol_param<1>_type<0> = [Number,293,50,56]; @symbol_param<2> = [centreY,293,58,65]; @symbol_param<2>_type<0> = [Number,293,69,75]; @symbol_param<3> = [colour,294,12,18]; @symbol_param<3>_type<0> = [Number,294,22,28]; ]
+    private
+    function drawPulseIcon(dc as Dc, x as Number, centreY as Number, colour as Number) as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_294_38_314_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 295 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_294_38_314_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_294_38_314_4_stop" ]
+        %points.1 = local;
+        symbol [ points %points.1 295 12 18 ];
+        %tmp.1 = newa 8;
+        %tmp.2 = newa 2;
+        %tmp.3 = lgetv %x;
+        symbol [ x %tmp.3 296 13 14 ];
+        %tmp.4 = dup %tmp.2;
+        %tmp.5 = aputv %tmp.4 0 %tmp.3;
+        %tmp.6 = lgetv %centreY;
+        symbol [ centreY %tmp.6 296 21 28 ];
+        %tmp.7 = dup %tmp.5;
+        %tmp.8 = aputv %tmp.7 1 %tmp.6;
+        %tmp.9 = dup %tmp.1;
+        %tmp.10 = aputv %tmp.9 0 %tmp.8;
+        %tmp.11 = newa 2;
+        %tmp.12 = lgetv %x;
+        symbol [ x %tmp.12 297 13 14 ];
+        %tmp.13 = 5;
+        %tmp.14 = add %tmp.12 %tmp.13;
+        %tmp.15 = dup %tmp.11;
+        %tmp.16 = aputv %tmp.15 0 %tmp.14;
+        %tmp.17 = lgetv %centreY;
+        symbol [ centreY %tmp.17 297 21 28 ];
+        %tmp.18 = dup %tmp.16;
+        %tmp.19 = aputv %tmp.18 1 %tmp.17;
+        %tmp.20 = dup %tmp.10;
+        %tmp.21 = aputv %tmp.20 1 %tmp.19;
+        %tmp.22 = newa 2;
+        %tmp.23 = lgetv %x;
+        symbol [ x %tmp.23 298 13 14 ];
+        %tmp.24 = 7;
+        %tmp.25 = add %tmp.23 %tmp.24;
+        %tmp.26 = dup %tmp.22;
+        %tmp.27 = aputv %tmp.26 0 %tmp.25;
+        %tmp.28 = lgetv %centreY;
+        symbol [ centreY %tmp.28 298 21 28 ];
+        %tmp.29 = 2;
+        %tmp.30 = sub %tmp.28 %tmp.29;
+        %tmp.31 = dup %tmp.27;
+        %tmp.32 = aputv %tmp.31 1 %tmp.30;
+        %tmp.33 = dup %tmp.21;
+        %tmp.34 = aputv %tmp.33 2 %tmp.32;
+        %tmp.35 = newa 2;
+        %tmp.36 = lgetv %x;
+        symbol [ x %tmp.36 299 13 14 ];
+        %tmp.37 = 9;
+        %tmp.38 = add %tmp.36 %tmp.37;
+        %tmp.39 = dup %tmp.35;
+        %tmp.40 = aputv %tmp.39 0 %tmp.38;
+        %tmp.41 = lgetv %centreY;
+        symbol [ centreY %tmp.41 299 21 28 ];
+        %tmp.42 = dup %tmp.40;
+        %tmp.43 = aputv %tmp.42 1 %tmp.41;
+        %tmp.44 = dup %tmp.34;
+        %tmp.45 = aputv %tmp.44 3 %tmp.43;
+        %tmp.46 = newa 2;
+        %tmp.47 = lgetv %x;
+        symbol [ x %tmp.47 300 13 14 ];
+        %tmp.48 = 11;
+        %tmp.49 = add %tmp.47 %tmp.48;
+        %tmp.50 = dup %tmp.46;
+        %tmp.51 = aputv %tmp.50 0 %tmp.49;
+        %tmp.52 = lgetv %centreY;
+        symbol [ centreY %tmp.52 300 21 28 ];
+        %tmp.53 = 7;
+        %tmp.54 = sub %tmp.52 %tmp.53;
+        %tmp.55 = dup %tmp.51;
+        %tmp.56 = aputv %tmp.55 1 %tmp.54;
+        %tmp.57 = dup %tmp.45;
+        %tmp.58 = aputv %tmp.57 4 %tmp.56;
+        %tmp.59 = newa 2;
+        %tmp.60 = lgetv %x;
+        symbol [ x %tmp.60 301 13 14 ];
+        %tmp.61 = 13;
+        %tmp.62 = add %tmp.60 %tmp.61;
+        %tmp.63 = dup %tmp.59;
+        %tmp.64 = aputv %tmp.63 0 %tmp.62;
+        %tmp.65 = lgetv %centreY;
+        symbol [ centreY %tmp.65 301 21 28 ];
+        %tmp.66 = 5;
+        %tmp.67 = add %tmp.65 %tmp.66;
+        %tmp.68 = dup %tmp.64;
+        %tmp.69 = aputv %tmp.68 1 %tmp.67;
+        %tmp.70 = dup %tmp.58;
+        %tmp.71 = aputv %tmp.70 5 %tmp.69;
+        %tmp.72 = newa 2;
+        %tmp.73 = lgetv %x;
+        symbol [ x %tmp.73 302 13 14 ];
+        %tmp.74 = 15;
+        %tmp.75 = add %tmp.73 %tmp.74;
+        %tmp.76 = dup %tmp.72;
+        %tmp.77 = aputv %tmp.76 0 %tmp.75;
+        %tmp.78 = lgetv %centreY;
+        symbol [ centreY %tmp.78 302 21 28 ];
+        %tmp.79 = dup %tmp.77;
+        %tmp.80 = aputv %tmp.79 1 %tmp.78;
+        %tmp.81 = dup %tmp.71;
+        %tmp.82 = aputv %tmp.81 6 %tmp.80;
+        %tmp.83 = newa 2;
+        %tmp.84 = lgetv %x;
+        symbol [ x %tmp.84 303 13 14 ];
+        %tmp.85 = 20;
+        %tmp.86 = add %tmp.84 %tmp.85;
+        %tmp.87 = dup %tmp.83;
+        %tmp.88 = aputv %tmp.87 0 %tmp.86;
+        %tmp.89 = lgetv %centreY;
+        symbol [ centreY %tmp.89 303 21 28 ];
+        %tmp.90 = dup %tmp.88;
+        %tmp.91 = aputv %tmp.90 1 %tmp.89;
+        %tmp.92 = dup %tmp.82;
+        %tmp.93 = aputv %tmp.92 7 %tmp.91;
+        lputv %points.1 %tmp.93;
+        symbol [ points %points.1 295 12 18 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 306 8 ]
+        %tmp.94 = lgetv %dc;
+        symbol [ dc %tmp.94 306 8 10 ];
+        symbol [ setColor %tmp.95 306 11 19 ];
+        %tmp.95 = getv function %tmp.94 :setColor;
+        %tmp.96 = lgetv %colour;
+        symbol [ colour %tmp.96 306 20 26 ];
+        symbol [ Graphics %tmp.97 306 28 36 ];
+        %tmp.97 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.98 306 37 54 ];
+        %tmp.98 = getv %tmp.97 :COLOR_TRANSPARENT;
+        invoke %tmp.94 %tmp.95(%tmp.96, %tmp.98);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 307 8 ]
+        %tmp.99 = lgetv %dc;
+        symbol [ dc %tmp.99 307 8 10 ];
+        symbol [ setPenWidth %tmp.100 307 11 22 ];
+        %tmp.100 = getv function %tmp.99 :setPenWidth;
+        %tmp.101 = 2;
+        invoke %tmp.99 %tmp.100(%tmp.101);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 308 8 ]
+        for @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_8_312_8_for_test @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_8_312_8_for_incr @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_8_312_8_for_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_8_312_8_for_init:
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_8_312_8_for_begin" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_8_312_8_for_end" ]
+        %i.2 = local;
+        symbol [ i %i.2 308 17 18 ];
+        %tmp.102 = 0;
+        lputv %i.2 %tmp.102;
+        symbol [ i %i.2 308 17 18 ];
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_8_312_8_for_test:
+        %tmp.103 = lgetv %i.2;
+        symbol [ i %tmp.103 308 24 25 ];
+        %tmp.104 = lgetv %points.1;
+        symbol [ points %tmp.104 308 28 34 ];
+        symbol [ size %tmp.105 308 35 39 ];
+        %tmp.105 = getv function %tmp.104 :size;
+        %tmp.106 = invoke %tmp.104 %tmp.105();
+        %tmp.107 = 1;
+        %tmp.108 = sub %tmp.106 %tmp.107;
+        %tmp.109 = lt %tmp.103 %tmp.108;
+        bf %tmp.109 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_8_312_8_for_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_8_312_8_for_begin:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_52_312_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 309 12 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_52_312_8_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_52_312_8_stop" ]
+        %a.3 = local;
+        symbol [ a %a.3 309 16 17 ];
+        %tmp.110 = lgetv %points.1;
+        symbol [ points %tmp.110 309 20 26 ];
+        %tmp.111 = lgetv %i.2;
+        symbol [ i %tmp.111 309 27 28 ];
+        %tmp.112 = agetv %tmp.110 %tmp.111;
+        lputv %a.3 %tmp.112;
+        symbol [ a %a.3 309 16 17 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 310 12 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_52_312_8_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_52_312_8_stop" ]
+        %b.4 = local;
+        symbol [ b %b.4 310 16 17 ];
+        %tmp.113 = lgetv %points.1;
+        symbol [ points %tmp.113 310 20 26 ];
+        %tmp.114 = lgetv %i.2;
+        symbol [ i %tmp.114 310 27 28 ];
+        %tmp.115 = 1;
+        %tmp.116 = add %tmp.114 %tmp.115;
+        %tmp.117 = agetv %tmp.113 %tmp.116;
+        lputv %b.4 %tmp.117;
+        symbol [ b %b.4 310 16 17 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 311 12 ]
+        %tmp.118 = lgetv %dc;
+        symbol [ dc %tmp.118 311 12 14 ];
+        symbol [ drawLine %tmp.119 311 15 23 ];
+        %tmp.119 = getv function %tmp.118 :drawLine;
+        %tmp.120 = lgetv %a.3;
+        symbol [ a %tmp.120 311 24 25 ];
+        %tmp.121 = 0;
+        %tmp.122 = agetv %tmp.120 %tmp.121;
+        %tmp.123 = lgetv %a.3;
+        symbol [ a %tmp.123 311 30 31 ];
+        %tmp.124 = 1;
+        %tmp.125 = agetv %tmp.123 %tmp.124;
+        %tmp.126 = lgetv %b.4;
+        symbol [ b %tmp.126 311 36 37 ];
+        %tmp.127 = 0;
+        %tmp.128 = agetv %tmp.126 %tmp.127;
+        %tmp.129 = lgetv %b.4;
+        symbol [ b %tmp.129 311 42 43 ];
+        %tmp.130 = 1;
+        %tmp.131 = agetv %tmp.129 %tmp.130;
+        invoke %tmp.118 %tmp.119(%tmp.122, %tmp.125, %tmp.128, %tmp.131);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_52_312_8_stop:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_8_312_8_for_incr:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 308 ]
+        %tmp.134 = lgetv %i.2;
+        symbol [ i %tmp.134 308 47 48 ];
+        %tmp.135 = add %tmp.134 1;
+        lputv %i.2 %tmp.135;
+        symbol [ i %i.2 308 47 48 ];
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_8_312_8_for_test;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_308_8_312_8_for_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 313 8 ]
+        %tmp.136 = lgetv %dc;
+        symbol [ dc %tmp.136 313 8 10 ];
+        symbol [ setPenWidth %tmp.137 313 11 22 ];
+        %tmp.137 = getv function %tmp.136 :setPenWidth;
+        %tmp.138 = 1;
+        invoke %tmp.136 %tmp.137(%tmp.138);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_294_38_314_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 319; @symbol_functiondef = [drawFeetIcon,319,21,33]; @symbol_param<0> = [dc,319,34,36]; @symbol_param<0>_type<0> = [Dc,319,40,42]; @symbol_param<1> = [x,319,44,45]; @symbol_param<1>_type<0> = [Number,319,49,55]; @symbol_param<2> = [centreY,319,57,64]; @symbol_param<2>_type<0> = [Number,319,68,74]; @symbol_param<3> = [colour,320,12,18]; @symbol_param<3>_type<0> = [Number,320,22,28]; ]
+    private
+    function drawFeetIcon(dc as Dc, x as Number, centreY as Number, colour as Number) as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_320_38_330_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 321 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 321 8 10 ];
+        symbol [ setColor %tmp.2 321 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = lgetv %colour;
+        symbol [ colour %tmp.3 321 20 26 ];
+        symbol [ Graphics %tmp.4 321 28 36 ];
+        %tmp.4 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.5 321 37 54 ];
+        %tmp.5 = getv %tmp.4 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.5);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 324 8 ]
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 324 8 10 ];
+        symbol [ fillEllipse %tmp.7 324 11 22 ];
+        %tmp.7 = getv function %tmp.6 :fillEllipse;
+        %tmp.8 = lgetv %x;
+        symbol [ x %tmp.8 324 23 24 ];
+        %tmp.9 = 5;
+        %tmp.10 = add %tmp.8 %tmp.9;
+        %tmp.11 = lgetv %centreY;
+        symbol [ centreY %tmp.11 324 30 37 ];
+        %tmp.12 = 1;
+        %tmp.13 = sub %tmp.11 %tmp.12;
+        %tmp.14 = 3;
+        %tmp.15 = 4;
+        invoke %tmp.6 %tmp.7(%tmp.10, %tmp.13, %tmp.14, %tmp.15);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 325 8 ]
+        %tmp.16 = lgetv %dc;
+        symbol [ dc %tmp.16 325 8 10 ];
+        symbol [ fillCircle %tmp.17 325 11 21 ];
+        %tmp.17 = getv function %tmp.16 :fillCircle;
+        %tmp.18 = lgetv %x;
+        symbol [ x %tmp.18 325 22 23 ];
+        %tmp.19 = 5;
+        %tmp.20 = add %tmp.18 %tmp.19;
+        %tmp.21 = lgetv %centreY;
+        symbol [ centreY %tmp.21 325 29 36 ];
+        %tmp.22 = 5;
+        %tmp.23 = add %tmp.21 %tmp.22;
+        %tmp.24 = 2;
+        invoke %tmp.16 %tmp.17(%tmp.20, %tmp.23, %tmp.24);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 328 8 ]
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 328 8 10 ];
+        symbol [ fillEllipse %tmp.26 328 11 22 ];
+        %tmp.26 = getv function %tmp.25 :fillEllipse;
+        %tmp.27 = lgetv %x;
+        symbol [ x %tmp.27 328 23 24 ];
+        %tmp.28 = 14;
+        %tmp.29 = add %tmp.27 %tmp.28;
+        %tmp.30 = lgetv %centreY;
+        symbol [ centreY %tmp.30 328 31 38 ];
+        %tmp.31 = 4;
+        %tmp.32 = sub %tmp.30 %tmp.31;
+        %tmp.33 = 3;
+        %tmp.34 = 4;
+        invoke %tmp.25 %tmp.26(%tmp.29, %tmp.32, %tmp.33, %tmp.34);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 329 8 ]
+        %tmp.35 = lgetv %dc;
+        symbol [ dc %tmp.35 329 8 10 ];
+        symbol [ fillCircle %tmp.36 329 11 21 ];
+        %tmp.36 = getv function %tmp.35 :fillCircle;
+        %tmp.37 = lgetv %x;
+        symbol [ x %tmp.37 329 22 23 ];
+        %tmp.38 = 14;
+        %tmp.39 = add %tmp.37 %tmp.38;
+        %tmp.40 = lgetv %centreY;
+        symbol [ centreY %tmp.40 329 30 37 ];
+        %tmp.41 = 2;
+        %tmp.42 = add %tmp.40 %tmp.41;
+        %tmp.43 = 2;
+        invoke %tmp.35 %tmp.36(%tmp.39, %tmp.42, %tmp.43);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_320_38_330_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 335; @symbol_functiondef = [drawStepRing,335,21,33]; @symbol_param<0> = [dc,335,34,36]; @symbol_param<0>_type<0> = [Dc,335,40,42]; ]
+    private
+    function drawStepRing(dc as Dc) as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 336 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 336 12 16 ];
+        symbol [ ActivityMonitor %tmp.1 336 19 34 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 336 35 42 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 336 12 16 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 337 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_stop" ]
+        %steps.2 = local;
+        symbol [ steps %steps.2 337 12 17 ];
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_337_20_337_52_begin:
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 337 21 25 ];
+        symbol [ steps %tmp.5 337 26 31 ];
+        %tmp.5 = getv %tmp.4 :steps;
+        %tmp.6 = null;
+        %tmp.7 = eq %tmp.5 %tmp.6;
+        bf %tmp.7 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_337_20_337_52_else_false;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_337_20_337_52_true:
+        %tmp.8 = 0;
+        push %tmp.8;
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_337_20_337_52_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_337_20_337_52_else_false:
+        %tmp.9 = lgetv %info.1;
+        symbol [ info %tmp.9 337 47 51 ];
+        symbol [ steps %tmp.10 337 52 57 ];
+        %tmp.10 = getv %tmp.9 :steps;
+        push %tmp.10;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_337_20_337_52_end:
+        %tmp.11 = phi [%tmp.7 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_337_20_337_52_begin] [%tmp.8 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_337_20_337_52_true] [%tmp.10 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_337_20_337_52_else_false] [%tmp.11 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_337_20_337_52_end];
+        lputv %steps.2 %tmp.11;
+        symbol [ steps %steps.2 337 12 17 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 338 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_stop" ]
+        %goal.3 = local;
+        symbol [ goal %goal.3 338 12 16 ];
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_19_338_80_begin:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_20_338_62_begin:
+        %tmp.12 = lgetv %info.1;
+        symbol [ info %tmp.12 338 20 24 ];
+        symbol [ stepGoal %tmp.13 338 25 33 ];
+        %tmp.13 = getv %tmp.12 :stepGoal;
+        %tmp.14 = null;
+        %tmp.15 = eq %tmp.13 %tmp.14;
+        bt %tmp.15 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_19_338_80_true;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_45_338_62_false:
+        %tmp.16 = lgetv %info.1;
+        symbol [ info %tmp.16 338 45 49 ];
+        symbol [ stepGoal %tmp.17 338 50 58 ];
+        %tmp.17 = getv %tmp.16 :stepGoal;
+        %tmp.18 = 0;
+        %tmp.19 = eq %tmp.17 %tmp.18;
+        push %tmp.19;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_45_338_62_end:
+        %tmp.20 = phi [%tmp.15 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_20_338_62_begin] [%tmp.19 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_45_338_62_false] [%tmp.20 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_45_338_62_end];
+        bf %tmp.20 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_19_338_80_else_false;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_19_338_80_true:
+        %tmp.21 = 10000;
+        push %tmp.21;
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_19_338_80_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_19_338_80_else_false:
+        %tmp.22 = lgetv %info.1;
+        symbol [ info %tmp.22 338 75 79 ];
+        symbol [ stepGoal %tmp.23 338 80 88 ];
+        %tmp.23 = getv %tmp.22 :stepGoal;
+        push %tmp.23;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_19_338_80_end:
+        %tmp.24 = phi [%tmp.20 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_19_338_80_begin] [%tmp.21 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_19_338_80_true] [%tmp.23 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_19_338_80_else_false] [%tmp.24 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_338_19_338_80_end];
+        lputv %goal.3 %tmp.24;
+        symbol [ goal %goal.3 338 12 16 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 340 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_stop" ]
+        %fraction.4 = local;
+        symbol [ fraction %fraction.4 340 12 20 ];
+        %tmp.25 = lgetv %steps.2;
+        symbol [ steps %tmp.25 340 23 28 ];
+        symbol [ toFloat %tmp.26 340 29 36 ];
+        %tmp.26 = getv function %tmp.25 :toFloat;
+        %tmp.27 = invoke %tmp.25 %tmp.26();
+        %tmp.28 = lgetv %goal.3;
+        symbol [ goal %tmp.28 340 41 45 ];
+        %tmp.29 = div %tmp.27 %tmp.28;
+        lputv %fraction.4 %tmp.29;
+        symbol [ fraction %fraction.4 340 12 20 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 341 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_341_8_343_8_if_stmt:
+        %tmp.30 = lgetv %fraction.4;
+        symbol [ fraction %tmp.30 341 12 20 ];
+        %tmp.31 = 1.0;
+        %tmp.32 = gt %tmp.30 %tmp.31;
+        bf %tmp.32 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_341_8_343_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_341_8_343_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_341_28_343_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 342 12 ]
+        %tmp.33 = 1.0;
+        lputv %fraction.4 %tmp.33;
+        symbol [ fraction %fraction.4 342 12 20 ];
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_341_28_343_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_341_8_343_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_341_8_343_8_if_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 345 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_stop" ]
+        %radius.5 = local;
+        symbol [ radius %radius.5 345 12 18 ];
+        symbol [ _r %tmp.35 345 21 23 ];
+        %tmp.35 = getv ? :_r;
+        symbol [ RING_WIDTH %tmp.37 345 26 36 ];
+        %tmp.37 = getv ? :RING_WIDTH;
+        %tmp.38 = 2;
+        %tmp.39 = div %tmp.37 %tmp.38;
+        %tmp.40 = sub %tmp.35 %tmp.39;
+        %tmp.41 = 1;
+        %tmp.42 = sub %tmp.40 %tmp.41;
+        lputv %radius.5 %tmp.42;
+        symbol [ radius %radius.5 345 12 18 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 346 8 ]
+        %tmp.43 = lgetv %dc;
+        symbol [ dc %tmp.43 346 8 10 ];
+        symbol [ setPenWidth %tmp.44 346 11 22 ];
+        %tmp.44 = getv function %tmp.43 :setPenWidth;
+        symbol [ RING_WIDTH %tmp.46 346 23 33 ];
+        %tmp.46 = getv ? :RING_WIDTH;
+        invoke %tmp.43 %tmp.44(%tmp.46);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 349 8 ]
+        %tmp.47 = lgetv %dc;
+        symbol [ dc %tmp.47 349 8 10 ];
+        symbol [ setColor %tmp.48 349 11 19 ];
+        %tmp.48 = getv function %tmp.47 :setColor;
+        symbol [ COLOUR_TRACK %tmp.50 349 20 32 ];
+        %tmp.50 = getv ? :COLOUR_TRACK;
+        symbol [ Graphics %tmp.51 349 34 42 ];
+        %tmp.51 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.52 349 43 60 ];
+        %tmp.52 = getv %tmp.51 :COLOR_TRANSPARENT;
+        invoke %tmp.47 %tmp.48(%tmp.50, %tmp.52);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 350 8 ]
+        %tmp.53 = lgetv %dc;
+        symbol [ dc %tmp.53 350 8 10 ];
+        symbol [ drawCircle %tmp.54 350 11 21 ];
+        %tmp.54 = getv function %tmp.53 :drawCircle;
+        symbol [ _cx %tmp.56 350 22 25 ];
+        %tmp.56 = getv ? :_cx;
+        symbol [ _cy %tmp.58 350 27 30 ];
+        %tmp.58 = getv ? :_cy;
+        %tmp.59 = lgetv %radius.5;
+        symbol [ radius %tmp.59 350 32 38 ];
+        invoke %tmp.53 %tmp.54(%tmp.56, %tmp.58, %tmp.59);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 353 8 ]
+        %tmp.60 = lgetv %dc;
+        symbol [ dc %tmp.60 353 8 10 ];
+        symbol [ setColor %tmp.61 353 11 19 ];
+        %tmp.61 = getv function %tmp.60 :setColor;
+        symbol [ COLOUR_STEPS %tmp.63 353 20 32 ];
+        %tmp.63 = getv ? :COLOUR_STEPS;
+        symbol [ Graphics %tmp.64 353 34 42 ];
+        %tmp.64 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.65 353 43 60 ];
+        %tmp.65 = getv %tmp.64 :COLOR_TRANSPARENT;
+        invoke %tmp.60 %tmp.61(%tmp.63, %tmp.65);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 354 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_354_8_359_8_if_stmt:
+        %tmp.66 = lgetv %fraction.4;
+        symbol [ fraction %tmp.66 354 12 20 ];
+        %tmp.67 = 0.995;
+        %tmp.68 = gte %tmp.66 %tmp.67;
+        bf %tmp.68 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_354_8_359_8_if_false;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_354_8_359_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_354_31_356_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 355 12 ]
+        %tmp.69 = lgetv %dc;
+        symbol [ dc %tmp.69 355 12 14 ];
+        symbol [ drawCircle %tmp.70 355 15 25 ];
+        %tmp.70 = getv function %tmp.69 :drawCircle;
+        symbol [ _cx %tmp.72 355 26 29 ];
+        %tmp.72 = getv ? :_cx;
+        symbol [ _cy %tmp.74 355 31 34 ];
+        %tmp.74 = getv ? :_cy;
+        %tmp.75 = lgetv %radius.5;
+        symbol [ radius %tmp.75 355 36 42 ];
+        invoke %tmp.69 %tmp.70(%tmp.72, %tmp.74, %tmp.75);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_354_31_356_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_354_8_359_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_354_8_359_8_if_false:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 356 15 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_356_15_359_8_if_stmt:
+        %tmp.76 = lgetv %fraction.4;
+        symbol [ fraction %tmp.76 356 19 27 ];
+        %tmp.77 = 0.005;
+        %tmp.78 = gt %tmp.76 %tmp.77;
+        bf %tmp.78 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_356_15_359_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_356_15_359_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_356_37_359_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 357 12 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_356_37_359_8_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_356_37_359_8_stop" ]
+        %endAngle.6 = local;
+        symbol [ endAngle %endAngle.6 357 16 24 ];
+        %tmp.79 = 90;
+        %tmp.80 = 360;
+        %tmp.81 = lgetv %fraction.4;
+        symbol [ fraction %tmp.81 357 39 47 ];
+        %tmp.82 = mul %tmp.80 %tmp.81;
+        symbol [ toNumber %tmp.83 357 49 57 ];
+        %tmp.83 = getv function %tmp.82 :toNumber;
+        %tmp.84 = invoke %tmp.82 %tmp.83();
+        %tmp.85 = sub %tmp.79 %tmp.84;
+        lputv %endAngle.6 %tmp.85;
+        symbol [ endAngle %endAngle.6 357 16 24 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 358 12 ]
+        %tmp.86 = lgetv %dc;
+        symbol [ dc %tmp.86 358 12 14 ];
+        symbol [ drawArc %tmp.87 358 15 22 ];
+        %tmp.87 = getv function %tmp.86 :drawArc;
+        symbol [ _cx %tmp.89 358 23 26 ];
+        %tmp.89 = getv ? :_cx;
+        symbol [ _cy %tmp.91 358 28 31 ];
+        %tmp.91 = getv ? :_cy;
+        %tmp.92 = lgetv %radius.5;
+        symbol [ radius %tmp.92 358 33 39 ];
+        symbol [ Graphics %tmp.93 358 41 49 ];
+        %tmp.93 = getm $.Toybox.Graphics;
+        symbol [ ARC_CLOCKWISE %tmp.94 358 50 63 ];
+        %tmp.94 = getv %tmp.93 :ARC_CLOCKWISE;
+        %tmp.95 = 90;
+        %tmp.96 = lgetv %endAngle.6;
+        symbol [ endAngle %tmp.96 358 69 77 ];
+        invoke %tmp.86 %tmp.87(%tmp.89, %tmp.91, %tmp.92, %tmp.94, %tmp.95, %tmp.96);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_356_37_359_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_356_15_359_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_356_15_359_8_if_end:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_354_8_359_8_if_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 360 8 ]
+        %tmp.97 = lgetv %dc;
+        symbol [ dc %tmp.97 360 8 10 ];
+        symbol [ setPenWidth %tmp.98 360 11 22 ];
+        %tmp.98 = getv function %tmp.97 :setPenWidth;
+        %tmp.99 = 1;
+        invoke %tmp.97 %tmp.98(%tmp.99);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 363 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_stop" ]
+        %text.7 = local;
+        symbol [ text %text.7 363 12 16 ];
+        %tmp.100 = lgetv %steps.2;
+        symbol [ steps %tmp.100 363 19 24 ];
+        symbol [ toString %tmp.101 363 25 33 ];
+        %tmp.101 = getv function %tmp.100 :toString;
+        %tmp.102 = invoke %tmp.100 %tmp.101();
+        lputv %text.7 %tmp.102;
+        symbol [ text %text.7 363 12 16 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 364 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_stop" ]
+        %textW.8 = local;
+        symbol [ textW %textW.8 364 12 17 ];
+        %tmp.103 = lgetv %dc;
+        symbol [ dc %tmp.103 364 20 22 ];
+        symbol [ getTextWidthInPixels %tmp.104 364 23 43 ];
+        %tmp.104 = getv function %tmp.103 :getTextWidthInPixels;
+        %tmp.105 = lgetv %text.7;
+        symbol [ text %tmp.105 364 44 48 ];
+        %tmp.106 = self;
+        symbol [ getSmallFont %tmp.107 364 50 62 ];
+        %tmp.107 = getv function %tmp.106 :getSmallFont;
+        %tmp.108 = invoke %tmp.106 %tmp.107();
+        %tmp.109 = invoke %tmp.103 %tmp.104(%tmp.105, %tmp.108);
+        lputv %textW.8 %tmp.109;
+        symbol [ textW %textW.8 364 12 17 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 365 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_stop" ]
+        %totalW.9 = local;
+        symbol [ totalW %totalW.9 365 12 18 ];
+        symbol [ ICON_WIDTH %tmp.111 365 21 31 ];
+        %tmp.111 = getv ? :ICON_WIDTH;
+        %tmp.112 = 4;
+        %tmp.113 = add %tmp.111 %tmp.112;
+        %tmp.114 = lgetv %textW.8;
+        symbol [ textW %tmp.114 365 38 43 ];
+        %tmp.115 = add %tmp.113 %tmp.114;
+        lputv %totalW.9 %tmp.115;
+        symbol [ totalW %totalW.9 365 12 18 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 366 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_stop" ]
+        %left.10 = local;
+        symbol [ left %left.10 366 12 16 ];
+        symbol [ _cx %tmp.117 366 19 22 ];
+        %tmp.117 = getv ? :_cx;
+        %tmp.118 = lgetv %totalW.9;
+        symbol [ totalW %tmp.118 366 25 31 ];
+        %tmp.119 = 2;
+        %tmp.120 = div %tmp.118 %tmp.119;
+        %tmp.121 = sub %tmp.117 %tmp.120;
+        lputv %left.10 %tmp.121;
+        symbol [ left %left.10 366 12 16 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 368 8 ]
+        %tmp.122 = self;
+        symbol [ drawFeetIcon %tmp.123 368 8 20 ];
+        %tmp.123 = getv function %tmp.122 :drawFeetIcon;
+        %tmp.124 = lgetv %dc;
+        symbol [ dc %tmp.124 368 21 23 ];
+        %tmp.125 = lgetv %left.10;
+        symbol [ left %tmp.125 368 25 29 ];
+        symbol [ _stepsY %tmp.127 368 31 38 ];
+        %tmp.127 = getv ? :_stepsY;
+        symbol [ COLOUR_STEPS %tmp.129 368 40 52 ];
+        %tmp.129 = getv ? :COLOUR_STEPS;
+        invoke %tmp.122 %tmp.123(%tmp.124, %tmp.125, %tmp.127, %tmp.129);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 370 8 ]
+        %tmp.130 = lgetv %dc;
+        symbol [ dc %tmp.130 370 8 10 ];
+        symbol [ setColor %tmp.131 370 11 19 ];
+        %tmp.131 = getv function %tmp.130 :setColor;
+        symbol [ COLOUR_STEPS %tmp.133 370 20 32 ];
+        %tmp.133 = getv ? :COLOUR_STEPS;
+        symbol [ Graphics %tmp.134 370 34 42 ];
+        %tmp.134 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.135 370 43 60 ];
+        %tmp.135 = getv %tmp.134 :COLOR_TRANSPARENT;
+        invoke %tmp.130 %tmp.131(%tmp.133, %tmp.135);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 371 8 ]
+        %tmp.136 = lgetv %dc;
+        symbol [ dc %tmp.136 371 8 10 ];
+        symbol [ drawText %tmp.137 371 11 19 ];
+        %tmp.137 = getv function %tmp.136 :drawText;
+        %tmp.138 = lgetv %left.10;
+        symbol [ left %tmp.138 371 20 24 ];
+        symbol [ ICON_WIDTH %tmp.140 371 27 37 ];
+        %tmp.140 = getv ? :ICON_WIDTH;
+        %tmp.141 = add %tmp.138 %tmp.140;
+        %tmp.142 = 4;
+        %tmp.143 = add %tmp.141 %tmp.142;
+        symbol [ _stepsY %tmp.145 371 43 50 ];
+        %tmp.145 = getv ? :_stepsY;
+        %tmp.146 = self;
+        symbol [ getSmallFont %tmp.147 371 52 64 ];
+        %tmp.147 = getv function %tmp.146 :getSmallFont;
+        %tmp.148 = invoke %tmp.146 %tmp.147();
+        %tmp.149 = lgetv %text.7;
+        symbol [ text %tmp.149 371 68 72 ];
+        symbol [ Graphics %tmp.150 372 12 20 ];
+        %tmp.150 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.151 372 21 38 ];
+        %tmp.151 = getv %tmp.150 :TEXT_JUSTIFY_LEFT;
+        symbol [ Graphics %tmp.152 372 41 49 ];
+        %tmp.152 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.153 372 50 70 ];
+        %tmp.153 = getv %tmp.152 :TEXT_JUSTIFY_VCENTER;
+        %tmp.154 = bitor %tmp.151 %tmp.153;
+        invoke %tmp.136 %tmp.137(%tmp.143, %tmp.145, %tmp.148, %tmp.149, %tmp.154);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_335_52_373_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 376; @symbol_functiondef = [drawTime,376,21,29]; @symbol_param<0> = [dc,376,30,32]; @symbol_param<0>_type<0> = [Dc,376,36,38]; ]
+    private
+    function drawTime(dc as Dc) as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_376_48_380_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 377 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 377 8 10 ];
+        symbol [ setColor %tmp.2 377 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 377 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 377 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        symbol [ Graphics %tmp.5 377 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.6 377 51 68 ];
+        %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 378 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 378 8 10 ];
+        symbol [ drawText %tmp.8 378 11 19 ];
+        %tmp.8 = getv function %tmp.7 :drawText;
+        symbol [ _cx %tmp.10 378 20 23 ];
+        %tmp.10 = getv ? :_cx;
+        symbol [ _timeY %tmp.12 378 25 31 ];
+        %tmp.12 = getv ? :_timeY;
+        %tmp.13 = self;
+        symbol [ getTimeFont %tmp.14 378 33 44 ];
+        %tmp.14 = getv function %tmp.13 :getTimeFont;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        %tmp.16 = self;
+        symbol [ getTimeText %tmp.17 378 48 59 ];
+        %tmp.17 = getv function %tmp.16 :getTimeText;
+        %tmp.18 = invoke %tmp.16 %tmp.17();
+        symbol [ Graphics %tmp.19 379 12 20 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.20 379 21 40 ];
+        %tmp.20 = getv %tmp.19 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.21 379 43 51 ];
+        %tmp.21 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.22 379 52 72 ];
+        %tmp.22 = getv %tmp.21 :TEXT_JUSTIFY_VCENTER;
+        %tmp.23 = bitor %tmp.20 %tmp.22;
+        invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12, %tmp.15, %tmp.18, %tmp.23);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_376_48_380_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 383; @symbol_functiondef = [drawDate,383,21,29]; @symbol_param<0> = [dc,383,30,32]; @symbol_param<0>_type<0> = [Dc,383,36,38]; ]
+    private
+    function drawDate(dc as Dc) as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_383_48_403_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 384 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_383_48_403_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_383_48_403_4_stop" ]
+        %now.1 = local;
+        symbol [ now %now.1 384 12 15 ];
+        symbol [ Time %tmp.1 384 18 22 ];
+        %tmp.1 = getm $.Toybox.Time;
+        symbol [ now %tmp.2 384 23 26 ];
+        %tmp.2 = getv function %tmp.1 :now;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %now.1 %tmp.3;
+        symbol [ now %now.1 384 12 15 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 387 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_383_48_403_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_383_48_403_4_stop" ]
+        %medium.2 = local;
+        symbol [ medium %medium.2 387 12 18 ];
+        symbol [ Gregorian %tmp.4 387 21 30 ];
+        %tmp.4 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.5 387 31 35 ];
+        %tmp.5 = getv function %tmp.4 :info;
+        %tmp.6 = lgetv %now.1;
+        symbol [ now %tmp.6 387 36 39 ];
+        symbol [ Time %tmp.7 387 41 45 ];
+        %tmp.7 = getm $.Toybox.Time;
+        symbol [ FORMAT_MEDIUM %tmp.8 387 46 59 ];
+        %tmp.8 = getv %tmp.7 :FORMAT_MEDIUM;
+        %tmp.9 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+        lputv %medium.2 %tmp.9;
+        symbol [ medium %medium.2 387 12 18 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 388 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_383_48_403_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_383_48_403_4_stop" ]
+        %dayName.3 = local;
+        symbol [ dayName %dayName.3 388 12 19 ];
+        %tmp.10 = lgetv %medium.2;
+        symbol [ medium %tmp.10 388 23 29 ];
+        symbol [ day_of_week %tmp.11 388 30 41 ];
+        %tmp.11 = getv %tmp.10 :day_of_week;
+        %tmp.12 = as %tmp.11 String;
+        symbol [ String %tmp.12 388 45 51 ];
+        symbol [ toUpper %tmp.13 388 53 60 ];
+        %tmp.13 = getv function %tmp.12 :toUpper;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %dayName.3 %tmp.14;
+        symbol [ dayName %dayName.3 388 12 19 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 390 8 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 390 8 10 ];
+        symbol [ setColor %tmp.16 390 11 19 ];
+        %tmp.16 = getv function %tmp.15 :setColor;
+        symbol [ Graphics %tmp.17 390 20 28 ];
+        %tmp.17 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.18 390 29 42 ];
+        %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.19 390 44 52 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.20 390 53 70 ];
+        %tmp.20 = getv %tmp.19 :COLOR_TRANSPARENT;
+        invoke %tmp.15 %tmp.16(%tmp.18, %tmp.20);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 391 8 ]
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 391 8 10 ];
+        symbol [ drawText %tmp.22 391 11 19 ];
+        %tmp.22 = getv function %tmp.21 :drawText;
+        symbol [ _cx %tmp.24 391 20 23 ];
+        %tmp.24 = getv ? :_cx;
+        symbol [ _dayY %tmp.26 391 25 30 ];
+        %tmp.26 = getv ? :_dayY;
+        %tmp.27 = self;
+        symbol [ getSmallFont %tmp.28 391 32 44 ];
+        %tmp.28 = getv function %tmp.27 :getSmallFont;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        %tmp.30 = lgetv %dayName.3;
+        symbol [ dayName %tmp.30 391 48 55 ];
+        symbol [ Graphics %tmp.31 392 12 20 ];
+        %tmp.31 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.32 392 21 40 ];
+        %tmp.32 = getv %tmp.31 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.33 392 43 51 ];
+        %tmp.33 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.34 392 52 72 ];
+        %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_VCENTER;
+        %tmp.35 = bitor %tmp.32 %tmp.34;
+        invoke %tmp.21 %tmp.22(%tmp.24, %tmp.26, %tmp.29, %tmp.30, %tmp.35);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 395 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_383_48_403_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_383_48_403_4_stop" ]
+        %info.4 = local;
+        symbol [ info %info.4 395 12 16 ];
+        symbol [ Gregorian %tmp.36 395 19 28 ];
+        %tmp.36 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.37 395 29 33 ];
+        %tmp.37 = getv function %tmp.36 :info;
+        %tmp.38 = lgetv %now.1;
+        symbol [ now %tmp.38 395 34 37 ];
+        symbol [ Time %tmp.39 395 39 43 ];
+        %tmp.39 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.40 395 44 56 ];
+        %tmp.40 = getv %tmp.39 :FORMAT_SHORT;
+        %tmp.41 = invoke %tmp.36 %tmp.37(%tmp.38, %tmp.40);
+        lputv %info.4 %tmp.41;
+        symbol [ info %info.4 395 12 16 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 396 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_383_48_403_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_383_48_403_4_stop" ]
+        %text.5 = local;
+        symbol [ text %text.5 396 12 16 ];
+        %tmp.42 = lgetv %info.4;
+        symbol [ info %tmp.42 396 19 23 ];
+        symbol [ year %tmp.43 396 24 28 ];
+        %tmp.43 = getv %tmp.42 :year;
+        symbol [ format %tmp.44 396 29 35 ];
+        %tmp.44 = getv function %tmp.43 :format;
+        %tmp.45 = "%04d";
+        %tmp.46 = invoke %tmp.43 %tmp.44(%tmp.45);
+        %tmp.47 = ".";
+        %tmp.48 = add %tmp.46 %tmp.47;
+        %tmp.49 = lgetv %info.4;
+        symbol [ info %tmp.49 397 15 19 ];
+        symbol [ month %tmp.50 397 20 25 ];
+        %tmp.50 = getv %tmp.49 :month;
+        %tmp.51 = as %tmp.50 Number;
+        symbol [ Number %tmp.51 397 29 35 ];
+        symbol [ format %tmp.52 397 37 43 ];
+        %tmp.52 = getv function %tmp.51 :format;
+        %tmp.53 = "%02d";
+        %tmp.54 = invoke %tmp.51 %tmp.52(%tmp.53);
+        %tmp.55 = add %tmp.48 %tmp.54;
+        %tmp.56 = ".";
+        %tmp.57 = add %tmp.55 %tmp.56;
+        %tmp.58 = lgetv %info.4;
+        symbol [ info %tmp.58 398 14 18 ];
+        symbol [ day %tmp.59 398 19 22 ];
+        %tmp.59 = getv %tmp.58 :day;
+        symbol [ format %tmp.60 398 23 29 ];
+        %tmp.60 = getv function %tmp.59 :format;
+        %tmp.61 = "%02d";
+        %tmp.62 = invoke %tmp.59 %tmp.60(%tmp.61);
+        %tmp.63 = add %tmp.57 %tmp.62;
+        lputv %text.5 %tmp.63;
+        symbol [ text %text.5 396 12 16 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 400 8 ]
+        %tmp.64 = lgetv %dc;
+        symbol [ dc %tmp.64 400 8 10 ];
+        symbol [ setColor %tmp.65 400 11 19 ];
+        %tmp.65 = getv function %tmp.64 :setColor;
+        symbol [ Graphics %tmp.66 400 20 28 ];
+        %tmp.66 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.67 400 29 40 ];
+        %tmp.67 = getv %tmp.66 :COLOR_WHITE;
+        symbol [ Graphics %tmp.68 400 42 50 ];
+        %tmp.68 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.69 400 51 68 ];
+        %tmp.69 = getv %tmp.68 :COLOR_TRANSPARENT;
+        invoke %tmp.64 %tmp.65(%tmp.67, %tmp.69);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 401 8 ]
+        %tmp.70 = lgetv %dc;
+        symbol [ dc %tmp.70 401 8 10 ];
+        symbol [ drawText %tmp.71 401 11 19 ];
+        %tmp.71 = getv function %tmp.70 :drawText;
+        symbol [ _cx %tmp.73 401 20 23 ];
+        %tmp.73 = getv ? :_cx;
+        symbol [ _dateY %tmp.75 401 25 31 ];
+        %tmp.75 = getv ? :_dateY;
+        %tmp.76 = self;
+        symbol [ getSmallFont %tmp.77 401 33 45 ];
+        %tmp.77 = getv function %tmp.76 :getSmallFont;
+        %tmp.78 = invoke %tmp.76 %tmp.77();
+        %tmp.79 = lgetv %text.5;
+        symbol [ text %tmp.79 401 49 53 ];
+        symbol [ Graphics %tmp.80 402 12 20 ];
+        %tmp.80 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.81 402 21 40 ];
+        %tmp.81 = getv %tmp.80 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.82 402 43 51 ];
+        %tmp.82 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.83 402 52 72 ];
+        %tmp.83 = getv %tmp.82 :TEXT_JUSTIFY_VCENTER;
+        %tmp.84 = bitor %tmp.81 %tmp.83;
+        invoke %tmp.70 %tmp.71(%tmp.73, %tmp.75, %tmp.78, %tmp.79, %tmp.84);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_383_48_403_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 406; @symbol_functiondef = [drawLowPowerTime,406,21,37]; @symbol_param<0> = [dc,406,38,40]; @symbol_param<0>_type<0> = [Dc,406,44,46]; ]
+    private
+    function drawLowPowerTime(dc as Dc) as Void {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_406_56_414_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 407 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_406_56_414_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_406_56_414_4_stop" ]
+        %min.1 = local;
+        symbol [ min %min.1 407 12 15 ];
+        symbol [ System %tmp.1 407 18 24 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 407 25 37 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ min %tmp.4 407 40 43 ];
+        %tmp.4 = getv %tmp.3 :min;
+        lputv %min.1 %tmp.4;
+        symbol [ min %min.1 407 12 15 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 408 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_406_56_414_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_406_56_414_4_stop" ]
+        %dx.2 = local;
+        symbol [ dx %dx.2 408 12 14 ];
+        %tmp.5 = lgetv %min.1;
+        symbol [ min %tmp.5 408 18 21 ];
+        %tmp.6 = 5;
+        %tmp.7 = mod %tmp.5 %tmp.6;
+        %tmp.8 = 4;
+        %tmp.9 = mul %tmp.7 %tmp.8;
+        %tmp.10 = 8;
+        %tmp.11 = sub %tmp.9 %tmp.10;
+        lputv %dx.2 %tmp.11;
+        symbol [ dx %dx.2 408 12 14 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 409 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_406_56_414_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_406_56_414_4_stop" ]
+        %dy.3 = local;
+        symbol [ dy %dy.3 409 12 14 ];
+        %tmp.12 = lgetv %min.1;
+        symbol [ min %tmp.12 409 19 22 ];
+        %tmp.13 = 5;
+        %tmp.14 = div %tmp.12 %tmp.13;
+        %tmp.15 = 5;
+        %tmp.16 = mod %tmp.14 %tmp.15;
+        %tmp.17 = 4;
+        %tmp.18 = mul %tmp.16 %tmp.17;
+        %tmp.19 = 8;
+        %tmp.20 = sub %tmp.18 %tmp.19;
+        lputv %dy.3 %tmp.20;
+        symbol [ dy %dy.3 409 12 14 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 411 8 ]
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 411 8 10 ];
+        symbol [ setColor %tmp.22 411 11 19 ];
+        %tmp.22 = getv function %tmp.21 :setColor;
+        symbol [ Graphics %tmp.23 411 20 28 ];
+        %tmp.23 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.24 411 29 42 ];
+        %tmp.24 = getv %tmp.23 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.25 411 44 52 ];
+        %tmp.25 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.26 411 53 70 ];
+        %tmp.26 = getv %tmp.25 :COLOR_TRANSPARENT;
+        invoke %tmp.21 %tmp.22(%tmp.24, %tmp.26);
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 412 8 ]
+        %tmp.27 = lgetv %dc;
+        symbol [ dc %tmp.27 412 8 10 ];
+        symbol [ drawText %tmp.28 412 11 19 ];
+        %tmp.28 = getv function %tmp.27 :drawText;
+        symbol [ _cx %tmp.30 412 20 23 ];
+        %tmp.30 = getv ? :_cx;
+        %tmp.31 = lgetv %dx.2;
+        symbol [ dx %tmp.31 412 26 28 ];
+        %tmp.32 = add %tmp.30 %tmp.31;
+        symbol [ _cy %tmp.34 412 30 33 ];
+        %tmp.34 = getv ? :_cy;
+        %tmp.35 = lgetv %dy.3;
+        symbol [ dy %tmp.35 412 36 38 ];
+        %tmp.36 = add %tmp.34 %tmp.35;
+        %tmp.37 = self;
+        symbol [ getTimeFont %tmp.38 412 40 51 ];
+        %tmp.38 = getv function %tmp.37 :getTimeFont;
+        %tmp.39 = invoke %tmp.37 %tmp.38();
+        %tmp.40 = self;
+        symbol [ getTimeText %tmp.41 412 55 66 ];
+        %tmp.41 = getv function %tmp.40 :getTimeText;
+        %tmp.42 = invoke %tmp.40 %tmp.41();
+        symbol [ Graphics %tmp.43 413 12 20 ];
+        %tmp.43 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.44 413 21 40 ];
+        %tmp.44 = getv %tmp.43 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.45 413 43 51 ];
+        %tmp.45 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.46 413 52 72 ];
+        %tmp.46 = getv %tmp.45 :TEXT_JUSTIFY_VCENTER;
+        %tmp.47 = bitor %tmp.44 %tmp.46;
+        invoke %tmp.27 %tmp.28(%tmp.32, %tmp.36, %tmp.39, %tmp.42, %tmp.47);
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_406_56_414_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 421; @symbol_functiondef = [getTimeFont,421,21,32]; ]
+    private
+    function getTimeFont() {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_421_35_423_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 422 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_422_15_422_58_begin:
+        symbol [ _timeFont %tmp.2 422 16 25 ];
+        %tmp.2 = getv ? :_timeFont;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_422_15_422_58_else_false;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_422_15_422_58_true:
+        symbol [ _timeFont %tmp.6 422 37 46 ];
+        %tmp.6 = getv ? :_timeFont;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        push %tmp.7;
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_422_15_422_58_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_422_15_422_58_else_false:
+        symbol [ Graphics %tmp.8 422 49 57 ];
+        %tmp.8 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_HOT %tmp.9 422 58 73 ];
+        %tmp.9 = getv %tmp.8 :FONT_NUMBER_HOT;
+        push %tmp.9;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_422_15_422_58_end:
+        %tmp.10 = phi [%tmp.4 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_422_15_422_58_begin] [%tmp.7 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_422_15_422_58_true] [%tmp.9 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_422_15_422_58_else_false] [%tmp.10 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_422_15_422_58_end];
+        ret %tmp.10;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_421_35_423_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 425; @symbol_functiondef = [getSmallFont,425,21,33]; ]
+    private
+    function getSmallFont() {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_425_36_427_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 426 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_426_15_426_60_begin:
+        symbol [ _smallFont %tmp.2 426 16 26 ];
+        %tmp.2 = getv ? :_smallFont;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_426_15_426_60_else_false;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_426_15_426_60_true:
+        symbol [ _smallFont %tmp.6 426 38 48 ];
+        %tmp.6 = getv ? :_smallFont;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        push %tmp.7;
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_426_15_426_60_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_426_15_426_60_else_false:
+        symbol [ Graphics %tmp.8 426 51 59 ];
+        %tmp.8 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.9 426 60 70 ];
+        %tmp.9 = getv %tmp.8 :FONT_XTINY;
+        push %tmp.9;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_426_15_426_60_end:
+        %tmp.10 = phi [%tmp.4 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_426_15_426_60_begin] [%tmp.7 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_426_15_426_60_true] [%tmp.9 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_426_15_426_60_else_false] [%tmp.10 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_426_15_426_60_end];
+        ret %tmp.10;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_425_36_427_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 430; @symbol_functiondef = [getTimeText,430,21,32]; @symbol_return<0> = [String,430,38,44]; ]
+    private
+    function getTimeText() as String {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_430_45_433_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 431 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_430_45_433_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_430_45_433_4_stop" ]
+        %clock.1 = local;
+        symbol [ clock %clock.1 431 12 17 ];
+        symbol [ System %tmp.1 431 20 26 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 431 27 39 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clock.1 %tmp.3;
+        symbol [ clock %clock.1 431 12 17 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 432 8 ]
+        %tmp.4 = lgetv %clock.1;
+        symbol [ clock %tmp.4 432 15 20 ];
+        symbol [ hour %tmp.5 432 21 25 ];
+        %tmp.5 = getv %tmp.4 :hour;
+        symbol [ format %tmp.6 432 26 32 ];
+        %tmp.6 = getv function %tmp.5 :format;
+        %tmp.7 = "%02d";
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        %tmp.9 = ":";
+        %tmp.10 = add %tmp.8 %tmp.9;
+        %tmp.11 = lgetv %clock.1;
+        symbol [ clock %tmp.11 432 49 54 ];
+        symbol [ min %tmp.12 432 55 58 ];
+        %tmp.12 = getv %tmp.11 :min;
+        symbol [ format %tmp.13 432 59 65 ];
+        %tmp.13 = getv function %tmp.12 :format;
+        %tmp.14 = "%02d";
+        %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
+        %tmp.16 = add %tmp.10 %tmp.15;
+        ret %tmp.16;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_430_45_433_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 436; @symbol_functiondef = [getHeartRate,436,21,33]; @symbol_return<0> = [Number,436,39,45]; ]
+    private
+    function getHeartRate() as Number or Null {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_436_47_449_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 437 8 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_436_47_449_4_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_436_47_449_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 437 12 16 ];
+        symbol [ Activity %tmp.1 437 19 27 ];
+        %tmp.1 = getm $.Toybox.Activity;
+        symbol [ getActivityInfo %tmp.2 437 28 43 ];
+        %tmp.2 = getv function %tmp.1 :getActivityInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 437 12 16 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 438 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_8_440_8_if_stmt:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_12_438_53_begin:
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 438 12 16 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_8_440_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_28_438_53_true:
+        %tmp.7 = lgetv %info.1;
+        symbol [ info %tmp.7 438 28 32 ];
+        %tmp.8 = as %tmp.7 { (!Null) };
+        symbol [ currentHeartRate %tmp.9 438 33 49 ];
+        %tmp.9 = getv %tmp.8 :currentHeartRate;
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        push %tmp.11;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_28_438_53_end:
+        %tmp.12 = phi [%tmp.6 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_12_438_53_begin] [%tmp.11 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_28_438_53_true] [%tmp.12 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_28_438_53_end];
+        bf %tmp.12 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_8_440_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_8_440_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_59_440_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 439 12 ]
+        %tmp.13 = lgetv %info.1;
+        symbol [ info %tmp.13 439 19 23 ];
+        %tmp.14 = as %tmp.13 { (!Null) };
+        symbol [ currentHeartRate %tmp.15 439 24 40 ];
+        %tmp.15 = getv %tmp.14 :currentHeartRate;
+        ret %tmp.15;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_59_440_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_8_440_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_438_8_440_8_if_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 442 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_442_8_447_8_if_stmt:
+        symbol [ ActivityMonitor %tmp.16 442 12 27 ];
+        %tmp.16 = getm $.Toybox.ActivityMonitor;
+        %tmp.18 = const :getHeartRateHistory;
+        symbol [ getHeartRateHistory %tmp.18 442 33 52 const ];
+        %tmp.19 = canhazplz %tmp.16 %tmp.18;
+        bf %tmp.19 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_442_8_447_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_442_8_447_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_442_54_447_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 443 12 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_442_54_447_8_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_442_54_447_8_stop" ]
+        %sample.2 = local;
+        symbol [ sample %sample.2 443 16 22 ];
+        symbol [ ActivityMonitor %tmp.20 443 25 40 ];
+        %tmp.20 = getm $.Toybox.ActivityMonitor;
+        symbol [ getHeartRateHistory %tmp.21 443 41 60 ];
+        %tmp.21 = getv function %tmp.20 :getHeartRateHistory;
+        %tmp.22 = 1;
+        %tmp.23 = true;
+        %tmp.24 = invoke %tmp.20 %tmp.21(%tmp.22, %tmp.23);
+        symbol [ next %tmp.25 443 70 74 ];
+        %tmp.25 = getv function %tmp.24 :next;
+        %tmp.26 = invoke %tmp.24 %tmp.25();
+        lputv %sample.2 %tmp.26;
+        symbol [ sample %sample.2 443 16 22 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 444 12 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_12_446_12_if_stmt:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_16_444_70_begin:
+        %tmp.27 = lgetv %sample.2;
+        symbol [ sample %tmp.27 444 16 22 ];
+        %tmp.28 = null;
+        %tmp.29 = ne %tmp.27 %tmp.28;
+        bf %tmp.29 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_12_446_12_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_34_444_70_true:
+        %tmp.30 = lgetv %sample.2;
+        symbol [ sample %tmp.30 444 34 40 ];
+        %tmp.31 = as %tmp.30 { (!Null) };
+        symbol [ heartRate %tmp.32 444 41 50 ];
+        %tmp.32 = getv %tmp.31 :heartRate;
+        symbol [ ActivityMonitor %tmp.33 444 54 69 ];
+        %tmp.33 = getm $.Toybox.ActivityMonitor;
+        symbol [ INVALID_HR_SAMPLE %tmp.34 444 70 87 ];
+        %tmp.34 = getv %tmp.33 :INVALID_HR_SAMPLE;
+        %tmp.35 = ne %tmp.32 %tmp.34;
+        push %tmp.35;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_34_444_70_end:
+        %tmp.36 = phi [%tmp.29 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_16_444_70_begin] [%tmp.35 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_34_444_70_true] [%tmp.36 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_34_444_70_end];
+        bf %tmp.36 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_12_446_12_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_12_446_12_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_89_446_12_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 445 16 ]
+        %tmp.37 = lgetv %sample.2;
+        symbol [ sample %tmp.37 445 23 29 ];
+        %tmp.38 = as %tmp.37 { (!Null) };
+        symbol [ heartRate %tmp.39 445 30 39 ];
+        %tmp.39 = getv %tmp.38 :heartRate;
+        ret %tmp.39;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_89_446_12_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_12_446_12_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_444_12_446_12_if_end:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_442_54_447_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_442_8_447_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_442_8_447_8_if_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 448 8 ]
+        %tmp.40 = null;
+        ret %tmp.40;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_436_47_449_4_stop:
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 453; @symbol_functiondef = [getBodyBattery,453,21,35]; @symbol_return<0> = [Number,453,41,47]; ]
+    private
+    function getBodyBattery() as Number or Null {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_453_49_464_4_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 454 8 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_8_462_8_if_stmt:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_12_454_84_begin:
+        symbol [ Toybox %tmp.2 454 13 19 ];
+        %tmp.2 = getv ? :Toybox;
+        %tmp.4 = const :SensorHistory;
+        symbol [ SensorHistory %tmp.4 454 25 38 const ];
+        %tmp.5 = canhazplz %tmp.2 %tmp.4;
+        bf %tmp.5 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_8_462_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_43_454_84_true:
+        symbol [ SensorHistory %tmp.6 454 44 57 ];
+        %tmp.6 = getm $.Toybox.SensorHistory;
+        %tmp.8 = const :getBodyBatteryHistory;
+        symbol [ getBodyBatteryHistory %tmp.8 454 63 84 const ];
+        %tmp.9 = canhazplz %tmp.6 %tmp.8;
+        push %tmp.9;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_43_454_84_end:
+        %tmp.10 = phi [%tmp.5 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_12_454_84_begin] [%tmp.9 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_43_454_84_true] [%tmp.10 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_43_454_84_end];
+        bf %tmp.10 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_8_462_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_8_462_8_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_87_462_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 455 12 ]
+        [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_87_462_8_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_87_462_8_stop" ]
+        %sample.1 = local;
+        symbol [ sample %sample.1 455 16 22 ];
+        symbol [ SensorHistory %tmp.11 455 25 38 ];
+        %tmp.11 = getm $.Toybox.SensorHistory;
+        symbol [ getBodyBatteryHistory %tmp.12 455 39 60 ];
+        %tmp.12 = getv function %tmp.11 :getBodyBatteryHistory;
+        %tmp.13 = newd 2;
+        %tmp.15 = const :period;
+        symbol [ period %tmp.15 456 17 23 const ];
+        %tmp.16 = 1;
+        %tmp.17 = dup %tmp.13;
+        %tmp.18 = aputv %tmp.17 %tmp.15 %tmp.16;
+        %tmp.20 = const :order;
+        symbol [ order %tmp.20 457 17 22 const ];
+        symbol [ SensorHistory %tmp.21 457 26 39 ];
+        %tmp.21 = getm $.Toybox.SensorHistory;
+        symbol [ ORDER_NEWEST_FIRST %tmp.22 457 40 58 ];
+        %tmp.22 = getv %tmp.21 :ORDER_NEWEST_FIRST;
+        %tmp.23 = dup %tmp.18;
+        %tmp.24 = aputv %tmp.23 %tmp.20 %tmp.22;
+        %tmp.25 = invoke %tmp.11 %tmp.12(%tmp.24);
+        symbol [ next %tmp.26 458 15 19 ];
+        %tmp.26 = getv function %tmp.25 :next;
+        %tmp.27 = invoke %tmp.25 %tmp.26();
+        lputv %sample.1 %tmp.27;
+        symbol [ sample %sample.1 455 16 22 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 459 12 ]
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_12_461_12_if_stmt:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_16_459_49_begin:
+        %tmp.28 = lgetv %sample.1;
+        symbol [ sample %tmp.28 459 16 22 ];
+        %tmp.29 = null;
+        %tmp.30 = ne %tmp.28 %tmp.29;
+        bf %tmp.30 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_12_461_12_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_34_459_49_true:
+        %tmp.31 = lgetv %sample.1;
+        symbol [ sample %tmp.31 459 34 40 ];
+        %tmp.32 = as %tmp.31 { (!Null) };
+        symbol [ data %tmp.33 459 41 45 ];
+        %tmp.33 = getv %tmp.32 :data;
+        %tmp.34 = null;
+        %tmp.35 = ne %tmp.33 %tmp.34;
+        push %tmp.35;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_34_459_49_end:
+        %tmp.36 = phi [%tmp.30 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_16_459_49_begin] [%tmp.35 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_34_459_49_true] [%tmp.36 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_34_459_49_end];
+        bf %tmp.36 @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_12_461_12_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_12_461_12_if_true:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_55_461_12_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 460 16 ]
+        %tmp.37 = lgetv %sample.1;
+        symbol [ sample %tmp.37 460 23 29 ];
+        %tmp.38 = as %tmp.37 { (!Null) };
+        symbol [ data %tmp.39 460 30 34 ];
+        %tmp.39 = getv %tmp.38 :data;
+        symbol [ toNumber %tmp.40 460 35 43 ];
+        %tmp.40 = getv function %tmp.39 :toNumber;
+        %tmp.41 = invoke %tmp.39 %tmp.40();
+        ret %tmp.41;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_55_461_12_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_12_461_12_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_459_12_461_12_if_end:
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_87_462_8_stop:
+        goto @_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_8_462_8_if_end;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_454_8_462_8_if_end:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc" 463 8 ]
+        %tmp.42 = null;
+        ret %tmp.42;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_watchface_1View_mc_453_49_464_4_stop:
+    }
+}
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/watchface_1View.mc"; @line = 1; ]
+<init> {
+}

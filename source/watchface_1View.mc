@@ -12,23 +12,32 @@ import Toybox.WatchUi;
 // Digital watch face:
 //   - day of the week, YYYY.MM.DD date and 24-hour time at the top
 //   - three horizontal bars underneath that shrink as the value drops:
-//       battery icon = watch battery (0-100 %)
-//       HP   = Body Battery  (0-100)
-//       HR   = heart rate    (40-200 bpm)
-//   - each row on one line: label/icon on the left, bar, number on the right
-//   - a ring round the edge for steps towards the daily goal, count at the top
+//       battery icon = watch battery (0-100)
+//       heart icon   = Body Battery  (0-100)
+//       EKG icon     = heart rate    (40-200 bpm)
+//   - each row on one line: icon on the left, bar, number on the right
+//   - a ring round the edge for steps towards the daily goal,
+//     with a footprints icon and the step count at the bottom
 class watchface_1View extends WatchUi.WatchFace {
 
     // Fixed colour for each bar and its number (they never change)
     const COLOUR_BATTERY = Graphics.COLOR_GREEN;
     const COLOUR_BODY = Graphics.COLOR_BLUE;
     const COLOUR_HEART = Graphics.COLOR_RED;
-    const COLOUR_STEPS = Graphics.COLOR_YELLOW;
+    const COLOUR_STEPS = 0xFFFF55;
     const COLOUR_TRACK = Graphics.COLOR_DK_GRAY;
 
     // Heart-rate range that maps onto an empty / full bar
     const HR_MIN = 40;
     const HR_MAX = 200;
+
+    // Which icon to draw at the start of each bar row
+    const ICON_BATTERY = 0;
+    const ICON_HEART = 1;   // Body Battery
+    const ICON_PULSE = 2;   // heart rate (EKG line)
+
+    // All icons are drawn in a box this wide, in pixels
+    const ICON_WIDTH = 20;
 
     // Bar thickness and step-ring thickness, in pixels
     const BAR_HEIGHT = 6;
@@ -43,13 +52,27 @@ class watchface_1View extends WatchUi.WatchFace {
     private var _r as Number = 0;    // radius (half the shorter side)
 
     // Bar layout, worked out once in onLayout.
-    // Each row is:  [label/icon]  [=========bar=========]  [number]
+    // Each row is:  [icon]  [=========bar=========]  [number]
     private var _firstRowY as Number = 0;   // vertical centre of the first row
     private var _rowGap as Number = 0;      // distance between row centres
     private var _labelLeft as Number = 0;   // x where labels/icons start
     private var _barLeft as Number = 0;     // x where every bar starts
     private var _barWidth as Number = 0;    // full length of every bar
     private var _valueRight as Number = 0;  // x where numbers end (right-aligned)
+
+    // Vertical centres of the text, worked out in onLayout from the real font heights
+    private var _dayY as Number = 0;
+    private var _dateY as Number = 0;
+    private var _timeY as Number = 0;
+    private var _stepsY as Number = 0;
+
+    // Custom font for the time (resources/fonts/fonts.xml, id "TimeFont"),
+    // loaded once in onLayout
+    private var _timeFont as FontResource? = null;
+
+    // The same typeface at a small size for everything else
+    // (resources/fonts/fonts.xml, id "SmallFont")
+    private var _smallFont as FontResource? = null;
 
     function initialize() {
         WatchFace.initialize();
@@ -67,18 +90,60 @@ class watchface_1View extends WatchUi.WatchFace {
         _cy = dc.getHeight() / 2;
         _r = (_cx < _cy) ? _cx : _cy;
 
-        _firstRowY = _cy + (_r * 0.22).toNumber();
-        _rowGap = (_r * 0.14).toNumber();
+        _timeFont = WatchUi.loadResource(Rez.Fonts.TimeFont) as FontResource;
+        _smallFont = WatchUi.loadResource(Rez.Fonts.SmallFont) as FontResource;
 
-        // The rows must fit inside the round screen at the lowest row,
+        layOut(dc);
+    }
+
+    // Works out every position from the actual heights and widths of the fonts,
+    // so the layout still fits if you remake the fonts at a different size.
+    //
+    // Top to bottom:  day / date / time / three bar rows ... footprints + steps at the bottom
+    private function layOut(dc as Dc) as Void {
+        var smallH = dc.getFontHeight(getSmallFont());
+        var timeH = dc.getFontHeight(getTimeFont());
+
+        var gap = 2;                 // space between stacked items
+        _rowGap = smallH + 2;        // distance between bar rows
+
+        // Steps sit at the bottom, just inside the step ring
+        _stepsY = _cy + _r - RING_WIDTH - 4 - smallH / 2;
+
+        // Space available for the main block: below the ring at the top,
+        // above the steps text at the bottom
+        var top = _cy - _r + RING_WIDTH + 6;
+        var bottom = _stepsY - smallH / 2 - gap;
+
+        var blockH = smallH + smallH + timeH + gap * 2 + _rowGap * 3;
+        var y = top + (bottom - top - blockH) / 2;   // centre the block in that space
+        if (y < top) {
+            y = top;   // fonts too big to fit: start at the top and let it overflow downwards
+        }
+
+        _dayY = y + smallH / 2;
+        y += smallH;
+        _dateY = y + smallH / 2;
+        y += smallH + gap;
+        _timeY = y + timeH / 2;
+        y += timeH + gap;
+        _firstRowY = y + _rowGap / 2;
+
+        // Widths: the rows must fit inside the round screen at the lowest row,
         // leaving room for the step ring round the edge
-        var lowestEdge = _firstRowY + _rowGap * 2 + 8;
+        var lowestEdge = _firstRowY + _rowGap * 2 + smallH / 2;
         var dy = lowestEdge - _cy;
-        var halfWidth = Math.sqrt(_r * _r - dy * dy).toNumber() - 20;
+        if (dy > _r - 30) {
+            dy = _r - 30;   // safety: never take the square root of a negative number
+        }
+        var halfWidth = Math.sqrt(_r * _r - dy * dy).toNumber() - RING_WIDTH - 8;
 
-        var labelColumn = 24;   // room for "HP", "HR" or the battery icon
-        var valueColumn = 34;   // room for "100%"
-        var padding = 4;        // gap between columns
+        // Icon column
+        var labelColumn = ICON_WIDTH;
+
+        // Value column: wide enough for "200"
+        var valueColumn = dc.getTextWidthInPixels("200", getSmallFont());
+        var padding = 4;
 
         _labelLeft = _cx - halfWidth;
         _valueRight = _cx + halfWidth;
@@ -119,12 +184,12 @@ class watchface_1View extends WatchUi.WatchFace {
         drawTime(dc);
 
         // Three rows, one under the other
-        drawBarRow(dc, _firstRowY, null, battery.toString() + "%",
+        drawBarRow(dc, _firstRowY, ICON_BATTERY, battery.toString(),
             battery / 100.0, COLOUR_BATTERY);
-        drawBarRow(dc, _firstRowY + _rowGap, "HP",
+        drawBarRow(dc, _firstRowY + _rowGap, ICON_HEART,
             (bodyBattery == null) ? "--" : bodyBattery.toString(),
             (bodyBattery == null) ? 0.0 : bodyBattery / 100.0, COLOUR_BODY);
-        drawBarRow(dc, _firstRowY + _rowGap * 2, "HR",
+        drawBarRow(dc, _firstRowY + _rowGap * 2, ICON_PULSE,
             (heartRate == null) ? "--" : heartRate.toString(),
             hrFraction, COLOUR_HEART);
     }
@@ -146,10 +211,10 @@ class watchface_1View extends WatchUi.WatchFace {
     // Drawing helpers
     // ---------------------------------------------------------------
 
-    // One row on a single line: label or icon on the left, bar in the middle,
-    // number on the right. Pass null as the label to draw the battery icon.
-    // The coloured part of the bar shrinks to the left as the fraction (0.0-1.0) drops.
-    private function drawBarRow(dc as Dc, centreY as Number, label as String?,
+    // One row on a single line: icon on the left, bar in the middle,
+    // number on the right. The coloured part of the bar shrinks to the left
+    // as the fraction (0.0-1.0) drops.
+    private function drawBarRow(dc as Dc, centreY as Number, icon as Number,
             value as String, fraction as Float, colour as Number) as Void {
         if (fraction < 0.0) {
             fraction = 0.0;
@@ -157,13 +222,13 @@ class watchface_1View extends WatchUi.WatchFace {
             fraction = 1.0;
         }
 
-        // Left: label or icon
-        if (label == null) {
+        // Left: icon
+        if (icon == ICON_BATTERY) {
             drawBatteryIcon(dc, _labelLeft, centreY, fraction, colour);
+        } else if (icon == ICON_HEART) {
+            drawHeartIcon(dc, _labelLeft, centreY, colour);
         } else {
-            dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(_labelLeft, centreY, Graphics.FONT_XTINY, label,
-                Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+            drawPulseIcon(dc, _labelLeft, centreY, colour);
         }
 
         // Middle: dark full-length track, then the coloured part
@@ -179,7 +244,7 @@ class watchface_1View extends WatchUi.WatchFace {
 
         // Right: number
         dc.setColor(colour, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(_valueRight, centreY, Graphics.FONT_XTINY, value,
+        dc.drawText(_valueRight, centreY, getSmallFont(), value,
             Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
@@ -206,8 +271,66 @@ class watchface_1View extends WatchUi.WatchFace {
         }
     }
 
+    // Heart, drawn from two circles (the top bumps) and a triangle (the point).
+    // x = left edge of the icon box, centreY = vertical centre.
+    private function drawHeartIcon(dc as Dc, x as Number, centreY as Number,
+            colour as Number) as Void {
+        var cx = x + ICON_WIDTH / 2;   // middle of the icon box
+        var top = centreY - 3;         // centre line of the two bumps
+
+        dc.setColor(colour, Graphics.COLOR_TRANSPARENT);
+        dc.fillCircle(cx - 3, top, 4);
+        dc.fillCircle(cx + 3, top, 4);
+        dc.fillPolygon([
+            [cx - 7, top + 1],
+            [cx + 7, top + 1],
+            [cx, centreY + 7]
+        ]);
+    }
+
+    // EKG pulse line: flat, small bump, tall spike, dip, flat.
+    // x = left edge of the icon box, centreY = the flat baseline.
+    private function drawPulseIcon(dc as Dc, x as Number, centreY as Number,
+            colour as Number) as Void {
+        var points = [
+            [x,      centreY],
+            [x + 5,  centreY],
+            [x + 7,  centreY - 2],
+            [x + 9,  centreY],
+            [x + 11, centreY - 7],
+            [x + 13, centreY + 5],
+            [x + 15, centreY],
+            [x + 20, centreY]
+        ];
+
+        dc.setColor(colour, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(2);
+        for (var i = 0; i < points.size() - 1; i++) {
+            var a = points[i];
+            var b = points[i + 1];
+            dc.drawLine(a[0], a[1], b[0], b[1]);
+        }
+        dc.setPenWidth(1);
+    }
+
+    // Two footprints, drawn from ellipses (soles) and circles (heels),
+    // the right foot a little higher than the left.
+    // x = left edge of the icon box, centreY = vertical centre.
+    private function drawFeetIcon(dc as Dc, x as Number, centreY as Number,
+            colour as Number) as Void {
+        dc.setColor(colour, Graphics.COLOR_TRANSPARENT);
+
+        // Left foot
+        dc.fillEllipse(x + 5, centreY - 1, 3, 4);
+        dc.fillCircle(x + 5, centreY + 5, 2);
+
+        // Right foot, raised
+        dc.fillEllipse(x + 14, centreY - 4, 3, 4);
+        dc.fillCircle(x + 14, centreY + 2, 2);
+    }
+
     // Ring round the edge showing progress towards today's step goal,
-    // filling clockwise from 12 o'clock, with the step count at the top.
+    // filling clockwise from 12 o'clock, with footprints and the step count at the bottom.
     // Arc angles: 0 = 3 o'clock, 90 = 12 o'clock, counting anticlockwise.
     private function drawStepRing(dc as Dc) as Void {
         var info = ActivityMonitor.getInfo();
@@ -236,16 +359,23 @@ class watchface_1View extends WatchUi.WatchFace {
         }
         dc.setPenWidth(1);
 
-        // Step count above the date
+        // Footprints icon and step count at the bottom, centred together
+        var text = steps.toString();
+        var textW = dc.getTextWidthInPixels(text, getSmallFont());
+        var totalW = ICON_WIDTH + 4 + textW;
+        var left = _cx - totalW / 2;
+
+        drawFeetIcon(dc, left, _stepsY, COLOUR_STEPS);
+
         dc.setColor(COLOUR_STEPS, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(_cx, _cy - (_r * 0.84).toNumber(), Graphics.FONT_XTINY, steps.toString(),
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(left + ICON_WIDTH + 4, _stepsY, getSmallFont(), text,
+            Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
     // 24-hour time near the top, e.g. "08:05"
     private function drawTime(dc as Dc) as Void {
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(_cx, _cy - (_r * 0.16).toNumber(), Graphics.FONT_NUMBER_HOT, getTimeText(),
+        dc.drawText(_cx, _timeY, getTimeFont(), getTimeText(),
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
@@ -258,7 +388,7 @@ class watchface_1View extends WatchUi.WatchFace {
         var dayName = (medium.day_of_week as String).toUpper();
 
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(_cx, _cy - (_r * 0.66).toNumber(), Graphics.FONT_XTINY, dayName,
+        dc.drawText(_cx, _dayY, getSmallFont(), dayName,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
         // Date as numbers
@@ -268,7 +398,7 @@ class watchface_1View extends WatchUi.WatchFace {
             + info.day.format("%02d");
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(_cx, _cy - (_r * 0.50).toNumber(), Graphics.FONT_TINY, text,
+        dc.drawText(_cx, _dateY, getSmallFont(), text,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
@@ -279,13 +409,22 @@ class watchface_1View extends WatchUi.WatchFace {
         var dy = ((min / 5) % 5) * 4 - 8;
 
         dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(_cx + dx, _cy + dy, Graphics.FONT_NUMBER_MEDIUM, getTimeText(),
+        dc.drawText(_cx + dx, _cy + dy, getTimeFont(), getTimeText(),
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
     // ---------------------------------------------------------------
     // Data helpers
     // ---------------------------------------------------------------
+
+    // Custom fonts, falling back to built-in ones if they haven't loaded
+    private function getTimeFont() {
+        return (_timeFont != null) ? _timeFont : Graphics.FONT_NUMBER_HOT;
+    }
+
+    private function getSmallFont() {
+        return (_smallFont != null) ? _smallFont : Graphics.FONT_XTINY;
+    }
 
     // Always 24-hour, ignoring the watch's 12/24 setting
     private function getTimeText() as String {

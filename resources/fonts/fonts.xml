@@ -1,0 +1,4 @@
+<fonts>
+    <font id="TimeFont" filename="time.fnt" filter="0123456789:. ABCDEFGHIJKLMNOPQRSTUVWXYZ" antialias="true"/>
+    <font id="SmallFont" filename="small.fnt" filter="0123456789:. ABCDEFGHIJKLMNOPQRSTUVWXYZ" antialias="true"/>
+</fonts>

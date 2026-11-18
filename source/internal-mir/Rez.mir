@@ -1,0 +1,139 @@
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 12; @symbol_moduledef = [Fonts,12,11,16]; ]
+    module Fonts {
+        [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [TimeFont,13,27,35]; @symbol_type<0> = [ResourceId,13,39,49]; ]
+        var TimeFont as ResourceId;
+        [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 14; @position = 27; initialized = true; @symbol_vardef = [SmallFont,14,27,36]; @symbol_type<0> = [ResourceId,14,40,50]; ]
+        var SmallFont as ResourceId;
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 17; @symbol_moduledef = [Layouts,17,11,18]; ]
+    module Layouts {
+        [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 17; ]
+        <init> {
+        }
+        [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 18; @symbol_functiondef = [WatchFace,18,17,26]; @symbol_param<0> = [dc,18,27,29]; @symbol_param<0>_type<0> = [Graphics,18,33,41]; @symbol_param<0>_type<1> = [Dc,18,42,44]; @symbol_return<0> = [Array,18,49,54]; @symbol_return<1> = [WatchUi,18,55,62]; @symbol_return<2> = [Drawable,18,63,71]; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_gen_006_B3076_00_source_Rez_mcgen_18_73_22_8_start:
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen" 19 12 ]
+            [ "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_gen_006_B3076_00_source_Rez_mcgen_18_73_22_8_start" "_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_gen_006_B3076_00_source_Rez_mcgen_18_73_22_8_stop" ]
+            %rez_cmp_local_text_TimeLabel.1 = local;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.1 19 16 44 ];
+            symbol [ WatchUi %tmp.3 19 51 58 ];
+            %tmp.3 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.4 19 59 63 ];
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 6;
+            %tmp.7 = const :identifier;
+            symbol [ identifier %tmp.7 19 66 76 const ];
+            %tmp.8 = "TimeLabel";
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :color;
+            symbol [ color %tmp.12 19 92 97 const ];
+            symbol [ Graphics %tmp.13 19 99 107 ];
+            %tmp.13 = getm $.Toybox.Graphics;
+            symbol [ COLOR_BLUE %tmp.14 19 108 118 ];
+            %tmp.14 = getv %tmp.13 :COLOR_BLUE;
+            %tmp.15 = dup %tmp.10;
+            %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
+            %tmp.18 = const :locX;
+            symbol [ locX %tmp.18 19 121 125 const ];
+            %tmp.19 = lgetv %dc;
+            symbol [ dc %tmp.19 19 128 130 ];
+            symbol [ getWidth %tmp.20 19 131 139 ];
+            %tmp.20 = getv function %tmp.19 :getWidth;
+            %tmp.21 = invoke %tmp.19 %tmp.20();
+            %tmp.22 = 0.5;
+            %tmp.23 = mul %tmp.21 %tmp.22;
+            %tmp.24 = dup %tmp.16;
+            %tmp.25 = aputv %tmp.24 %tmp.18 %tmp.23;
+            %tmp.27 = const :locY;
+            symbol [ locY %tmp.27 19 151 155 const ];
+            %tmp.28 = lgetv %dc;
+            symbol [ dc %tmp.28 19 159 161 ];
+            symbol [ getHeight %tmp.29 19 162 171 ];
+            %tmp.29 = getv function %tmp.28 :getHeight;
+            %tmp.30 = invoke %tmp.28 %tmp.29();
+            %tmp.31 = lgetv %dc;
+            symbol [ dc %tmp.31 19 176 178 ];
+            symbol [ getFontHeight %tmp.32 19 179 192 ];
+            %tmp.32 = getv function %tmp.31 :getFontHeight;
+            symbol [ Graphics %tmp.33 19 193 201 ];
+            %tmp.33 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.34 19 202 212 ];
+            %tmp.34 = getv %tmp.33 :FONT_LARGE;
+            %tmp.35 = invoke %tmp.31 %tmp.32(%tmp.34);
+            %tmp.36 = sub %tmp.30 %tmp.35;
+            %tmp.37 = 0.5;
+            %tmp.38 = mul %tmp.36 %tmp.37;
+            %tmp.39 = dup %tmp.25;
+            %tmp.40 = aputv %tmp.39 %tmp.27 %tmp.38;
+            %tmp.42 = const :justification;
+            symbol [ justification %tmp.42 19 224 237 const ];
+            symbol [ Graphics %tmp.43 19 239 247 ];
+            %tmp.43 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.44 19 248 267 ];
+            %tmp.44 = getv %tmp.43 :TEXT_JUSTIFY_CENTER;
+            %tmp.45 = dup %tmp.40;
+            %tmp.46 = aputv %tmp.45 %tmp.42 %tmp.44;
+            %tmp.48 = const :font;
+            symbol [ font %tmp.48 19 270 274 const ];
+            symbol [ Graphics %tmp.49 19 276 284 ];
+            %tmp.49 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.50 19 285 295 ];
+            %tmp.50 = getv %tmp.49 :FONT_LARGE;
+            %tmp.51 = dup %tmp.46;
+            %tmp.52 = aputv %tmp.51 %tmp.48 %tmp.50;
+            %tmp.1 = newc %tmp.4 (%tmp.52);
+            lputv %rez_cmp_local_text_TimeLabel.1 %tmp.1;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.1 19 16 44 ];
+[ "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen" 21 12 ]
+            %tmp.53 = newa 1 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.53 21 53 58 ];
+            symbol [ WatchUi %tmp.53 21 59 66 ];
+            symbol [ Drawable %tmp.53 21 67 75 ];
+            %tmp.54 = lgetv %rez_cmp_local_text_TimeLabel.1;
+            symbol [ rez_cmp_local_text_TimeLabel %tmp.54 21 20 48 ];
+            %tmp.55 = dup %tmp.53;
+            %tmp.56 = aputv %tmp.55 0 %tmp.54;
+            ret %tmp.56;
+_home_kaho_Programs_GarminIQ_simple_watchface_watchface_1_source_gen_006_B3076_00_source_Rez_mcgen_18_73_22_8_stop:
+        }
+    }
+    [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 25; @symbol_moduledef = [Strings,25,11,18]; ]
+    module Strings {
+        [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 25; ]
+        <init> {
+        }
+        [ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 26; @position = 27; initialized = true; @symbol_vardef = [AppName,26,27,34]; @symbol_type<0> = [ResourceId,26,38,48]; ]
+        var AppName as ResourceId;
+    }
+}
+[ @file = "/home/kaho/Programs/GarminIQ/simple_watchface/watchface_1/source/gen/006-B3076-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}
